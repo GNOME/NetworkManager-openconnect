@@ -4,7 +4,7 @@ AC_INIT(NetworkManager-openconnect,
         1.2.5,
         https://bugzilla.gnome.org/enter_bug.cgi?product=NetworkManager,
         NetworkManager-openconnect)
-AM_INIT_AUTOMAKE([no-dist-gzip dist-xz])
+AM_INIT_AUTOMAKE([no-dist-gzip dist-xz subdir-objects])
 AM_MAINTAINER_MODE
 
 AC_CONFIG_MACRO_DIR([m4])
