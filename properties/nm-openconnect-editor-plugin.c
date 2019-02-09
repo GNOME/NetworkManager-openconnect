@@ -456,6 +456,9 @@ _vt_impl_get_service_add_detail (NMVpnEditorPlugin *plugin,
 		} else if (nm_streq (add_detail, "nc")) {
 			NM_SET_OUT (out_pretty_name, g_strdup (_("Juniper Network Connect (openconnect)")));
 			NM_SET_OUT (out_description, g_strdup (_("Compatible with Juniper Network Connect / Pulse Secure SSL VPN")));
+		} else if (nm_streq (add_detail, "gp")) {
+			NM_SET_OUT (out_pretty_name, g_strdup (_("PAN GlobalProtect (openconnect)")));
+			NM_SET_OUT (out_description, g_strdup (_("Compatible with PAN GlobalProtect SSL VPN")));
 		} else {
 			/* we don't know this protocol by name, but it's configured in the .name file,
 			 * so just take it. */
@@ -573,6 +576,7 @@ openconnect_editor_plugin_init (OpenconnectEditorPlugin *plugin)
 	char *dflt[] = {
 		"anyconnect",
 		"nc",
+		"gp",
 		NULL,
 	};
 
