@@ -12,4 +12,4 @@ auth-dialog=@LIBEXECDIR@/nm-openconnect-auth-dialog
 properties=@PLUGINDIR@/libnm-openconnect-properties
 
 [openconnect]
-supported-protocols=anyconnect,nc
+supported-protocols=anyconnect,nc,gp
