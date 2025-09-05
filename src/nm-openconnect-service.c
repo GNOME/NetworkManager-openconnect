@@ -49,14 +49,14 @@
 # define DIST_VERSION VERSION
 #endif
 
-G_DEFINE_TYPE (NMOpenconnectPlugin, nm_openconnect_plugin, NM_TYPE_VPN_SERVICE_PLUGIN)
-
 typedef struct {
 	GPid pid;
 	char *tun_name;
 } NMOpenconnectPluginPrivate;
 
-#define NM_OPENCONNECT_PLUGIN_GET_PRIVATE(o) (G_TYPE_INSTANCE_GET_PRIVATE ((o), NM_TYPE_OPENCONNECT_PLUGIN, NMOpenconnectPluginPrivate))
+G_DEFINE_TYPE_WITH_PRIVATE (NMOpenconnectPlugin, nm_openconnect_plugin, NM_TYPE_VPN_SERVICE_PLUGIN)
+
+#define NM_OPENCONNECT_PLUGIN_GET_PRIVATE(o) ((NMOpenconnectPluginPrivate *) nm_openconnect_plugin_get_instance_private (NM_OPENCONNECT_PLUGIN (o)))
 
 static const char *openconnect_binary_paths[] =
 {
@@ -719,10 +719,7 @@ nm_openconnect_plugin_init (NMOpenconnectPlugin *plugin)
 static void
 nm_openconnect_plugin_class_init (NMOpenconnectPluginClass *openconnect_class)
 {
-	GObjectClass *object_class = G_OBJECT_CLASS (openconnect_class);
 	NMVpnServicePluginClass *parent_class = NM_VPN_SERVICE_PLUGIN_CLASS (openconnect_class);
-
-	g_type_class_add_private (object_class, sizeof (NMOpenconnectPluginPrivate));
 
 	/* virtual methods */
 	parent_class->connect    = real_connect;

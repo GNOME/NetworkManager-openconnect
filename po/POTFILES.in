@@ -1,9 +1,13 @@
 # List of source files containing translatable strings.
 # Please keep this file sorted alphabetically.
 appdata/network-manager-openconnect.metainfo.xml.in
+auth-dialog/auth-app-win.c
+auth-dialog/auth-app.c
 auth-dialog/main.c
 properties/auth-helpers.c
-[type: gettext/glade]properties/nm-openconnect-dialog.ui
+properties/nm-openconnect-dialog.blp
+properties/oc-cert-chooser.c
+properties/oc-pkcs11.c
 properties/nm-openconnect-editor.c
 properties/nm-openconnect-editor-plugin.c
 shared/nm-utils/nm-shared-utils.c

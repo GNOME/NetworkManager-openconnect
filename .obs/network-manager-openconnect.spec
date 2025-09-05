@@ -1,11 +1,4 @@
-%if 0%{?fedora} < 36 && 0%{?rhel} < 10
-%bcond_with gtk4
-%else
-%bcond_without gtk4
-%endif
-
 %global nm_version          1.2.0
-%global gtk3_version        3.4.0
 %global openconnect_version 7.00
 
 Summary:   NetworkManager VPN plugin for openconnect
@@ -19,20 +12,17 @@ Source:    https://download.gnome.org/sources/NetworkManager-openconnect/1.2/net
 
 BuildRequires: make
 BuildRequires: gcc
-BuildRequires: pkgconfig(gtk+-3.0) >= %{gtk3_version}
+BuildRequires: pkgconfig(gtk4) >= 4.10
+BuildRequires: pkgconfig(libadwaita-1) >= 1.6
+BuildRequires: pkgconfig(gck-2)
+BuildRequires: blueprint-compiler
 BuildRequires: pkgconfig(libnm) >= %{nm_version}
-BuildRequires: pkgconfig(libnma) >= %{nm_version}
 BuildRequires: pkgconfig(libsecret-1)
 BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: intltool gettext libtool
 BuildRequires: pkgconfig(libxml-2.0)
 BuildRequires: pkgconfig(openconnect) >= %{openconnect_version}
-BuildRequires: pkgconfig(gcr-3) >= 3.4
-BuildRequires: pkgconfig(webkit2gtk-4.0)
-%if %with gtk4
-BuildRequires: pkgconfig(gtk4) >= 4.0
-BuildRequires: pkgconfig(libnma-gtk4) >= 1.8.33
-%endif
+BuildRequires: pkgconfig(webkitgtk-6.0)
 
 Requires: NetworkManager   >= %{nm_version}
 Requires: openconnect      >= %{openconnect_version}
@@ -73,9 +63,6 @@ fi
         --enable-more-warnings=yes \
         --disable-static \
         --without-libnm-glib \
-%if %with gtk4
-        --with-gtk4 \
-%endif
         --with-dist-version=%{version}-%{release}
 make %{?_smp_mflags}
 
@@ -118,12 +105,8 @@ fi
 
 %files gnome
 %{_libexecdir}/nm-openconnect-auth-dialog
-%{_libdir}/NetworkManager/libnm-vpn-plugin-openconnect-editor.so
-%{_datadir}/metainfo/network-manager-openconnect.metainfo.xml
-
-%if %with gtk4
 %{_libdir}/NetworkManager/libnm-gtk4-vpn-plugin-openconnect-editor.so
-%endif
+%{_datadir}/metainfo/network-manager-openconnect.metainfo.xml
 
 
 %changelog

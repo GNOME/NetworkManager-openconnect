@@ -9,21 +9,20 @@
     file
     findutils
     gcc
-    gcr-devel
-    gcr3-devel
     gettext-devel
     glib2-devel
     gtk4-devel
     intltool
     libtool
     libsecret-devel
-    libnma-devel
     NetworkManager-libnm-devel
     pkgconfig
     libxml2-devel
     openconnect-devel
-    webkit2gtk3-devel
-    webkit2gtk4.1-devel
+    webkitgtk6.0-devel
+    libadwaita-devel
+    blueprint-compiler
+    gck-devel
 
 .fedora_from_dist: &fedora_from_dist
   - dnf -y install make
@@ -57,9 +56,7 @@ fedora37_dist:
     - dnf -y install
       /usr/bin/autopoint
       autoconf automake make
-      libnma-devel
     - sh autogen.sh
-    - touch gtk4/nm-openconnect-dialog.ui
     - make -j dist
   artifacts:
     paths:

@@ -25,7 +25,7 @@
 
 #include "auth-helpers.h"
 
-#include <nma-cert-chooser.h>
+#include "oc-cert-chooser.h"
 #include <string.h>
 #include <sys/types.h>
 #include <stdlib.h>
@@ -36,73 +36,50 @@
 
 #include <openconnect.h>
 
+static const char *
+cert_scheme_value (const char *value)
+{
+	return value && *value ? value : NULL;
+}
+
+static void
+init_chooser (GtkBuilder *builder,
+              const char *widget_name,
+              const char *cert_key,
+              const char *key_key,
+              NMSettingVpn *s_vpn,
+              ChangedCallback changed_cb,
+              gpointer user_data)
+{
+	OcCertChooser *chooser;
+
+	chooser = OC_CERT_CHOOSER (gtk_builder_get_object (builder, widget_name));
+	g_return_if_fail (chooser != NULL);
+
+	if (s_vpn) {
+		oc_cert_chooser_set_cert (chooser, cert_scheme_value (nm_setting_vpn_get_data_item (s_vpn, cert_key)));
+		if (key_key)
+			oc_cert_chooser_set_key (chooser, cert_scheme_value (nm_setting_vpn_get_data_item (s_vpn, key_key)));
+	}
+
+	g_signal_connect (G_OBJECT (chooser), "changed", G_CALLBACK (changed_cb), user_data);
+}
+
 void
 tls_pw_init_auth_widget (GtkBuilder *builder,
                          NMSettingVpn *s_vpn,
                          ChangedCallback changed_cb,
                          gpointer user_data)
 {
-	GtkWidget *widget;
-	const char *value;
-	GtkSizeGroup *group;
-
 	g_return_if_fail (builder != NULL);
 	g_return_if_fail (changed_cb != NULL);
 
-	group = GTK_SIZE_GROUP (gtk_builder_get_object (builder, "labels"));
-
-	widget = GTK_WIDGET (gtk_builder_get_object (builder, "ca_chooser"));
-	nma_cert_chooser_add_to_size_group (NMA_CERT_CHOOSER (widget), group);
-	g_signal_connect (G_OBJECT (widget), "changed", G_CALLBACK (changed_cb), user_data);
-
-	if (s_vpn) {
-		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_CACERT);
-		if (value && strlen (value))
-			nma_cert_chooser_set_cert (NMA_CERT_CHOOSER (widget), value,
-									   NM_SETTING_802_1X_CK_SCHEME_PATH);
-	}
-
-	widget = GTK_WIDGET (gtk_builder_get_object (builder, "mca_cert_chooser"));
-	nma_cert_chooser_add_to_size_group (NMA_CERT_CHOOSER (widget), group);
-	g_signal_connect (G_OBJECT (widget), "changed", G_CALLBACK (changed_cb), user_data);
-
-	if (s_vpn) {
-		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_MCACERT);
-		if (value && strlen (value))
-			nma_cert_chooser_set_cert (NMA_CERT_CHOOSER (widget), value,
-									   g_str_has_prefix(value, "pkcs11:") ?
-									   NM_SETTING_802_1X_CK_SCHEME_PKCS11 :
-									   NM_SETTING_802_1X_CK_SCHEME_PATH);
-
-		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_MCAKEY);
-		if (value && strlen (value))
-			nma_cert_chooser_set_key (NMA_CERT_CHOOSER (widget), value,
-									  g_str_has_prefix(value, "pkcs11:") ?
-									  NM_SETTING_802_1X_CK_SCHEME_PKCS11 :
-									  NM_SETTING_802_1X_CK_SCHEME_PATH);
-	}
-
-	widget = GTK_WIDGET (gtk_builder_get_object (builder, "user_cert_chooser"));
-	nma_cert_chooser_add_to_size_group (NMA_CERT_CHOOSER (widget), group);
-	g_signal_connect (G_OBJECT (widget), "changed", G_CALLBACK (changed_cb), user_data);
-
-	if (s_vpn) {
-		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_USERCERT);
-		if (value && strlen (value))
-			nma_cert_chooser_set_cert (NMA_CERT_CHOOSER (widget), value,
-									   g_str_has_prefix(value, "pkcs11:") ?
-									   NM_SETTING_802_1X_CK_SCHEME_PKCS11 :
-									   NM_SETTING_802_1X_CK_SCHEME_PATH);
-
-		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_PRIVKEY);
-		if (value && strlen (value)) {
-			nma_cert_chooser_set_key (NMA_CERT_CHOOSER (widget), value,
-									  g_str_has_prefix(value, "pkcs11:") ?
-									  NM_SETTING_802_1X_CK_SCHEME_PKCS11 :
-									  NM_SETTING_802_1X_CK_SCHEME_PATH);
-
-		}
-	}
+	init_chooser (builder, "ca_chooser", NM_OPENCONNECT_KEY_CACERT, NULL,
+	              s_vpn, changed_cb, user_data);
+	init_chooser (builder, "mca_cert_chooser", NM_OPENCONNECT_KEY_MCACERT, NM_OPENCONNECT_KEY_MCAKEY,
+	              s_vpn, changed_cb, user_data);
+	init_chooser (builder, "user_cert_chooser", NM_OPENCONNECT_KEY_USERCERT, NM_OPENCONNECT_KEY_PRIVKEY,
+	              s_vpn, changed_cb, user_data);
 }
 
 gboolean
@@ -117,8 +94,7 @@ update_cert_from_filechooser (GtkBuilder *builder,
                               const char *widget_name,
                               NMSettingVpn *s_vpn)
 {
-	GtkWidget *widget;
-	char *filename;
+	const char *filename;
 	char *authtype;
 
 	g_return_if_fail (builder != NULL);
@@ -126,9 +102,7 @@ update_cert_from_filechooser (GtkBuilder *builder,
 	g_return_if_fail (widget_name != NULL);
 	g_return_if_fail (s_vpn != NULL);
 
-	widget = GTK_WIDGET (gtk_builder_get_object (builder, widget_name));
-
-	filename = nma_cert_chooser_get_cert (NMA_CERT_CHOOSER (widget), NULL);
+	filename = oc_cert_chooser_get_cert (OC_CERT_CHOOSER (gtk_builder_get_object (builder, widget_name)));
 	if (filename && strlen(filename)) {
 		nm_setting_vpn_add_data_item (s_vpn, key, filename);
 		authtype = "cert";
@@ -139,7 +113,6 @@ update_cert_from_filechooser (GtkBuilder *builder,
 	/* Hack to keep older nm-auth-dialog working */
 	if (!strcmp(key, NM_OPENCONNECT_KEY_USERCERT) || !strcmp(key, NM_OPENCONNECT_KEY_MCACERT))
 		nm_setting_vpn_add_data_item (s_vpn, NM_OPENCONNECT_KEY_AUTHTYPE, authtype);
-	g_free (filename);
 }
 
 static void
@@ -148,26 +121,18 @@ update_key_from_filechooser (GtkBuilder *builder,
                              const char *widget_name,
                              NMSettingVpn *s_vpn)
 {
-	GtkWidget *widget;
-	char *filename;
-	char *authtype;
+	const char *filename;
 
 	g_return_if_fail (builder != NULL);
 	g_return_if_fail (key != NULL);
 	g_return_if_fail (widget_name != NULL);
 	g_return_if_fail (s_vpn != NULL);
 
-	widget = GTK_WIDGET (gtk_builder_get_object (builder, widget_name));
-
-	filename = nma_cert_chooser_get_key (NMA_CERT_CHOOSER (widget), NULL);
-	if (filename && strlen(filename)) {
+	filename = oc_cert_chooser_get_key (OC_CERT_CHOOSER (gtk_builder_get_object (builder, widget_name)));
+	if (filename && strlen(filename))
 		nm_setting_vpn_add_data_item (s_vpn, key, filename);
-		authtype = "cert";
-	} else {
+	else
 		nm_setting_vpn_remove_data_item (s_vpn, key);
-		authtype = "password";
-	}
-	g_free (filename);
 }
 
 gboolean

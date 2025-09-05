@@ -56,16 +56,17 @@ enum {
 
 static void openconnect_editor_plugin_interface_init (NMVpnEditorPluginInterface *iface_class);
 
-G_DEFINE_TYPE_EXTENDED (OpenconnectEditorPlugin, openconnect_editor_plugin, G_TYPE_OBJECT, 0,
-                        G_IMPLEMENT_INTERFACE (NM_TYPE_VPN_EDITOR_PLUGIN,
-                                               openconnect_editor_plugin_interface_init))
-
 typedef struct {
 	int nr_supported_protocols;
 	struct oc_vpn_proto *supported_protocols;
 } OpenconnectEditorPluginPrivate;
 
-#define OPENCONNECT_EDITOR_PLUGIN_GET_PRIVATE(o) (G_TYPE_INSTANCE_GET_PRIVATE ((o), OPENCONNECT_TYPE_EDITOR_PLUGIN, OpenconnectEditorPluginPrivate))
+G_DEFINE_TYPE_EXTENDED (OpenconnectEditorPlugin, openconnect_editor_plugin, G_TYPE_OBJECT, 0,
+                        G_ADD_PRIVATE (OpenconnectEditorPlugin)
+                        G_IMPLEMENT_INTERFACE (NM_TYPE_VPN_EDITOR_PLUGIN,
+                                               openconnect_editor_plugin_interface_init))
+
+#define OPENCONNECT_EDITOR_PLUGIN_GET_PRIVATE(o) ((OpenconnectEditorPluginPrivate *) openconnect_editor_plugin_get_instance_private (OPENCONNECT_EDITOR_PLUGIN (o)))
 
 /************** import/export **************/
 
@@ -562,7 +563,6 @@ openconnect_editor_plugin_class_init (OpenconnectEditorPluginClass *req_class)
 {
 	GObjectClass *object_class = G_OBJECT_CLASS (req_class);
 
-	g_type_class_add_private (req_class, sizeof (OpenconnectEditorPluginPrivate));
 
 	object_class->get_property = get_property;
 	object_class->dispose = openconnect_editor_plugin_dispose;

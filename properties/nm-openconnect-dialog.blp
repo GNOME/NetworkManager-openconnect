@@ -1,0 +1,109 @@
+using Gtk 4.0;
+using Adw 1;
+
+Box openconnect-vbox {
+  spacing: 12;
+  orientation: vertical;
+
+  Adw.PreferencesGroup general_group {
+    title: _("General");
+
+    Adw.ComboRow protocol_combo {
+      title: _("_Protocol");
+      use-underline: true;
+      model: StringList {};
+    }
+
+    Adw.EntryRow gateway_entry {
+      title: _("_Gateway");
+      use-underline: true;
+    }
+
+    Adw.EntryRow user_agent_entry {
+      title: _("_User Agent");
+      use-underline: true;
+    }
+
+    Adw.EntryRow proxy_entry {
+      title: _("_Proxy");
+      use-underline: true;
+    }
+
+    Adw.ExpanderRow csd_button {
+      title: _("Allow security scanner _trojan (CSD)");
+      show-enable-switch: true;
+      use-underline: true;
+
+      Adw.EntryRow csd_wrapper_entry {
+        title: _("Trojan (CSD) _Wrapper Script");
+        use-underline: true;
+      }
+    }
+
+    Adw.EntryRow reported_os {
+      title: _("Reported OS");
+      tooltip-text: _("Common values: linux linux-64 win mac-intel android apple-ios");
+      use-underline: true;
+    }
+  }
+
+  Adw.PreferencesGroup ca_group {
+    title: _("Certificate Authentication");
+
+    Adw.SwitchRow fsid_button {
+      title: _("Use _FSID for key passphrase");
+      use-underline: true;
+    }
+
+    Adw.SwitchRow prevent_invalid_cert_button {
+      title: _("Prevent user from manually accepting invalid certificates");
+      use-underline: true;
+    }
+
+    Adw.SwitchRow disable_udp_button {
+      title: _("Disable UDP (DTLS and ESP)");
+      use-underline: true;
+      tooltip-text: _("In most cases, OpenConnect can detect network conditions or server configurations that do not permit UDP-based tunnels (including DTLS and ESP) to work correctly, and fall back automatically to a TLS-based tunnel.\n\nOpenConnect prefers to use a UDP-based tunnel whenever possible, for performance reasons.\n\nYou should only select this option if your connection is unreliable or non-functional without it.");
+    }
+  }
+
+  Adw.PreferencesGroup sta_group {
+    title: _("Software Token Authentication");
+
+    Adw.ComboRow token_mode {
+      title: _("_Token Mode");
+      use-underline: true;
+
+      // Must match the token_modes table in nm-openconnect-editor.c
+      model: StringList {
+        strings [
+          _("Disabled"),
+          _("RSA SecurID — read from ~/.stokenrc"),
+          _("RSA SecurID — manually entered"),
+          _("TOTP — manually entered"),
+          _("HOTP — manually entered"),
+          _("Yubikey OATH"),
+        ]
+      };
+    }
+
+    Adw.EntryRow token_secret {
+      title: _("Token Sec_ret");
+      use-underline: true;
+    }
+  }
+
+  $OcCertChooser ca_chooser {
+    title: _("CA Certificate");
+  }
+
+  $OcCertChooser mca_cert_chooser {
+    title: _("Machine Certificate");
+    show-key: true;
+  }
+
+  $OcCertChooser user_cert_chooser {
+    title: _("User Certificate");
+    show-key: true;
+  }
+}
