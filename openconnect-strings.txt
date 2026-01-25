@@ -238,10 +238,10 @@ _(""
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/fd1d30a24:/auth-globalprotect.c#l117
 _("SAML %s authentication is required via %s\n");
 
-// https://git.infradead.org/users/dwmw2/openconnect.git/blob/ff13a983b:/auth-globalprotect.c#l158
+// https://git.infradead.org/users/dwmw2/openconnect.git/blob/880396030:/auth-globalprotect.c#l153
 _(""
 "When SAML authentication is complete, specify destination form field by "
-"appending :field_name to login URL.\n");
+"appending field_name to login URL.\n");
 
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/3e91f7bf7:/auth-globalprotect.c#l110
 _("Please enter your username and password");
@@ -806,17 +806,19 @@ _("Too long time in MTU detect loop; assuming negotiated MTU.\n");
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/0120a25b4:/dtls.c#l616
 _("Too long time in MTU detect loop; MTU set to %d.\n");
 
-// https://git.infradead.org/users/dwmw2/openconnect.git/blob/c00609adc:/dtls.c#l1252
-_("Received unexpected packet (%.2x) in MTU detection; skipping.\n");
+// https://git.infradead.org/users/dwmw2/openconnect.git/blob/19a7183c6:/dtls.c#l578
+_(""
+"Received unexpected packet (type 0x%02x, %d bytes, expected %d) in MTU "
+"detection; skipping.\n");
 
-// https://git.infradead.org/users/dwmw2/openconnect.git/blob/0120a25b4:/dtls.c#l640
-_("No response to size %u after %d tries; declare MTU is %u\n");
+// https://git.infradead.org/users/dwmw2/openconnect.git/blob/19a7183c6:/dtls.c#l584
+_("Received MTU DPD probe (%u bytes)\n");
+
+// https://git.infradead.org/users/dwmw2/openconnect.git/blob/19a7183c6:/dtls.c#l592
+_("No response to size %u after %d tries (min %d max %d)\n");
 
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/0120a25b4:/dtls.c#l647
 _("Failed to recv DPD request (%d)\n");
-
-// https://git.infradead.org/users/dwmw2/openconnect.git/blob/0120a25b4:/dtls.c#l651
-_("Received MTU DPD probe (%u bytes)\n");
 
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/c00609adc:/dtls.c#l1317
 _("Detected MTU of %d bytes (was %d)\n");
@@ -2901,8 +2903,8 @@ _("Server bugs");
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/2560a29f1:/main.c#l1076
 _("Do not offer or use auth methods requiring external browser");
 
-// https://git.infradead.org/users/dwmw2/openconnect.git/blob/f8da07270:/main.c#l863
-_("Disable HTTP connection re-use");
+// https://git.infradead.org/users/dwmw2/openconnect.git/blob/7be5b093d:/main.c#l1131
+_("Disable HTTP connection reuse");
 
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/f8da07270:/main.c#l864
 _("Do not attempt XML POST authentication");
@@ -3058,9 +3060,9 @@ _(""
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/e2c36e363:/main.c#l557
 _("MTU %d too small\n");
 
-// https://git.infradead.org/users/dwmw2/openconnect.git/blob/f18f58253:/main.c#l393
+// https://git.infradead.org/users/dwmw2/openconnect.git/blob/7be5b093d:/main.c#l2137
 _(""
-"Disabling all HTTP connection re-use due to --no-http-keepalive option.\n"
+"Disabling all HTTP connection reuse due to --no-http-keepalive option.\n"
 "If this helps, please report to <%s>.\n");
 
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/6c95e85f1:/main.c#l1294
@@ -3454,6 +3456,9 @@ _(""
 "Juniper's older oNCP protocol, and only allows connections using\n"
 "the newer Junos Pulse protocol. This version of OpenConnect has\n"
 "EXPERIMENTAL support for Pulse using --prot=pulse\n");
+
+// https://git.infradead.org/users/dwmw2/openconnect.git/blob/34ba4a01e:/oncp.c#l614
+_("Read additional %d bytes of SSL record\n");
 
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/59e108340:/oncp.c#l384
 _("Invalid packet waiting for KMP 301\n");
@@ -4215,8 +4220,8 @@ _("Received proxy auto-config (PAC) URL: %.*s\n");
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/7bbbc9cd0:/pulse.c#l515
 _("Pulse ESP tunnel allowed to carry 6in4 or 4in6 traffic: %d\n");
 
-// https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l475
-_("Unknown attr 0x%x len %d:%s\n");
+// https://git.infradead.org/users/dwmw2/openconnect.git/blob/85ec0a512:/pulse.c#l549
+_("Unknown attr 0x%04x len %d:%s\n");
 
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l486
 _("Read %d bytes of IF-T/TLS record\n");
@@ -4551,6 +4556,10 @@ _("Script did not complete within 10 seconds.\n");
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/887c9d97e:/script.c#l368
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/dd0df3770:/script.c#l377
 _("Failed to spawn script '%s' for %s: %s\n");
+
+// https://git.infradead.org/users/dwmw2/openconnect.git/blob/c0ed1606a:/script.c#l682
+// https://git.infradead.org/users/dwmw2/openconnect.git/blob/be40969ca:/tun.c#l475
+_("setpgid");
 
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/f90b4428d:/script.c#l334
 _("Script '%s' exited abnormally (%x)\n");
@@ -5021,9 +5030,6 @@ _("socketpair failed: %s\n");
 
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/0f484d6c7:/tun.c#l669
 _("fork failed: %s\n");
-
-// https://git.infradead.org/users/dwmw2/openconnect.git/blob/be40969ca:/tun.c#l475
-_("setpgid");
 
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/be40969ca:/tun.c#l480
 _("execl");
