@@ -8,9 +8,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: network-manager-openconnect master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-25 22:43+0000\n"
-"PO-Revision-Date: 2025-01-26 10:31+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/NetworkManager-"
+"openconnect/issues\n"
+"POT-Creation-Date: 2026-01-26 00:09+0000\n"
+"PO-Revision-Date: 2026-01-26 12:05+0100\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
 "n%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 3.8\n"
 
 #: ../appdata/network-manager-openconnect.metainfo.xml.in.h:1
 msgid "OpenConnect VPN client"
@@ -115,6 +116,274 @@ msgstr "Shrani gesla"
 #: ../auth-dialog/main.c:1735
 msgid "Log"
 msgstr "Dnevnik"
+
+#: ../properties/nm-openconnect-dialog.ui.h:1
+msgid "General"
+msgstr "Splošno"
+
+#: ../properties/nm-openconnect-dialog.ui.h:2
+msgid "_VPN Protocol"
+msgstr "_Protokol VPN"
+
+#: ../properties/nm-openconnect-dialog.ui.h:3
+msgid "_Gateway"
+msgstr "_Prehod"
+
+#: ../properties/nm-openconnect-dialog.ui.h:4
+msgid "_User Agent:"
+msgstr "_Uporabniški posrednik:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:5
+msgid "_Proxy"
+msgstr "_Posredniški strežnik"
+
+#: ../properties/nm-openconnect-dialog.ui.h:6
+msgid "Allow security scanner _trojan (CSD)"
+msgstr "Dovoli _trojanca varnostnega preiskovalnika (CSD)"
+
+#: ../properties/nm-openconnect-dialog.ui.h:7
+msgid "Trojan (CSD) _Wrapper Script"
+msgstr "Skript _ovijalnika Trojan CSD"
+
+#: ../properties/nm-openconnect-dialog.ui.h:8
+msgid "Reported OS"
+msgstr "Objavljen OS"
+
+#: ../properties/nm-openconnect-dialog.ui.h:9
+msgid "Common values: linux linux-64 win mac-intel android apple-ios"
+msgstr "Običajne vrednosti: linux linux-64 win mac-intel android apple-ios"
+
+#: ../properties/nm-openconnect-dialog.ui.h:10
+msgid "Certificate Authentication"
+msgstr "Preverjanje pristnosti potrdila"
+
+#: ../properties/nm-openconnect-dialog.ui.h:11
+msgid "Use _FSID for key passphrase"
+msgstr "Uporabite _FSID za večbesedno geslo ključa"
+
+#: ../properties/nm-openconnect-dialog.ui.h:12
+msgid "Prevent user from manually accepting invalid certificates"
+msgstr "Prepreči uporabniku ročno sprejemanje neveljavnih potrdil"
+
+#: ../properties/nm-openconnect-dialog.ui.h:13
+msgid "Disable UDP (DTLS and ESP)"
+msgstr "Onemogoči UDP (DTLS in ESP)"
+
+#: ../properties/nm-openconnect-dialog.ui.h:14
+msgid ""
+"In most cases, OpenConnect can detect network conditions or server "
+"configurations that do not permit UDP-based tunnels (including DTLS and ESP) "
+"to work correctly, and fall back automatically to a TLS-based tunnel.\n"
+"\n"
+"OpenConnect prefers to use a UDP-based tunnel whenever possible, for "
+"performance reasons.\n"
+"\n"
+"You should only select this option if your connection is unreliable or non-"
+"functional without it."
+msgstr ""
+"V večini primerov lahko OpenConnect zazna omrežne pogoje ali prilagoditve "
+"strežnika, ki ne dovoljujejo pravilnega delovanja tunelov, ki temeljijo na "
+"UDP (vključno z DTLS in ESP), in se samodejno vrne v tunel, ki temelji na "
+"TLS.\n"
+"\n"
+"OpenConnect raje uporablja tunel, ki temelji na UDP, kadar koli je to "
+"mogoče, zaradi učinkovitosti.\n"
+"\n"
+"To možnost izberite le, če je povezava brez nje nezanesljiva ali "
+"nefunkcionalna."
+
+#: ../properties/nm-openconnect-dialog.ui.h:19
+msgid "Software Token Authentication"
+msgstr "Overitev programskega žetona"
+
+#: ../properties/nm-openconnect-dialog.ui.h:20
+msgid "Token _Mode"
+msgstr "_Način žetona"
+
+#: ../properties/nm-openconnect-dialog.ui.h:21
+msgid "Token Sec_ret"
+msgstr "_Skrivnost žetona"
+
+#: ../properties/nm-openconnect-dialog.ui.h:22
+msgid "Disabled"
+msgstr "Onemogočeno"
+
+#: ../properties/nm-openconnect-dialog.ui.h:23
+msgid "RSA SecurID — read from ~/.stokenrc"
+msgstr "RSA SecurID – preberi iz ~/.stokenrc"
+
+#: ../properties/nm-openconnect-dialog.ui.h:24
+msgid "RSA SecurID — manually entered"
+msgstr "RSA SecurID – ročno vpisano"
+
+#: ../properties/nm-openconnect-dialog.ui.h:25
+msgid "TOTP — manually entered"
+msgstr "TOTP – ročno vpisano"
+
+#: ../properties/nm-openconnect-dialog.ui.h:26
+msgid "HOTP — manually entered"
+msgstr "HOTP – ročno vpisano"
+
+#: ../properties/nm-openconnect-dialog.ui.h:27
+msgid "Yubikey OATH"
+msgstr "Yubikey OATH"
+
+#: ../properties/nm-openconnect-editor-plugin.c:45
+msgid "Multi-protocol VPN client (openconnect)"
+msgstr "Večprotokolni odjemalec VPN (openconnect)"
+
+#: ../properties/nm-openconnect-editor-plugin.c:46
+msgid ""
+"Compatible with Cisco AnyConnect, Juniper Network Connect and Junos Pulse, "
+"and PAN GlobalProtect SSL VPNs."
+msgstr ""
+"Združljiv s Cisco AnyConnect, Juniper Network Connect in Junos Pulse ter VPN-"
+"ji PAN GlobalProtect SSL."
+
+#: ../shared/nm-utils/nm-shared-utils.c:185
+#, c-format
+msgid "object class '%s' has no property named '%s'"
+msgstr "razred predmeta »%s« nima določenega imena lastnosti »%s«"
+
+#: ../shared/nm-utils/nm-shared-utils.c:192
+#, c-format
+msgid "property '%s' of object class '%s' is not writable"
+msgstr "lastnost »%s« poti datoteke »%s« ni zapisljiva"
+
+#: ../shared/nm-utils/nm-shared-utils.c:199
+#, c-format
+msgid ""
+"construct property \"%s\" for object '%s' can't be set after construction"
+msgstr "lastnosti »%s« za predmet »%s« ni mogoče nastaviti po sestavljanju"
+
+#: ../shared/nm-utils/nm-shared-utils.c:207
+#, c-format
+msgid "'%s::%s' is not a valid property name; '%s' is not a GObject subtype"
+msgstr "»%s::%s« ni veljavno ime lastnosti; »%s« ni podvrsta predmeta GObject"
+
+#: ../shared/nm-utils/nm-shared-utils.c:216
+#, c-format
+msgid "unable to set property '%s' of type '%s' from value of type '%s'"
+msgstr "ni mogoče nastaviti lastnosti »%s« vrste »%s« za vrednost vrste »%s«"
+
+#: ../shared/nm-utils/nm-shared-utils.c:227
+#, c-format
+msgid ""
+"value \"%s\" of type '%s' is invalid or out of range for property '%s' of "
+"type '%s'"
+msgstr ""
+"vrednost »%s« vrste »%s« ni veljavna ali pa je lastnost »%s« izven obsega za "
+"vrsto »%s«"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:69
+#, c-format
+msgid "unable to get editor plugin name: %s"
+msgstr "ni mogoče pridobiti imena vstavka urejevalnika: %s"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:103
+#, c-format
+msgid "missing plugin file \"%s\""
+msgstr "manjka datoteka vstavka »%s«"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:109
+#, c-format
+msgid "cannot load editor plugin: %s"
+msgstr "ni mogoče naložiti vstavka urejevalnike: %s"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:118
+#, c-format
+msgid "cannot load factory %s from plugin: %s"
+msgstr "ni mogoče naložiti vstavka »%s« vmesnika: %s"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:144
+msgid "unknown error creating editor instance"
+msgstr "neznana napaka pri ustvarjanju okna urejevalnika"
+
+#: ../src/nm-openconnect-service.c:185
+#, c-format
+msgid "invalid integer property “%s” or out of range [%d -> %d]"
+msgstr ""
+"neveljavna lastnost celega števila »%s«, ali pa je vrednost izven območja "
+"[%d -> %d]"
+
+#: ../src/nm-openconnect-service.c:195
+#, c-format
+msgid "invalid boolean property “%s” (not yes or no)"
+msgstr "neveljavna logična lastnost »%s« (ni vrednost da oziroma ne)"
+
+#: ../src/nm-openconnect-service.c:202
+#, c-format
+msgid "unhandled property “%s” type %s"
+msgstr "neupravljana lastnost »%s« vrste %s"
+
+#: ../src/nm-openconnect-service.c:215
+#, c-format
+msgid "property “%s” invalid or not supported"
+msgstr "lastnost »%s« ni veljavna, ali pa ni podprta"
+
+#: ../src/nm-openconnect-service.c:231
+msgid "No VPN configuration options."
+msgstr "Ni možnosti nastavitev VPN."
+
+#: ../src/nm-openconnect-service.c:249
+msgid "No VPN secrets!"
+msgstr "Ni skrivnih podatkov VPN!"
+
+#: ../src/nm-openconnect-service.c:281
+msgid "Could not open /dev/net/tun"
+msgstr "Ni mogoče odpreti /dev/net/tun"
+
+#: ../src/nm-openconnect-service.c:295
+#, c-format
+msgid "Could not create tunnel interface named '%.*s'"
+msgstr "Ni bilo mogoče ustvariti vmesnika tunela z imenom »%.*s«"
+
+#: ../src/nm-openconnect-service.c:311
+msgid "Could not create tunnel interface named 'vpnX', for X in 0..255"
+msgstr ""
+"Ni bilo mogoče ustvariti vmesnika tunela z imenom »vpnX«, kjer je X iz "
+"obsega celih števil 0..255"
+
+#: ../src/nm-openconnect-service.c:321
+#, c-format
+msgid "Could not set tunnel interface owner to '%d'"
+msgstr "Lastnika vmesnika tunela ni bilo mogoče nastaviti na »%d«"
+
+#: ../src/nm-openconnect-service.c:332
+msgid "Could not set tunnel interface persistence"
+msgstr "Vztrajnosti vmesnika predora ni bilo mogoče nastaviti"
+
+#: ../src/nm-openconnect-service.c:459
+msgid "Could not find openconnect binary."
+msgstr "Programa openconnect ni mogoče najti."
+
+#: ../src/nm-openconnect-service.c:471
+msgid "No VPN gateway specified."
+msgstr "Ni določenega prehoda VPN."
+
+#: ../src/nm-openconnect-service.c:481
+msgid "No WebVPN cookie provided."
+msgstr "Piškotek WebVPN ni na voljo."
+
+#: ../src/nm-openconnect-service.c:787
+msgid "Don’t quit when VPN connection terminates"
+msgstr "Naj se opravilo ne konča, ko se povezava VPN zaustavi"
+
+#: ../src/nm-openconnect-service.c:788
+msgid "Enable verbose debug logging (may expose passwords)"
+msgstr "Omogoči podrobno beleženje razhroščevanja (lahko razkrije gesla)"
+
+#: ../src/nm-openconnect-service.c:789
+msgid "D-Bus name to use for this instance"
+msgstr "Ime D-Bus za uporabo v programu"
+
+#: ../src/nm-openconnect-service.c:812
+msgid ""
+"nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN "
+"capability to NetworkManager."
+msgstr ""
+"Storitev nm-openconnect-service omogoča vgrajeno podporo za Cisco AnyConnect "
+"SSL VPN v program NetworkManager."
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/27066a2b9:/array.c#l113
 #: ../openconnect-strings.txt:14
@@ -1515,6 +1784,8 @@ msgid ""
 "Received unexpected packet (type 0x%02x, %d bytes, expected %d) in MTU "
 "detection; skipping.\n"
 msgstr ""
+"Prejet nepričakovan paket (vrsta 0x%02x, %d bajtov, pričakovano %d) pri "
+"zaznavanju MTU; preskočeno.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/19a7183c6:/dtls.c#l584
 #: ../openconnect-strings.txt:815
@@ -1526,7 +1797,7 @@ msgstr "Prejeta sondaža MTU DPD (%u bajtov)\n"
 #: ../openconnect-strings.txt:818
 #, c-format
 msgid "No response to size %u after %d tries (min %d max %d)\n"
-msgstr ""
+msgstr "Ni odgovora na velikost %u po %d poskusih (najm. %d, najv. %d)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/0120a25b4:/dtls.c#l647
 #: ../openconnect-strings.txt:821
@@ -6332,7 +6603,7 @@ msgstr ""
 #: ../openconnect-strings.txt:3461
 #, c-format
 msgid "Read additional %d bytes of SSL record\n"
-msgstr ""
+msgstr "Preberi dodatnih %d bajtov zapisa SSL\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/59e108340:/oncp.c#l384
 #: ../openconnect-strings.txt:3464
@@ -7733,7 +8004,7 @@ msgstr "Predor Pulse ESP omogoča prenos prometa 6v4 ali 4v6: %d\n"
 #: ../openconnect-strings.txt:4224
 #, c-format
 msgid "Unknown attr 0x%04x len %d:%s\n"
-msgstr ""
+msgstr "Neznan atribut 0x%04x dolž. %d:%s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l486
 #: ../openconnect-strings.txt:4227
@@ -9639,325 +9910,3 @@ msgstr "Ukaz calculate (izračunaj)"
 #: ../openconnect-strings.txt:5250
 msgid "Unrecognised response from Yubikey when generating tokencode\n"
 msgstr "Neprepoznan odziv Yubikeya pri ustvarjanju žetona\n"
-
-#: ../properties/nm-openconnect-dialog.ui.h:1
-msgid "General"
-msgstr "Splošno"
-
-#: ../properties/nm-openconnect-dialog.ui.h:2
-msgid "_VPN Protocol"
-msgstr "_Protokol VPN"
-
-#: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_Gateway"
-msgstr "_Prehod"
-
-#: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_User Agent:"
-msgstr "_Uporabniški posrednik:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:5
-msgid "_Proxy"
-msgstr "_Posredniški strežnik"
-
-#: ../properties/nm-openconnect-dialog.ui.h:6
-msgid "Allow security scanner _trojan (CSD)"
-msgstr "Dovoli _trojanca varnostnega preiskovalnika (CSD)"
-
-#: ../properties/nm-openconnect-dialog.ui.h:7
-msgid "Trojan (CSD) _Wrapper Script"
-msgstr "Skript _ovijalnika Trojan CSD"
-
-#: ../properties/nm-openconnect-dialog.ui.h:8
-msgid "Reported OS"
-msgstr "Objavljen OS"
-
-#: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "Common values: linux linux-64 win mac-intel android apple-ios"
-msgstr "Običajne vrednosti: linux linux-64 win mac-intel android apple-ios"
-
-#: ../properties/nm-openconnect-dialog.ui.h:10
-msgid "Certificate Authentication"
-msgstr "Preverjanje pristnosti potrdila"
-
-#: ../properties/nm-openconnect-dialog.ui.h:11
-msgid "Use _FSID for key passphrase"
-msgstr "Uporabite _FSID za večbesedno geslo ključa"
-
-#: ../properties/nm-openconnect-dialog.ui.h:12
-msgid "Prevent user from manually accepting invalid certificates"
-msgstr "Prepreči uporabniku ročno sprejemanje neveljavnih potrdil"
-
-#: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Disable UDP (DTLS and ESP)"
-msgstr "Onemogoči UDP (DTLS in ESP)"
-
-#: ../properties/nm-openconnect-dialog.ui.h:14
-msgid ""
-"In most cases, OpenConnect can detect network conditions or server "
-"configurations that do not permit UDP-based tunnels (including DTLS and ESP) "
-"to work correctly, and fall back automatically to a TLS-based tunnel.\n"
-"\n"
-"OpenConnect prefers to use a UDP-based tunnel whenever possible, for "
-"performance reasons.\n"
-"\n"
-"You should only select this option if your connection is unreliable or non-"
-"functional without it."
-msgstr ""
-"V večini primerov lahko OpenConnect zazna omrežne pogoje ali prilagoditve "
-"strežnika, ki ne dovoljujejo pravilnega delovanja tunelov, ki temeljijo na "
-"UDP (vključno z DTLS in ESP), in se samodejno vrne v tunel, ki temelji na "
-"TLS.\n"
-"\n"
-"OpenConnect raje uporablja tunel, ki temelji na UDP, kadar koli je to "
-"mogoče, zaradi učinkovitosti.\n"
-"\n"
-"To možnost izberite le, če je povezava brez nje nezanesljiva ali "
-"nefunkcionalna."
-
-#: ../properties/nm-openconnect-dialog.ui.h:19
-msgid "Software Token Authentication"
-msgstr "Overitev programskega žetona"
-
-#: ../properties/nm-openconnect-dialog.ui.h:20
-msgid "Token _Mode"
-msgstr "_Način žetona"
-
-#: ../properties/nm-openconnect-dialog.ui.h:21
-msgid "Token Sec_ret"
-msgstr "_Skrivnost žetona"
-
-#: ../properties/nm-openconnect-dialog.ui.h:22
-msgid "Disabled"
-msgstr "Onemogočeno"
-
-#: ../properties/nm-openconnect-dialog.ui.h:23
-msgid "RSA SecurID — read from ~/.stokenrc"
-msgstr "RSA SecurID – preberi iz ~/.stokenrc"
-
-#: ../properties/nm-openconnect-dialog.ui.h:24
-msgid "RSA SecurID — manually entered"
-msgstr "RSA SecurID – ročno vpisano"
-
-#: ../properties/nm-openconnect-dialog.ui.h:25
-msgid "TOTP — manually entered"
-msgstr "TOTP – ročno vpisano"
-
-#: ../properties/nm-openconnect-dialog.ui.h:26
-msgid "HOTP — manually entered"
-msgstr "HOTP – ročno vpisano"
-
-#: ../properties/nm-openconnect-dialog.ui.h:27
-msgid "Yubikey OATH"
-msgstr "Yubikey OATH"
-
-#: ../properties/nm-openconnect-editor-plugin.c:45
-msgid "Multi-protocol VPN client (openconnect)"
-msgstr "Večprotokolni odjemalec VPN (openconnect)"
-
-#: ../properties/nm-openconnect-editor-plugin.c:46
-msgid ""
-"Compatible with Cisco AnyConnect, Juniper Network Connect and Junos Pulse, "
-"and PAN GlobalProtect SSL VPNs."
-msgstr ""
-"Združljiv s Cisco AnyConnect, Juniper Network Connect in Junos Pulse ter VPN-"
-"ji PAN GlobalProtect SSL."
-
-#: ../shared/nm-utils/nm-shared-utils.c:185
-#, c-format
-msgid "object class '%s' has no property named '%s'"
-msgstr "razred predmeta »%s« nima določenega imena lastnosti »%s«"
-
-#: ../shared/nm-utils/nm-shared-utils.c:192
-#, c-format
-msgid "property '%s' of object class '%s' is not writable"
-msgstr "lastnost »%s« poti datoteke »%s« ni zapisljiva"
-
-#: ../shared/nm-utils/nm-shared-utils.c:199
-#, c-format
-msgid ""
-"construct property \"%s\" for object '%s' can't be set after construction"
-msgstr "lastnosti »%s« za predmet »%s« ni mogoče nastaviti po sestavljanju"
-
-#: ../shared/nm-utils/nm-shared-utils.c:207
-#, c-format
-msgid "'%s::%s' is not a valid property name; '%s' is not a GObject subtype"
-msgstr "»%s::%s« ni veljavno ime lastnosti; »%s« ni podvrsta predmeta GObject"
-
-#: ../shared/nm-utils/nm-shared-utils.c:216
-#, c-format
-msgid "unable to set property '%s' of type '%s' from value of type '%s'"
-msgstr "ni mogoče nastaviti lastnosti »%s« vrste »%s« za vrednost vrste »%s«"
-
-#: ../shared/nm-utils/nm-shared-utils.c:227
-#, c-format
-msgid ""
-"value \"%s\" of type '%s' is invalid or out of range for property '%s' of "
-"type '%s'"
-msgstr ""
-"vrednost »%s« vrste »%s« ni veljavna ali pa je lastnost »%s« izven obsega za "
-"vrsto »%s«"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:69
-#, c-format
-msgid "unable to get editor plugin name: %s"
-msgstr "ni mogoče pridobiti imena vstavka urejevalnika: %s"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:103
-#, c-format
-msgid "missing plugin file \"%s\""
-msgstr "manjka datoteka vstavka »%s«"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:109
-#, c-format
-msgid "cannot load editor plugin: %s"
-msgstr "ni mogoče naložiti vstavka urejevalnike: %s"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:118
-#, c-format
-msgid "cannot load factory %s from plugin: %s"
-msgstr "ni mogoče naložiti vstavka »%s« vmesnika: %s"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:144
-msgid "unknown error creating editor instance"
-msgstr "neznana napaka pri ustvarjanju okna urejevalnika"
-
-#: ../src/nm-openconnect-service.c:185
-#, c-format
-msgid "invalid integer property “%s” or out of range [%d -> %d]"
-msgstr ""
-"neveljavna lastnost celega števila »%s«, ali pa je vrednost izven območja "
-"[%d -> %d]"
-
-#: ../src/nm-openconnect-service.c:195
-#, c-format
-msgid "invalid boolean property “%s” (not yes or no)"
-msgstr "neveljavna logična lastnost »%s« (ni vrednost da oziroma ne)"
-
-#: ../src/nm-openconnect-service.c:202
-#, c-format
-msgid "unhandled property “%s” type %s"
-msgstr "neupravljana lastnost »%s« vrste %s"
-
-#: ../src/nm-openconnect-service.c:215
-#, c-format
-msgid "property “%s” invalid or not supported"
-msgstr "lastnost »%s« ni veljavna, ali pa ni podprta"
-
-#: ../src/nm-openconnect-service.c:231
-msgid "No VPN configuration options."
-msgstr "Ni možnosti nastavitev VPN."
-
-#: ../src/nm-openconnect-service.c:249
-msgid "No VPN secrets!"
-msgstr "Ni skrivnih podatkov VPN!"
-
-#: ../src/nm-openconnect-service.c:281
-msgid "Could not open /dev/net/tun"
-msgstr "Ni mogoče odpreti /dev/net/tun"
-
-#: ../src/nm-openconnect-service.c:295
-#, c-format
-msgid "Could not create tunnel interface named '%.*s'"
-msgstr "Ni bilo mogoče ustvariti vmesnika tunela z imenom »%.*s«"
-
-#: ../src/nm-openconnect-service.c:311
-msgid "Could not create tunnel interface named 'vpnX', for X in 0..255"
-msgstr ""
-"Ni bilo mogoče ustvariti vmesnika tunela z imenom »vpnX«, kjer je X iz "
-"obsega celih števil 0..255"
-
-#: ../src/nm-openconnect-service.c:321
-#, c-format
-msgid "Could not set tunnel interface owner to '%d'"
-msgstr "Lastnika vmesnika tunela ni bilo mogoče nastaviti na »%d«"
-
-#: ../src/nm-openconnect-service.c:332
-msgid "Could not set tunnel interface persistence"
-msgstr "Vztrajnosti vmesnika predora ni bilo mogoče nastaviti"
-
-#: ../src/nm-openconnect-service.c:459
-msgid "Could not find openconnect binary."
-msgstr "Programa openconnect ni mogoče najti."
-
-#: ../src/nm-openconnect-service.c:471
-msgid "No VPN gateway specified."
-msgstr "Ni določenega prehoda VPN."
-
-#: ../src/nm-openconnect-service.c:481
-msgid "No WebVPN cookie provided."
-msgstr "Piškotek WebVPN ni na voljo."
-
-#: ../src/nm-openconnect-service.c:787
-msgid "Don’t quit when VPN connection terminates"
-msgstr "Naj se opravilo ne konča, ko se povezava VPN zaustavi"
-
-#: ../src/nm-openconnect-service.c:788
-msgid "Enable verbose debug logging (may expose passwords)"
-msgstr "Omogoči podrobno beleženje razhroščevanja (lahko razkrije gesla)"
-
-#: ../src/nm-openconnect-service.c:789
-msgid "D-Bus name to use for this instance"
-msgstr "Ime D-Bus za uporabo v programu"
-
-#: ../src/nm-openconnect-service.c:812
-msgid ""
-"nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN "
-"capability to NetworkManager."
-msgstr ""
-"Storitev nm-openconnect-service omogoča vgrajeno podporo za Cisco AnyConnect "
-"SSL VPN v program NetworkManager."
-
-#~ msgid "Cisco AnyConnect"
-#~ msgstr "Cisco AnyConnect"
-
-#~ msgid "Cisco AnyConnect Compatible VPN (openconnect)"
-#~ msgstr "Združljivo s Cisco AnyConnect VPN (openconnect)"
-
-#~ msgid "Cisco AnyConnect or openconnect"
-#~ msgstr "Cisco AnyConnect ali openconnect"
-
-#~ msgid "Compatible with Cisco AnyConnect SSL VPN."
-#~ msgstr "Združljivo s Cisco AnyConnect SSL VPN."
-
-#~ msgid ""
-#~ "Compatible with Cisco AnyConnect and Juniper Network Connect and Junos "
-#~ "Pulse SSL VPNs."
-#~ msgstr ""
-#~ "Združljivo s Cisco AnyConnect in Juniper Network Connect ter Junos Pulse "
-#~ "SSL VPN-ji."
-
-#~ msgid "Disable HTTP connection re-use"
-#~ msgstr "Onemogoči ponovno uporabo povezave HTTP"
-
-#, c-format
-#~ msgid ""
-#~ "Disabling all HTTP connection re-use due to --no-http-keepalive option.\n"
-#~ "If this helps, please report to <%s>.\n"
-#~ msgstr ""
-#~ "Zaradi uporabe možnosti --no-http-keepalive je onemogočena ponovna "
-#~ "uporaba povezav HTTP.\n"
-#~ "V kolikor možnost deluje, pošljite poročilo na <%s>.\n"
-
-#~ msgid "Juniper/Pulse Network Connect"
-#~ msgstr "Omrežna povezava Juniper/Pulse"
-
-#, c-format
-#~ msgid "No response to size %u after %d tries; declare MTU is %u\n"
-#~ msgstr "Na velikost %u po %d poskusih ni odziva; razglasitev: MTU je %u\n"
-
-#, c-format
-#~ msgid "Received unexpected packet (%.2x) in MTU detection; skipping.\n"
-#~ msgstr ""
-#~ "Prejet nepričakovan paket (%.2x) pri zaznavanju MTU; preskakovanje.\n"
-
-#, c-format
-#~ msgid "Unknown attr 0x%x len %d:%s\n"
-#~ msgstr "Neznan atr 0x%x dolžine %d:%s\n"
-
-#~ msgid ""
-#~ "When SAML authentication is complete, specify destination form field by "
-#~ "appending :field_name to login URL.\n"
-#~ msgstr ""
-#~ "Ko je preverjanje pristnosti SAML končano, določite ciljno polje obrazca "
-#~ "tako, da URL-ju za prijavo priložite :ime_polja.\n"
