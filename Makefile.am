@@ -290,6 +290,9 @@ nm-openconnect-service.name: $(srcdir)/nm-openconnect-service.name.in
 	    -e 's|[@]PLUGINDIR[@]/|@NM_PLUGIN_DIR_NAME_FILE@|g' \
 	    $< >$@
 
+nm-openconnect-sysusers.conf: $(srcdir)/nm-openconnect-sysusers.conf.in
+	sed -e 's|[@]USER_LOCKED_UNLOCKED[@]|$(NM_USER_LOCKED_UNLOCKED)|g' \
+	    $< >$@
 nmopenconnectsysusersdir = $(prefix)/lib/sysusers.d
 nmopenconnectsysusers_DATA = nm-openconnect-sysusers.conf
 
@@ -308,6 +311,7 @@ ACLOCAL_AMFLAGS = -I m4
 
 EXTRA_DIST += \
 	nm-openconnect-service.name.in \
+	nm-openconnect-sysusers.conf.in \
 	$(nmopenconnectsysusers_DATA) \
 	$(dbusservice_DATA) \
 	$(desktop_in_files) \

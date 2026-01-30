@@ -33,6 +33,7 @@ appdata/network-manager-openconnect.metainfo.xml
 properties/resources.c
 
 nm-openconnect-service.name
+nm-openconnect-sysusers.conf
 src/nm-openconnect-service
 src/nm-openconnect-service-openconnect-helper
 auth-dialog/nm-openconnect-auth-dialog
