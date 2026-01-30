@@ -293,7 +293,7 @@ nm-openconnect-service.name: $(srcdir)/nm-openconnect-service.name.in
 nm-openconnect-sysusers.conf: $(srcdir)/nm-openconnect-sysusers.conf.in
 	sed -e 's|[@]USER_LOCKED_UNLOCKED[@]|$(NM_USER_LOCKED_UNLOCKED)|g' \
 	    $< >$@
-nmopenconnectsysusersdir = $(prefix)/lib/sysusers.d
+nmopenconnectsysusersdir = $(NM_SYSUSERS_DIR)
 nmopenconnectsysusers_DATA = nm-openconnect-sysusers.conf
 
 DISTCHECK_CONFIGURE_FLAGS = \
