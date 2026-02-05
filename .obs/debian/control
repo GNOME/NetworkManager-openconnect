@@ -16,7 +16,8 @@ Build-Depends: debhelper-compat (= 12),
                libwebkit2gtk-4.1-dev | libwebkit2gtk-4.0-dev,
                libopenconnect-dev (>= 8.20~),
                libsecret-1-dev,
-               libxml2-dev
+               libxml2-dev,
+               systemd-dev | systemd (<< 255~),
 Rules-Requires-Root: no
 Standards-Version: 4.7.2
 Vcs-Browser: https://gitlab.gnome.org/GNOME/NetworkManager-openconnect

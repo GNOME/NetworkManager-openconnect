@@ -183,6 +183,13 @@ else
 fi
 AC_SUBST(NM_PLUGIN_DIR_NAME_FILE)
 
+dnl systemd-sysusers does not support locked user ('u!') before v257 and fails
+PKG_CHECK_MODULES(SYSTEMD, systemd >= 257, [NM_USER_LOCKED_UNLOCKED="u!"], [NM_USER_LOCKED_UNLOCKED="u"])
+AC_SUBST(NM_USER_LOCKED_UNLOCKED)
+
+NM_SYSUSERS_DIR=`$PKG_CONFIG --define-variable prefix='\${prefix}' --variable sysusersdir systemd`
+AC_SUBST(NM_SYSUSERS_DIR)
+
 dnl
 dnl Distribution version string
 dnl
