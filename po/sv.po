@@ -1,17 +1,18 @@
 # Swedish translation for network-manager-openconnect.
-# Copyright © 2008, 2010, 2011, 2015, 2017-2025 Free Software Foundation, Inc.
+# Copyright © 2008, 2010, 2011, 2015, 2017-2026 Free Software Foundation, Inc.
 # This file is distributed under the same license as the network-manager-openconnect package.
 # Daniel Nylander <po@danielnylander.se>, 2008, 2010, 2011.
 # Josef Andersson <josef.andersson@fripost.org>, 2015, 2017, 2018, 2019.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2019, 2020, 2021, 2022, 2023, 2024, 2025.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026.
 # Luna Jernberg <droidbittin@gmail.com>, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: network-manager-openconnect\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-25 22:43+0000\n"
-"PO-Revision-Date: 2025-07-11 11:50+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/NetworkManager-"
+"openconnect/issues\n"
+"POT-Creation-Date: 2026-01-25 22:47+0000\n"
+"PO-Revision-Date: 2026-02-14 13:01+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.8\n"
 "X-Project-Style: gnome\n"
 
 #: ../appdata/network-manager-openconnect.metainfo.xml.in.h:1
@@ -115,6 +116,275 @@ msgstr "Spara lösenord"
 #: ../auth-dialog/main.c:1735
 msgid "Log"
 msgstr "Logg"
+
+#: ../properties/nm-openconnect-dialog.ui.h:1
+msgid "General"
+msgstr "Allmänt"
+
+#: ../properties/nm-openconnect-dialog.ui.h:2
+msgid "_VPN Protocol"
+msgstr "_VPN-protokoll"
+
+#: ../properties/nm-openconnect-dialog.ui.h:3
+msgid "_Gateway"
+msgstr "_Gateway"
+
+#: ../properties/nm-openconnect-dialog.ui.h:4
+msgid "_User Agent:"
+msgstr "_Användaragent:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:5
+msgid "_Proxy"
+msgstr "_Proxy"
+
+#: ../properties/nm-openconnect-dialog.ui.h:6
+msgid "Allow security scanner _trojan (CSD)"
+msgstr "Tillåt säkerhetsanalys_trojan (CSD)"
+
+#: ../properties/nm-openconnect-dialog.ui.h:7
+msgid "Trojan (CSD) _Wrapper Script"
+msgstr "O_mslagsskript för trojan (CSD)"
+
+#: ../properties/nm-openconnect-dialog.ui.h:8
+msgid "Reported OS"
+msgstr "Rapporterat OS"
+
+#: ../properties/nm-openconnect-dialog.ui.h:9
+msgid "Common values: linux linux-64 win mac-intel android apple-ios"
+msgstr "Vanliga värden: linux linux-64 win mac-intel android apple-ios"
+
+#: ../properties/nm-openconnect-dialog.ui.h:10
+msgid "Certificate Authentication"
+msgstr "Certifikatautentisering"
+
+#: ../properties/nm-openconnect-dialog.ui.h:11
+msgid "Use _FSID for key passphrase"
+msgstr "Använd _FSID för nyckellösenfras"
+
+#: ../properties/nm-openconnect-dialog.ui.h:12
+msgid "Prevent user from manually accepting invalid certificates"
+msgstr "Förhindra användare från att manuellt acceptera ogiltiga certifikat"
+
+#: ../properties/nm-openconnect-dialog.ui.h:13
+msgid "Disable UDP (DTLS and ESP)"
+msgstr "Inaktivera UDP (DTLS och ESP)"
+
+#: ../properties/nm-openconnect-dialog.ui.h:14
+msgid ""
+"In most cases, OpenConnect can detect network conditions or server "
+"configurations that do not permit UDP-based tunnels (including DTLS and ESP) "
+"to work correctly, and fall back automatically to a TLS-based tunnel.\n"
+"\n"
+"OpenConnect prefers to use a UDP-based tunnel whenever possible, for "
+"performance reasons.\n"
+"\n"
+"You should only select this option if your connection is unreliable or non-"
+"functional without it."
+msgstr ""
+"I de flesta fall kan OpenConnect upptäcka nätverksvillkor eller "
+"serverkonfigurationer som inte låter UDP-baserade tunnlar (inklusive DTLS "
+"och ESP) fungera som de ska, och automatiskt falla tillbaka på en TLS-"
+"baserad tunnel.\n"
+"\n"
+"OpenConnect föredrar av prestandaskäl att använda en UDP-baserad tunnel "
+"närhelst möjligt.\n"
+"\n"
+"Du bör endast välja detta alternativ om din anslutning är opålitlig eller "
+"inte fungerar utan det."
+
+#: ../properties/nm-openconnect-dialog.ui.h:19
+msgid "Software Token Authentication"
+msgstr "Programvarutoken-autentisering (STA)"
+
+#: ../properties/nm-openconnect-dialog.ui.h:20
+msgid "Token _Mode"
+msgstr "Token_läge"
+
+#: ../properties/nm-openconnect-dialog.ui.h:21
+msgid "Token Sec_ret"
+msgstr "Tokenhem_lighet"
+
+#: ../properties/nm-openconnect-dialog.ui.h:22
+msgid "Disabled"
+msgstr "Inaktiverad"
+
+#: ../properties/nm-openconnect-dialog.ui.h:23
+msgid "RSA SecurID — read from ~/.stokenrc"
+msgstr "RSA SecurID — läs från ~/.stokenrc"
+
+#: ../properties/nm-openconnect-dialog.ui.h:24
+msgid "RSA SecurID — manually entered"
+msgstr "RSA SecurID — manuellt angiven"
+
+#: ../properties/nm-openconnect-dialog.ui.h:25
+msgid "TOTP — manually entered"
+msgstr "TOTP — manuellt angiven"
+
+#: ../properties/nm-openconnect-dialog.ui.h:26
+msgid "HOTP — manually entered"
+msgstr "HOTP — manuellt angiven"
+
+#: ../properties/nm-openconnect-dialog.ui.h:27
+msgid "Yubikey OATH"
+msgstr "Yubikey OATH"
+
+#: ../properties/nm-openconnect-editor-plugin.c:45
+msgid "Multi-protocol VPN client (openconnect)"
+msgstr "Multiprotokollklient för VPN (openconnect)"
+
+#: ../properties/nm-openconnect-editor-plugin.c:46
+msgid ""
+"Compatible with Cisco AnyConnect, Juniper Network Connect and Junos Pulse, "
+"and PAN GlobalProtect SSL VPNs."
+msgstr ""
+"Kompatibel med Cisco AnyConnect, Juniper Network Connect och Junos Pulse "
+"samt VPN med PAN GlobalProtect SSL."
+
+#: ../shared/nm-utils/nm-shared-utils.c:185
+#, c-format
+msgid "object class '%s' has no property named '%s'"
+msgstr "objektklassen ”%s” har ingen egenskap med namn ”%s”"
+
+#: ../shared/nm-utils/nm-shared-utils.c:192
+#, c-format
+msgid "property '%s' of object class '%s' is not writable"
+msgstr "egenskapen ”%s” för objektklassen ”%s” är skrivskyddad"
+
+#: ../shared/nm-utils/nm-shared-utils.c:199
+#, c-format
+msgid ""
+"construct property \"%s\" for object '%s' can't be set after construction"
+msgstr ""
+"konstruktionsegenskap ”%s” för objektet ”%s” kan inte ställas in efter att "
+"det skapats"
+
+#: ../shared/nm-utils/nm-shared-utils.c:207
+#, c-format
+msgid "'%s::%s' is not a valid property name; '%s' is not a GObject subtype"
+msgstr ""
+"”%s::%s” är inte ett giltigt egenskapsnamn; ”%s” är inte en undertyp till "
+"GObject"
+
+#: ../shared/nm-utils/nm-shared-utils.c:216
+#, c-format
+msgid "unable to set property '%s' of type '%s' from value of type '%s'"
+msgstr ""
+"kunde inte ange egenskapen ”%s” för typen ”%s” från värdet av typen ”%s”"
+
+#: ../shared/nm-utils/nm-shared-utils.c:227
+#, c-format
+msgid ""
+"value \"%s\" of type '%s' is invalid or out of range for property '%s' of "
+"type '%s'"
+msgstr ""
+"värdet ”%s” av typen ”%s” är ogiltigt eller utanför intervallet för "
+"egenskapen ”%s” av typen ”%s”"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:69
+#, c-format
+msgid "unable to get editor plugin name: %s"
+msgstr "kunde inte hämta namnet på redigerarinsticket: %s"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:103
+#, c-format
+msgid "missing plugin file \"%s\""
+msgstr "saknar insticksmodulfilen ”%s”"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:109
+#, c-format
+msgid "cannot load editor plugin: %s"
+msgstr "kan inte öppna redigerarinsticket: %s"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:118
+#, c-format
+msgid "cannot load factory %s from plugin: %s"
+msgstr "kan inte öppna fabriken %s från insticksmodulen: %s"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:144
+msgid "unknown error creating editor instance"
+msgstr "okänt fel vid skapande av redigeringsinstans"
+
+#: ../src/nm-openconnect-service.c:185
+#, c-format
+msgid "invalid integer property “%s” or out of range [%d -> %d]"
+msgstr "ogiltig heltalsegenskap ”%s” eller utanför intervallet [%d -> %d]"
+
+#: ../src/nm-openconnect-service.c:195
+#, c-format
+msgid "invalid boolean property “%s” (not yes or no)"
+msgstr "ogiltig boolesk egenskap ”%s” (inte yes eller no)"
+
+#: ../src/nm-openconnect-service.c:202
+#, c-format
+msgid "unhandled property “%s” type %s"
+msgstr "ohanterad egenskap ”%s” typ %s"
+
+#: ../src/nm-openconnect-service.c:215
+#, c-format
+msgid "property “%s” invalid or not supported"
+msgstr "egenskapen ”%s” är ogiltig eller stöds ej"
+
+#: ../src/nm-openconnect-service.c:231
+msgid "No VPN configuration options."
+msgstr "Inga VPN-konfigurationsalternativ."
+
+#: ../src/nm-openconnect-service.c:249
+msgid "No VPN secrets!"
+msgstr "Inga VPN-hemligheter!"
+
+#: ../src/nm-openconnect-service.c:281
+msgid "Could not open /dev/net/tun"
+msgstr "Kunde inte öppna /dev/net/tun"
+
+#: ../src/nm-openconnect-service.c:295
+#, c-format
+msgid "Could not create tunnel interface named '%.*s'"
+msgstr "Kunde inte skapa tunnelgränssnitt med namnet ”%.*s”"
+
+#: ../src/nm-openconnect-service.c:311
+msgid "Could not create tunnel interface named 'vpnX', for X in 0..255"
+msgstr "Kunde inte skapa tunnelgränssnitt med namnet ”vpnX” för X i 0..255"
+
+#: ../src/nm-openconnect-service.c:321
+#, c-format
+msgid "Could not set tunnel interface owner to '%d'"
+msgstr "Kunde inte sätta ägare för tunnelgränssnitt till ”%d”"
+
+#: ../src/nm-openconnect-service.c:332
+msgid "Could not set tunnel interface persistence"
+msgstr "Kunde inte sätta beständighet för tunnelgränssnitt"
+
+#: ../src/nm-openconnect-service.c:459
+msgid "Could not find openconnect binary."
+msgstr "Kunde inte hitta binärfilen för openconnect."
+
+#: ../src/nm-openconnect-service.c:471
+msgid "No VPN gateway specified."
+msgstr "Ingen VPN-gateway har angivits."
+
+#: ../src/nm-openconnect-service.c:481
+msgid "No WebVPN cookie provided."
+msgstr "Ingen WebVPN-kaka tillhandahölls."
+
+#: ../src/nm-openconnect-service.c:787
+msgid "Don’t quit when VPN connection terminates"
+msgstr "Avsluta inte när VPN-anslutningen terminerar"
+
+#: ../src/nm-openconnect-service.c:788
+msgid "Enable verbose debug logging (may expose passwords)"
+msgstr "Aktivera detaljerad felloggning (kan visa lösenord)"
+
+#: ../src/nm-openconnect-service.c:789
+msgid "D-Bus name to use for this instance"
+msgstr "D-Bus-namn att använda för denna instans"
+
+#: ../src/nm-openconnect-service.c:812
+msgid ""
+"nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN "
+"capability to NetworkManager."
+msgstr ""
+"nm-openconnect-service tillhandahåller integrerade Cisco AnyConnect SSL VPN-"
+"funktioner till Nätverkshanteraren."
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/27066a2b9:/array.c#l113
 #: ../openconnect-strings.txt:14
@@ -1405,7 +1675,7 @@ msgstr "DTLS initierad. DPD %d, Keepalive %d\n"
 #: ../openconnect-strings.txt:762
 #, c-format
 msgid "Unknown packet (len %d) received: %02x %02x %02x %02x...\n"
-msgstr "Okänt paket (län %d) mottog: %02x %02x %02x %02x…\n"
+msgstr "Okänt paket (län %d) mottogs: %02x %02x %02x %02x…\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/21da88397:/dtls.c#l266
 #: ../openconnect-strings.txt:765
@@ -1447,7 +1717,7 @@ msgstr "Komprimerade DTLS-paket mottaget när komprimering inte var aktiverat\n"
 #: ../openconnect-strings.txt:786
 #, c-format
 msgid "Unknown DTLS packet type %02x, len %d\n"
-msgstr "Okänt DTLS-pakettyp %02x, län %d\n"
+msgstr "Okänd DTLS-pakettyp %02x, län %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/ab4abdcdf:/dtls.c#l808
 #: ../openconnect-strings.txt:789
@@ -1495,6 +1765,8 @@ msgid ""
 "Received unexpected packet (type 0x%02x, %d bytes, expected %d) in MTU "
 "detection; skipping.\n"
 msgstr ""
+"Mottog oväntat paket (typ 0x%02x, %d byte, förväntade %d) i MTU-upptäckt; "
+"hoppar över.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/19a7183c6:/dtls.c#l584
 #: ../openconnect-strings.txt:815
@@ -1506,7 +1778,7 @@ msgstr "Mottog MTU DPD-avsökning (%u byte)\n"
 #: ../openconnect-strings.txt:818
 #, c-format
 msgid "No response to size %u after %d tries (min %d max %d)\n"
-msgstr ""
+msgstr "Inget svar till storlek %u efter %d försök (min %d max %d)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/0120a25b4:/dtls.c#l647
 #: ../openconnect-strings.txt:821
@@ -5203,10 +5475,11 @@ msgstr "Inaktivera DTLS och ESP"
 msgid "OpenSSL ciphers to support for DTLS"
 msgstr "OpenSSL-chiffer till stöd för DTLS"
 
+# TODO: LEN översättningsbar?
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/f8da07270:/main.c#l855
 #: ../openconnect-strings.txt:2865
 msgid "Set packet queue limit to LEN pkts"
-msgstr "Sätt paketkögräns till LEN-pkts"
+msgstr "Sätt paketkögräns till LEN paket"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/ffd55f342:/main.c#l873
 #: ../openconnect-strings.txt:2868
@@ -6282,7 +6555,7 @@ msgstr ""
 #: ../openconnect-strings.txt:3461
 #, c-format
 msgid "Read additional %d bytes of SSL record\n"
-msgstr ""
+msgstr "Läste ytterligare %d byte av SSL-post\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/59e108340:/oncp.c#l384
 #: ../openconnect-strings.txt:3464
@@ -7666,7 +7939,7 @@ msgstr "Pulse ESP-tunnel tillåten att innehålla 6in4- eller 4in6-trafik: %d\n"
 #: ../openconnect-strings.txt:4224
 #, c-format
 msgid "Unknown attr 0x%04x len %d:%s\n"
-msgstr ""
+msgstr "Okänd attr 0x%04x län %d:%s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l486
 #: ../openconnect-strings.txt:4227
@@ -9544,275 +9817,6 @@ msgstr "kommandot beräkna"
 #: ../openconnect-strings.txt:5250
 msgid "Unrecognised response from Yubikey when generating tokencode\n"
 msgstr "Okänt svar från Yubikey under generering av tokenkod\n"
-
-#: ../properties/nm-openconnect-dialog.ui.h:1
-msgid "General"
-msgstr "Allmänt"
-
-#: ../properties/nm-openconnect-dialog.ui.h:2
-msgid "_VPN Protocol"
-msgstr "_VPN-protokoll"
-
-#: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_Gateway"
-msgstr "_Gateway"
-
-#: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_User Agent:"
-msgstr "_Användaragent:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:5
-msgid "_Proxy"
-msgstr "_Proxy"
-
-#: ../properties/nm-openconnect-dialog.ui.h:6
-msgid "Allow security scanner _trojan (CSD)"
-msgstr "Tillåt säkerhetsanalys_trojan (CSD)"
-
-#: ../properties/nm-openconnect-dialog.ui.h:7
-msgid "Trojan (CSD) _Wrapper Script"
-msgstr "O_mslagsskript för trojan (CSD)"
-
-#: ../properties/nm-openconnect-dialog.ui.h:8
-msgid "Reported OS"
-msgstr "Rapporterat OS"
-
-#: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "Common values: linux linux-64 win mac-intel android apple-ios"
-msgstr "Vanliga värden: linux linux-64 win mac-intel android apple-ios"
-
-#: ../properties/nm-openconnect-dialog.ui.h:10
-msgid "Certificate Authentication"
-msgstr "Certifikatautentisering"
-
-#: ../properties/nm-openconnect-dialog.ui.h:11
-msgid "Use _FSID for key passphrase"
-msgstr "Använd _FSID för nyckellösenfras"
-
-#: ../properties/nm-openconnect-dialog.ui.h:12
-msgid "Prevent user from manually accepting invalid certificates"
-msgstr "Förhindra användare från att manuellt acceptera ogiltiga certifikat"
-
-#: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Disable UDP (DTLS and ESP)"
-msgstr "Inaktivera UDP (DTLS och ESP)"
-
-#: ../properties/nm-openconnect-dialog.ui.h:14
-msgid ""
-"In most cases, OpenConnect can detect network conditions or server "
-"configurations that do not permit UDP-based tunnels (including DTLS and ESP) "
-"to work correctly, and fall back automatically to a TLS-based tunnel.\n"
-"\n"
-"OpenConnect prefers to use a UDP-based tunnel whenever possible, for "
-"performance reasons.\n"
-"\n"
-"You should only select this option if your connection is unreliable or non-"
-"functional without it."
-msgstr ""
-"I de flesta fall kan OpenConnect upptäcka nätverksvillkor eller "
-"serverkonfigurationer som inte låter UDP-baserade tunnlar (inklusive DTLS "
-"och ESP) fungera som de ska, och automatiskt falla tillbaka på en TLS-"
-"baserad tunnel.\n"
-"\n"
-"OpenConnect föredrar av prestandaskäl att använda en UDP-baserad tunnel "
-"närhelst möjligt.\n"
-"\n"
-"Du bör endast välja detta alternativ om din anslutning är opålitlig eller "
-"inte fungerar utan det."
-
-#: ../properties/nm-openconnect-dialog.ui.h:19
-msgid "Software Token Authentication"
-msgstr "Programvarutoken-autentisering (STA)"
-
-#: ../properties/nm-openconnect-dialog.ui.h:20
-msgid "Token _Mode"
-msgstr "Token_läge"
-
-#: ../properties/nm-openconnect-dialog.ui.h:21
-msgid "Token Sec_ret"
-msgstr "Tokenhem_lighet"
-
-#: ../properties/nm-openconnect-dialog.ui.h:22
-msgid "Disabled"
-msgstr "Inaktiverad"
-
-#: ../properties/nm-openconnect-dialog.ui.h:23
-msgid "RSA SecurID — read from ~/.stokenrc"
-msgstr "RSA SecurID — läs från ~/.stokenrc"
-
-#: ../properties/nm-openconnect-dialog.ui.h:24
-msgid "RSA SecurID — manually entered"
-msgstr "RSA SecurID — manuellt angiven"
-
-#: ../properties/nm-openconnect-dialog.ui.h:25
-msgid "TOTP — manually entered"
-msgstr "TOTP — manuellt angiven"
-
-#: ../properties/nm-openconnect-dialog.ui.h:26
-msgid "HOTP — manually entered"
-msgstr "HOTP — manuellt angiven"
-
-#: ../properties/nm-openconnect-dialog.ui.h:27
-msgid "Yubikey OATH"
-msgstr "Yubikey OATH"
-
-#: ../properties/nm-openconnect-editor-plugin.c:45
-msgid "Multi-protocol VPN client (openconnect)"
-msgstr "Multiprotokollklient för VPN (openconnect)"
-
-#: ../properties/nm-openconnect-editor-plugin.c:46
-msgid ""
-"Compatible with Cisco AnyConnect, Juniper Network Connect and Junos Pulse, "
-"and PAN GlobalProtect SSL VPNs."
-msgstr ""
-"Kompatibel med Cisco AnyConnect, Juniper Network Connect och Junos Pulse "
-"samt VPN med PAN GlobalProtect SSL."
-
-#: ../shared/nm-utils/nm-shared-utils.c:185
-#, c-format
-msgid "object class '%s' has no property named '%s'"
-msgstr "objektklassen ”%s” har ingen egenskap med namn ”%s”"
-
-#: ../shared/nm-utils/nm-shared-utils.c:192
-#, c-format
-msgid "property '%s' of object class '%s' is not writable"
-msgstr "egenskapen ”%s” för objektklassen ”%s” är skrivskyddad"
-
-#: ../shared/nm-utils/nm-shared-utils.c:199
-#, c-format
-msgid ""
-"construct property \"%s\" for object '%s' can't be set after construction"
-msgstr ""
-"konstruktionsegenskap ”%s” för objektet ”%s” kan inte ställas in efter att "
-"det skapats"
-
-#: ../shared/nm-utils/nm-shared-utils.c:207
-#, c-format
-msgid "'%s::%s' is not a valid property name; '%s' is not a GObject subtype"
-msgstr ""
-"”%s::%s” är inte ett giltigt egenskapsnamn; ”%s” är inte en undertyp till "
-"GObject"
-
-#: ../shared/nm-utils/nm-shared-utils.c:216
-#, c-format
-msgid "unable to set property '%s' of type '%s' from value of type '%s'"
-msgstr ""
-"kunde inte ange egenskapen ”%s” för typen ”%s” från värdet av typen ”%s”"
-
-#: ../shared/nm-utils/nm-shared-utils.c:227
-#, c-format
-msgid ""
-"value \"%s\" of type '%s' is invalid or out of range for property '%s' of "
-"type '%s'"
-msgstr ""
-"värdet ”%s” av typen ”%s” är ogiltigt eller utanför intervallet för "
-"egenskapen ”%s” av typen ”%s”"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:69
-#, c-format
-msgid "unable to get editor plugin name: %s"
-msgstr "kunde inte hämta namnet på redigerarinsticket: %s"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:103
-#, c-format
-msgid "missing plugin file \"%s\""
-msgstr "saknar insticksmodulfilen ”%s”"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:109
-#, c-format
-msgid "cannot load editor plugin: %s"
-msgstr "kan inte öppna redigerarinsticket: %s"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:118
-#, c-format
-msgid "cannot load factory %s from plugin: %s"
-msgstr "kan inte öppna fabriken %s från insticksmodulen: %s"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:144
-msgid "unknown error creating editor instance"
-msgstr "okänt fel vid skapande av redigeringsinstans"
-
-#: ../src/nm-openconnect-service.c:185
-#, c-format
-msgid "invalid integer property “%s” or out of range [%d -> %d]"
-msgstr "ogiltig heltalsegenskap ”%s” eller utanför intervallet [%d -> %d]"
-
-#: ../src/nm-openconnect-service.c:195
-#, c-format
-msgid "invalid boolean property “%s” (not yes or no)"
-msgstr "ogiltig boolesk egenskap ”%s” (inte yes eller no)"
-
-#: ../src/nm-openconnect-service.c:202
-#, c-format
-msgid "unhandled property “%s” type %s"
-msgstr "ohanterad egenskap ”%s” typ %s"
-
-#: ../src/nm-openconnect-service.c:215
-#, c-format
-msgid "property “%s” invalid or not supported"
-msgstr "egenskapen ”%s” är ogiltig eller stöds ej"
-
-#: ../src/nm-openconnect-service.c:231
-msgid "No VPN configuration options."
-msgstr "Inga VPN-konfigurationsalternativ."
-
-#: ../src/nm-openconnect-service.c:249
-msgid "No VPN secrets!"
-msgstr "Inga VPN-hemligheter!"
-
-#: ../src/nm-openconnect-service.c:281
-msgid "Could not open /dev/net/tun"
-msgstr "Kunde inte öppna /dev/net/tun"
-
-#: ../src/nm-openconnect-service.c:295
-#, c-format
-msgid "Could not create tunnel interface named '%.*s'"
-msgstr "Kunde inte skapa tunnelgränssnitt med namnet ”%.*s”"
-
-#: ../src/nm-openconnect-service.c:311
-msgid "Could not create tunnel interface named 'vpnX', for X in 0..255"
-msgstr "Kunde inte skapa tunnelgränssnitt med namnet ”vpnX” för X i 0..255"
-
-#: ../src/nm-openconnect-service.c:321
-#, c-format
-msgid "Could not set tunnel interface owner to '%d'"
-msgstr "Kunde inte sätta ägare för tunnelgränssnitt till ”%d”"
-
-#: ../src/nm-openconnect-service.c:332
-msgid "Could not set tunnel interface persistence"
-msgstr "Kunde inte sätta beständighet för tunnelgränssnitt"
-
-#: ../src/nm-openconnect-service.c:459
-msgid "Could not find openconnect binary."
-msgstr "Kunde inte hitta binärfilen för openconnect."
-
-#: ../src/nm-openconnect-service.c:471
-msgid "No VPN gateway specified."
-msgstr "Ingen VPN-gateway har angivits."
-
-#: ../src/nm-openconnect-service.c:481
-msgid "No WebVPN cookie provided."
-msgstr "Ingen WebVPN-kaka tillhandahölls."
-
-#: ../src/nm-openconnect-service.c:787
-msgid "Don’t quit when VPN connection terminates"
-msgstr "Avsluta inte när VPN-anslutningen terminerar"
-
-#: ../src/nm-openconnect-service.c:788
-msgid "Enable verbose debug logging (may expose passwords)"
-msgstr "Aktivera detaljerad felloggning (kan visa lösenord)"
-
-#: ../src/nm-openconnect-service.c:789
-msgid "D-Bus name to use for this instance"
-msgstr "D-Bus-namn att använda för denna instans"
-
-#: ../src/nm-openconnect-service.c:812
-msgid ""
-"nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN "
-"capability to NetworkManager."
-msgstr ""
-"nm-openconnect-service tillhandahåller integrerade Cisco AnyConnect SSL VPN-"
-"funktioner till Nätverkshanteraren."
 
 #, c-format
 #~ msgid "  %s (%s)\n"
