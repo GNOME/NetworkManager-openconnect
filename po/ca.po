@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: network-manager-openconnect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-25 22:43+0000\n"
-"PO-Revision-Date: 2025-08-26 21:50+0200\n"
+"PO-Revision-Date: 2026-02-15 21:50+0200\n"
 "Last-Translator: Miquel-Àngel Burgos i Fradeja <miquel.angel.burgos@gmail."
 "com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -108,7 +108,7 @@ msgstr "S'està connectant l'amfitrió…"
 
 #: ../auth-dialog/main.c:1715
 msgid "_Login"
-msgstr "_Nom d'usuari"
+msgstr "_Inici de sessió"
 
 #: ../auth-dialog/main.c:1727
 msgid "Save passwords"
@@ -538,19 +538,19 @@ msgstr ""
 #: ../openconnect-strings.txt:262
 #, c-format
 msgid "GlobalProtect login returned %s=%s (expected %s)\n"
-msgstr "Nom d'usuari retornat GlobalProtect %s=%s (esperat %s)\n"
+msgstr "L'inici de sessió GlobalProtect ha retornat %s=%s (esperat %s)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/8e7efd51f:/auth-globalprotect.c#l159
 #: ../openconnect-strings.txt:265
 #, c-format
 msgid "GlobalProtect login returned empty or missing %s\n"
-msgstr "El nom d'usuari retornat GlobalProtect està buit o s'ha perdut %s\n"
+msgstr "L'inici de sessió GlobalProtect ha retornat buit o s'ha perdut %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/8e7efd51f:/auth-globalprotect.c#l165
 #: ../openconnect-strings.txt:268
 #, c-format
 msgid "GlobalProtect login returned %s=%s\n"
-msgstr "Nom d'usuari retornat GlobalProtect %s=%s\n"
+msgstr "L'inici de sessió GlobalProtect ha retornat %s=%s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c:/auth-globalprotect.c#l403
 #: ../openconnect-strings.txt:271
