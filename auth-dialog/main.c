@@ -39,6 +39,18 @@
 #include <webkit2/webkit2.h>
 #include <libsoup/soup.h>
 
+#ifdef WITH_SSO_MIB
+/* When the VPN web auth server is an Entra tenant with Conditional Access
+ * policies enabled, the user cannot simply login with user/password/MFA,
+ * and an SSO cookie from the Primary Refresh Token is required and needs
+ * to be sent to the server. The sso-mib library allows to easily integrate
+ * with this flow, and talks to the open source Himmelblau broker via D-Bus.
+ * https://github.com/siemens/sso-mib
+ * https://himmelblau-idm.org/
+ * https://learn.microsoft.com/en-us/entra/identity/devices/concept-primary-refresh-token */
+#include <sso-mib/sso-mib.h>
+#endif
+
 #include <gcr/gcr.h>
 
 #include <libsecret/secret.h>
@@ -179,6 +191,14 @@ typedef struct auth_ui_data {
 
 	int autosubmit;
 	int fields_pending;
+
+#ifdef WITH_SSO_MIB
+	gboolean entra_ca_enabled;
+	const char *entra_ca_sso_url;
+	const char *entra_ca_authority;
+	const char *entra_ca_client_id;
+	const char *entra_ca_redirect_uri;
+#endif
 } auth_ui_data;
 
 enum {
@@ -614,6 +634,8 @@ struct WebviewContext {
 	struct openconnect_info *vpninfo;
 	WebKitWebView *webview;
 	const char *login_uri;
+	gchar *cookie_name;
+	gchar *cookie_value;
 	void *privdata;
 	GMutex mutex;
 	GCond cv;
@@ -707,6 +729,82 @@ static void cookie_cb (GObject *source_obj, GAsyncResult *res, gpointer data)
 	}
 }
 
+#ifdef WITH_SSO_MIB
+static gboolean get_entra_ca_cookie(const char *sso_url,
+				    const char *authority,
+				    const char *client_id,
+				    const char *redirect_uri,
+				    gchar **cookie_name,
+				    gchar **cookie_value)
+{
+	g_autoptr(MIBClientApp) app = NULL;
+	g_autoptr(MIBAccount) account = NULL;
+	g_autoptr(MIBPrtSsoCookie) cookie = NULL;
+	g_autoptr(GError) error = NULL;
+	GSList *scopes = NULL;
+
+	if (!sso_url)
+		sso_url = MIB_SSO_URL_DEFAULT;
+	if (!authority)
+		authority = MIB_AUTHORITY_COMMON;
+	if (!client_id)
+		client_id = "d7b530a4-7680-4c23-a8bf-c52c121d2e87"; /* Edge AppId */
+
+	app = mib_public_client_app_new(client_id, authority, NULL, &error);
+	if (!app) {
+		fprintf(stderr, "Entra CA: failed to create client app: %s\n",
+			error ? error->message : "unknown error");
+		return FALSE;
+	}
+
+	if (redirect_uri)
+		mib_client_app_set_redirect_uri(app, redirect_uri);
+
+	account = mib_client_app_get_account_by_upn(app, NULL);
+	if (!account) {
+		g_autoptr(MIBPrt) token = NULL;
+
+		/* No account found, try interactive acquisition to register */
+		scopes = g_slist_append(scopes, (gpointer) "User.Read");
+		token = mib_client_app_acquire_token_interactive(
+			app, scopes, MIB_PROMPT_UNSET, NULL, NULL, NULL, NULL);
+		g_slist_free(scopes);
+		scopes = NULL;
+
+		if (!token) {
+			fprintf(stderr, "Entra CA: interactive token acquisition failed\n");
+			return FALSE;
+		}
+
+		account = mib_client_app_get_account_by_upn(app, NULL);
+		if (!account) {
+			fprintf(stderr, "Entra CA: no account after interactive acquisition\n");
+			return FALSE;
+		}
+	}
+
+	scopes = g_slist_append(scopes, (gpointer) "User.Read");
+	cookie = mib_client_app_acquire_prt_sso_cookie(app, account, sso_url, scopes);
+	g_slist_free(scopes);
+
+	if (!cookie) {
+		fprintf(stderr, "Entra CA: failed to acquire PRT SSO cookie\n");
+		return FALSE;
+	}
+
+	*cookie_name = g_strdup(mib_prt_sso_cookie_get_name(cookie));
+	*cookie_value = g_strdup(mib_prt_sso_cookie_get_content(cookie));
+
+	return TRUE;
+}
+
+static void add_cookie_cb(WebKitCookieManager *cm, GAsyncResult *res, GMainLoop *loop)
+{
+	webkit_cookie_manager_add_cookie_finish(cm, res, NULL);
+	g_main_loop_quit(loop);
+}
+#endif
+
 static gboolean open_webview_idle(gpointer data)
 {
 	struct WebviewContext *ctx = (struct WebviewContext *)data;
@@ -732,6 +830,36 @@ static gboolean open_webview_idle(gpointer data)
 		g_string_free(storage, TRUE);
 	}
 
+#ifdef WITH_SSO_MIB
+	if (cm && ctx->cookie_name && ctx->cookie_value) {
+		g_autoptr(GMainLoop) loop = NULL;
+		g_autoptr(SoupCookie) cookie = NULL;
+		const char *host_start, *host_end;
+		char *domain = NULL;
+
+		/* Extract hostname from the login URI for the cookie domain */
+		host_start = strstr(ctx->login_uri, "://");
+		if (host_start) {
+			host_start += 3;
+			host_end = strchr(host_start, '/');
+			if (host_end)
+				domain = g_strndup(host_start, host_end - host_start);
+			else
+				domain = g_strdup(host_start);
+		}
+
+		if (domain) {
+			cookie = soup_cookie_new(ctx->cookie_name, ctx->cookie_value, domain, "/", -1);
+			g_free(domain);
+		}
+		if (cookie) {
+			loop = g_main_loop_new(NULL, FALSE);
+			webkit_cookie_manager_add_cookie(cm, cookie, NULL, (GAsyncReadyCallback) add_cookie_cb, loop);
+			g_main_loop_run(loop);
+		}
+	}
+#endif
+
 	g_signal_connect(webView, "load-changed", G_CALLBACK(load_changed_cb), ctx);
 	ctx->webview = webView;
 
@@ -748,6 +876,10 @@ static gboolean open_webview_idle(gpointer data)
 
 static int open_webview(struct openconnect_info *vpninfo, const char *login_uri, void *privdata)
 {
+#ifdef WITH_SSO_MIB
+	auth_ui_data *ui_data = _ui_data; /* FIXME global */
+	gchar *cookie_name = NULL, *cookie_value = NULL;
+#endif
 	struct WebviewContext ctx;
 
 	// Webview is incredibly slow with compositing enabled
@@ -757,7 +889,26 @@ static int open_webview(struct openconnect_info *vpninfo, const char *login_uri,
 	g_mutex_init(&ctx.mutex);
 	g_cond_init(&ctx.cv);
 	ctx.login_uri = login_uri;
+	ctx.cookie_name = NULL;
+	ctx.cookie_value = NULL;
 	ctx.done = 0;
+
+#ifdef WITH_SSO_MIB
+	/* Pass the actual SAML login URI as sso_url so the PRT SSO cookie
+	 * is generated specifically for this URL (including the sso_nonce). */
+	if (ui_data->entra_ca_enabled && get_entra_ca_cookie(login_uri,
+							     ui_data->entra_ca_authority,
+							     ui_data->entra_ca_client_id,
+							     ui_data->entra_ca_redirect_uri,
+							     &cookie_name,
+							     &cookie_value)) {
+		ctx.cookie_name = cookie_name;
+		ctx.cookie_value = cookie_value;
+	} else {
+		/* If cookie acquisition failed via sso-mib, fallback to the interactive login page. */
+		ui_data->entra_ca_enabled = FALSE;
+	}
+#endif
 
 	g_mutex_lock(&ctx.mutex);
 	g_idle_add(open_webview_idle, &ctx);
@@ -765,6 +916,11 @@ static int open_webview(struct openconnect_info *vpninfo, const char *login_uri,
 		g_cond_wait(&ctx.cv, &ctx.mutex);
 	}
 	g_mutex_unlock(&ctx.mutex);
+
+#ifdef WITH_SSO_MIB
+	g_free(cookie_name);
+	g_free(cookie_value);
+#endif
 
 	return 0;
 }
@@ -811,6 +967,14 @@ static int nm_process_auth_form (void *cbdata, struct oc_auth_form *form)
 	}
 	ui_data->form_shown = FALSE;
 
+#ifdef WITH_SSO_MIB
+	/* When SSO via Entra is enabled, auto-submit the form. The webview callback
+	 * will handle authentication via the PRT SSO cookie without any
+	 * user interaction needed. */
+	if (ui_data->entra_ca_enabled) {
+		response = AUTH_DIALOG_RESPONSE_LOGIN;
+	} else
+#endif
 	if (!ui_data->cancelled) {
 		/* wait for form submission or cancel */
 		while (!ui_data->form_retval) {
@@ -1278,6 +1442,22 @@ static int get_config (auth_ui_data *ui_data,
 			fprintf(stderr, "Failed to initialize software token: %d\n", ret);
 	}
 
+#ifdef WITH_SSO_MIB
+	{
+		char *entra_ca_enabled;
+
+		entra_ca_enabled = g_hash_table_lookup (options, NM_OPENCONNECT_KEY_ENTRA_CA);
+		if (entra_ca_enabled && !strcmp(entra_ca_enabled, "yes")) {
+			ui_data->entra_ca_enabled = TRUE;
+
+			ui_data->entra_ca_sso_url = g_hash_table_lookup (options, NM_OPENCONNECT_KEY_ENTRA_CA_SSO_URL);
+			ui_data->entra_ca_authority = g_hash_table_lookup (options, NM_OPENCONNECT_KEY_ENTRA_CA_AUTHORITY);
+			ui_data->entra_ca_client_id = g_hash_table_lookup (options, NM_OPENCONNECT_KEY_ENTRA_CA_CLIENT_ID);
+			ui_data->entra_ca_redirect_uri = g_hash_table_lookup (options, NM_OPENCONNECT_KEY_ENTRA_CA_REDIRECT_URI);
+		}
+	}
+#endif
+
 	return 0;
 }
 
@@ -1570,6 +1750,12 @@ static void connect_host(auth_ui_data *ui_data)
 	if (!openconnect_get_urlpath(ui_data->vpninfo) && host->usergroup)
 		openconnect_set_urlpath(ui_data->vpninfo, OC3DUP (host->usergroup));
 
+#ifdef WITH_SSO_MIB
+	/* Force gateway path with prelogin-cookie as the credential field.
+	 * This is what the automated Entra SSO cookie-based flow requires. */
+	if (!openconnect_get_urlpath(ui_data->vpninfo))
+		openconnect_set_urlpath(ui_data->vpninfo, "gateway:prelogin-cookie");
+#endif
 
 	g_hash_table_insert (ui_data->success_secrets, g_strdup("lasthost"),
 			     g_strdup(host->hostname));

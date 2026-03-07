@@ -33,6 +33,9 @@ BuildRequires: (pkgconfig(webkit2gtk-4.1) or pkgconfig(webkit2gtk-4.0))
 BuildRequires: pkgconfig(gtk4) >= 4.0
 BuildRequires: pkgconfig(libnma-gtk4) >= 1.8.33
 %endif
+%if 0%{?suse_version} > 1600 || 0%{?fedora_version}
+BuildRequires: pkgconfig(sso-mib)
+%endif
 
 Requires: NetworkManager   >= %{nm_version}
 Requires: openconnect      >= %{openconnect_version}
