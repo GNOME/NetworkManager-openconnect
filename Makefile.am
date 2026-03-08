@@ -87,7 +87,6 @@ gtk4/%.ui: properties/%.ui
 	gtk4-builder-tool simplify --3to4 $< |grep -v can-default >$@
 
 CLEANFILES += \
-	gtk4/nm-openconnect-dialog.ui \
 	gtk4/resources.c \
 	properties/resources.c \
 	properties/resources.h
