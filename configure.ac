@@ -168,6 +168,21 @@ if test x"$with_authdlg" != xno; then
 fi
 AM_CONDITIONAL(WITH_AUTHDLG, test x"$with_authdlg" != xno)
 
+AC_ARG_WITH(sso-mib, AS_HELP_STRING([--with-sso-mib], [Build with sso-mib support for Entra Conditional Access (default: auto)]),
+	    [], [with_sso_mib=auto])
+if test x"$with_sso_mib" != xno; then
+	PKG_CHECK_MODULES(SSO_MIB, sso-mib,
+			  [with_sso_mib=yes],
+			  [if test x"$with_sso_mib" = xyes; then
+				AC_MSG_ERROR([sso-mib requested but not found])
+			   fi
+			   with_sso_mib=no])
+fi
+if test x"$with_sso_mib" = xyes; then
+	AC_DEFINE(WITH_SSO_MIB, 1, [Define to enable sso-mib for Entra Conditional Access])
+fi
+AM_CONDITIONAL(WITH_SSO_MIB, test x"$with_sso_mib" = xyes)
+
 NM_VPN_SERVICE_DIR=`$PKG_CONFIG --define-variable prefix='\${prefix}' --variable vpnservicedir libnm`
 AC_SUBST(NM_VPN_SERVICE_DIR)
 
@@ -210,5 +225,6 @@ echo "  --with-gnome=$with_gnome"
 echo "  --with-gtk4=$with_gtk4"
 echo "  --with-libnm-glib=$with_libnm_glib"
 echo "  --with-authdlg=$with_authdlg"
+echo "  --with-sso-mib=$with_sso_mib"
 echo "  --enable-absolute-paths=$enable_absolute_paths"
 echo "  --enable-more-warnings=$set_more_warnings"

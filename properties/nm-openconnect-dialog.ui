@@ -394,6 +394,170 @@ You should only select this option if your connection is unreliable or non-funct
       </object>
     </child>
     <child>
+      <object class="GtkLabel" id="entra_ca_label">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Entra Conditional Access</property>
+        <property name="use_underline">False</property>
+        <attributes>
+          <attribute name="weight" value="bold"/>
+        </attributes>
+        <property name="justify">GTK_JUSTIFY_LEFT</property>
+        <property name="wrap">False</property>
+        <property name="selectable">False</property>
+        <property name="xalign">0</property>
+        <property name="margin_top">12</property>
+        <property name="margin_bottom">6</property>
+        <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+        <property name="width_chars">-1</property>
+        <property name="single_line_mode">False</property>
+      </object>
+      <packing>
+        <property name="left_attach">0</property>
+        <property name="top_attach">14</property>
+        <property name="width">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkCheckButton" id="enable_entra_ca_button">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="label" translatable="yes">Enable _Entra Conditional Access SSO</property>
+        <property name="use_underline">True</property>
+        <property name="focus_on_click">True</property>
+        <property name="active">False</property>
+        <property name="inconsistent">False</property>
+        <property name="draw_indicator">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">0</property>
+        <property name="top_attach">15</property>
+        <property name="width">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel" id="entra_ca_sso_url_label">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">SSO _URL</property>
+        <property name="use_underline">True</property>
+        <property name="justify">GTK_JUSTIFY_LEFT</property>
+        <property name="wrap">False</property>
+        <property name="selectable">False</property>
+        <property name="xalign">1</property>
+        <property name="yalign">0.5</property>
+        <property name="mnemonic_widget">entra_ca_sso_url</property>
+      </object>
+      <packing>
+        <property name="left_attach">0</property>
+        <property name="top_attach">16</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkEntry" id="entra_ca_sso_url">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="editable">True</property>
+        <property name="visibility">True</property>
+        <property name="placeholder_text">https://login.microsoftonline.com/</property>
+        <property name="hexpand">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">1</property>
+        <property name="top_attach">16</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel" id="entra_ca_authority_label">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">_Authority</property>
+        <property name="use_underline">True</property>
+        <property name="justify">GTK_JUSTIFY_LEFT</property>
+        <property name="wrap">False</property>
+        <property name="selectable">False</property>
+        <property name="xalign">1</property>
+        <property name="yalign">0.5</property>
+        <property name="mnemonic_widget">entra_ca_authority</property>
+      </object>
+      <packing>
+        <property name="left_attach">0</property>
+        <property name="top_attach">17</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkEntry" id="entra_ca_authority">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="editable">True</property>
+        <property name="visibility">True</property>
+        <property name="placeholder_text">https://login.microsoftonline.com/common</property>
+        <property name="hexpand">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">1</property>
+        <property name="top_attach">17</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel" id="entra_ca_client_id_label">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">_Client ID</property>
+        <property name="use_underline">True</property>
+        <property name="justify">GTK_JUSTIFY_LEFT</property>
+        <property name="wrap">False</property>
+        <property name="selectable">False</property>
+        <property name="xalign">1</property>
+        <property name="yalign">0.5</property>
+        <property name="mnemonic_widget">entra_ca_client_id</property>
+      </object>
+      <packing>
+        <property name="left_attach">0</property>
+        <property name="top_attach">18</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkEntry" id="entra_ca_client_id">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="editable">True</property>
+        <property name="visibility">True</property>
+        <property name="placeholder_text">d7b530a4-7680-4c23-a8bf-c52c121d2e87</property>
+        <property name="hexpand">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">1</property>
+        <property name="top_attach">18</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel" id="entra_ca_redirect_uri_label">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">_Redirect URI</property>
+        <property name="use_underline">True</property>
+        <property name="justify">GTK_JUSTIFY_LEFT</property>
+        <property name="wrap">False</property>
+        <property name="selectable">False</property>
+        <property name="xalign">1</property>
+        <property name="yalign">0.5</property>
+        <property name="mnemonic_widget">entra_ca_redirect_uri</property>
+      </object>
+      <packing>
+        <property name="left_attach">0</property>
+        <property name="top_attach">19</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkEntry" id="entra_ca_redirect_uri">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="editable">True</property>
+        <property name="visibility">True</property>
+        <property name="hexpand">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">1</property>
+        <property name="top_attach">19</property>
+      </packing>
+    </child>
+    <child>
       <object class="GtkLabel" id="token_label">
         <property name="visible">False</property>
         <property name="label" translatable="yes">Software Token Authentication</property>
@@ -413,7 +577,7 @@ You should only select this option if your connection is unreliable or non-funct
       </object>
       <packing>
           <property name="left_attach">0</property>
-          <property name="top_attach">14</property>
+          <property name="top_attach">20</property>
           <property name="width">2</property>
       </packing>
     </child>
@@ -435,7 +599,7 @@ You should only select this option if your connection is unreliable or non-funct
       </object>
       <packing>
         <property name="left_attach">0</property>
-        <property name="top_attach">15</property>
+        <property name="top_attach">21</property>
       </packing>
     </child>
     <child>
@@ -453,7 +617,7 @@ You should only select this option if your connection is unreliable or non-funct
       </object>
       <packing>
         <property name="left_attach">1</property>
-        <property name="top_attach">15</property>
+        <property name="top_attach">21</property>
       </packing>
     </child>
     <child>
@@ -475,7 +639,7 @@ You should only select this option if your connection is unreliable or non-funct
       </object>
       <packing>
         <property name="left_attach">0</property>
-        <property name="top_attach">16</property>
+        <property name="top_attach">22</property>
       </packing>
     </child>
     <child>
@@ -489,7 +653,7 @@ You should only select this option if your connection is unreliable or non-funct
       </object>
       <packing>
         <property name="left-attach">0</property>
-        <property name="top-attach">17</property>
+        <property name="top-attach">23</property>
         <property name="width">2</property>
       </packing>
     </child>
@@ -563,6 +727,10 @@ You should only select this option if your connection is unreliable or non-funct
       <widget name="reported_os_label"/>
       <widget name="token_mode_label"/>
       <widget name="token_secret_label"/>
+      <widget name="entra_ca_sso_url_label"/>
+      <widget name="entra_ca_authority_label"/>
+      <widget name="entra_ca_client_id_label"/>
+      <widget name="entra_ca_redirect_uri_label"/>
     </widgets>
   </object>
 </interface>

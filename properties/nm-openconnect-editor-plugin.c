@@ -225,6 +225,31 @@ import (NMVpnEditorPlugin *iface, const char *path, GError **error)
 	if (buf)
 		nm_setting_vpn_add_secret (s_vpn, NM_OPENCONNECT_KEY_TOKEN_SECRET, buf);
 
+	/* Entra Conditional Access toggle */
+	bval = g_key_file_get_boolean (keyfile, "openconnect", "EntraConditionalAccess", NULL);
+	if (bval)
+		nm_setting_vpn_add_data_item (s_vpn, NM_OPENCONNECT_KEY_ENTRA_CA, "yes");
+
+	/* Entra Conditional Access SSO URL */
+	buf = g_key_file_get_string (keyfile, "openconnect", "EntraConditionalAccessSSOURL", NULL);
+	if (buf)
+		nm_setting_vpn_add_data_item (s_vpn, NM_OPENCONNECT_KEY_ENTRA_CA_SSO_URL, buf);
+
+	/* Entra Conditional Access Authority */
+	buf = g_key_file_get_string (keyfile, "openconnect", "EntraConditionalAccessAuthority", NULL);
+	if (buf)
+		nm_setting_vpn_add_data_item (s_vpn, NM_OPENCONNECT_KEY_ENTRA_CA_AUTHORITY, buf);
+
+	/* Entra Conditional Access Client ID */
+	buf = g_key_file_get_string (keyfile, "openconnect", "EntraConditionalAccessClientID", NULL);
+	if (buf)
+		nm_setting_vpn_add_data_item (s_vpn, NM_OPENCONNECT_KEY_ENTRA_CA_CLIENT_ID, buf);
+
+	/* Entra Conditional Access Redirect URI */
+	buf = g_key_file_get_string (keyfile, "openconnect", "EntraConditionalAccessRedirectURI", NULL);
+	if (buf)
+		nm_setting_vpn_add_data_item (s_vpn, NM_OPENCONNECT_KEY_ENTRA_CA_REDIRECT_URI, buf);
+
 	return connection;
 }
 
@@ -254,6 +279,11 @@ export (NMVpnEditorPlugin *iface,
 	gboolean disable_udp = FALSE;
 	const char *token_mode = NULL;
 	const char *token_secret = NULL;
+	gboolean entra_ca_enabled = FALSE;
+	const char *entra_ca_sso_url = NULL;
+	const char *entra_ca_authority = NULL;
+	const char *entra_ca_client_id = NULL;
+	const char *entra_ca_redirect_uri = NULL;
 	gboolean success = FALSE;
 	FILE *f;
 
@@ -350,6 +380,26 @@ export (NMVpnEditorPlugin *iface,
 			token_secret = value;
 	}
 
+	value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_ENTRA_CA);
+	if (value && !strcmp (value, "yes"))
+		entra_ca_enabled = TRUE;
+
+	value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_ENTRA_CA_SSO_URL);
+	if (value && strlen (value))
+		entra_ca_sso_url = value;
+
+	value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_ENTRA_CA_AUTHORITY);
+	if (value && strlen (value))
+		entra_ca_authority = value;
+
+	value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_ENTRA_CA_CLIENT_ID);
+	if (value && strlen (value))
+		entra_ca_client_id = value;
+
+	value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_ENTRA_CA_REDIRECT_URI);
+	if (value && strlen (value))
+		entra_ca_redirect_uri = value;
+
 	fprintf (f,
 		 "[openconnect]\n"
 		 "Description=%s\n"
@@ -369,7 +419,12 @@ export (NMVpnEditorPlugin *iface,
 		 "PreventInvalidCert=%s\n"
 		 "DisableUDP=%s\n"
 		 "StokenSource=%s\n"
-		 "StokenString=%s\n",
+		 "StokenString=%s\n"
+		 "EntraConditionalAccess=%s\n"
+		 "EntraConditionalAccessSSOURL=%s\n"
+		 "EntraConditionalAccessAuthority=%s\n"
+		 "EntraConditionalAccessClientID=%s\n"
+		 "EntraConditionalAccessRedirectURI=%s\n",
 		 /* Description */           nm_setting_connection_get_id (s_con),
 		 /* Host */                  gateway,
 		 /* CA Certificate */        cacert ? cacert : "",
@@ -387,7 +442,12 @@ export (NMVpnEditorPlugin *iface,
 		 /* Prevent invalid cert */  prevent_invalid_cert ? "1" : "0",
 		 /* Disable UDP */           disable_udp ? "1" : "0",
 		 /* Soft token mode */       token_mode ? token_mode : "",
-		 /* Soft token secret */     token_secret ? token_secret : "");
+		 /* Soft token secret */     token_secret ? token_secret : "",
+		 /* Entra CA */              entra_ca_enabled ? "1" : "0",
+		 /* Entra CA SSO URL */      entra_ca_sso_url ? entra_ca_sso_url : "",
+		 /* Entra CA Authority */    entra_ca_authority ? entra_ca_authority : "",
+		 /* Entra CA Client ID */    entra_ca_client_id ? entra_ca_client_id : "",
+		 /* Entra CA Redirect URI */ entra_ca_redirect_uri ? entra_ca_redirect_uri : "");
 
 	success = TRUE;
 

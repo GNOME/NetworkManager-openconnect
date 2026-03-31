@@ -385,6 +385,64 @@ init_editor_plugin (OpenconnectEditor *self, NMConnection *connection, GError **
 	}
 	g_signal_connect (G_OBJECT (widget), "changed", G_CALLBACK (stuff_changed_cb), self);
 
+#ifdef WITH_SSO_MIB
+	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "enable_entra_ca_button"));
+	g_return_val_if_fail (widget, FALSE);
+	if (s_vpn) {
+		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_ENTRA_CA);
+		if (value && !strcmp(value, "yes"))
+			gtk_check_button_set_active (GTK_CHECK_BUTTON (widget), TRUE);
+	}
+	g_signal_connect (G_OBJECT (widget), "toggled", G_CALLBACK (stuff_changed_cb), self);
+
+	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "entra_ca_sso_url"));
+	g_return_val_if_fail (widget, FALSE);
+	if (s_vpn) {
+		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_ENTRA_CA_SSO_URL);
+		if (value)
+			gtk_editable_set_text (GTK_EDITABLE (widget), value);
+	}
+	g_signal_connect (G_OBJECT (widget), "changed", G_CALLBACK (stuff_changed_cb), self);
+
+	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "entra_ca_authority"));
+	g_return_val_if_fail (widget, FALSE);
+	if (s_vpn) {
+		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_ENTRA_CA_AUTHORITY);
+		if (value)
+			gtk_editable_set_text (GTK_EDITABLE (widget), value);
+	}
+	g_signal_connect (G_OBJECT (widget), "changed", G_CALLBACK (stuff_changed_cb), self);
+
+	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "entra_ca_client_id"));
+	g_return_val_if_fail (widget, FALSE);
+	if (s_vpn) {
+		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_ENTRA_CA_CLIENT_ID);
+		if (value)
+			gtk_editable_set_text (GTK_EDITABLE (widget), value);
+	}
+	g_signal_connect (G_OBJECT (widget), "changed", G_CALLBACK (stuff_changed_cb), self);
+
+	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "entra_ca_redirect_uri"));
+	g_return_val_if_fail (widget, FALSE);
+	if (s_vpn) {
+		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_ENTRA_CA_REDIRECT_URI);
+		if (value)
+			gtk_editable_set_text (GTK_EDITABLE (widget), value);
+	}
+	g_signal_connect (G_OBJECT (widget), "changed", G_CALLBACK (stuff_changed_cb), self);
+#else
+	gtk_widget_hide (GTK_WIDGET (gtk_builder_get_object (priv->builder, "entra_ca_label")));
+	gtk_widget_hide (GTK_WIDGET (gtk_builder_get_object (priv->builder, "enable_entra_ca_button")));
+	gtk_widget_hide (GTK_WIDGET (gtk_builder_get_object (priv->builder, "entra_ca_sso_url_label")));
+	gtk_widget_hide (GTK_WIDGET (gtk_builder_get_object (priv->builder, "entra_ca_sso_url")));
+	gtk_widget_hide (GTK_WIDGET (gtk_builder_get_object (priv->builder, "entra_ca_authority_label")));
+	gtk_widget_hide (GTK_WIDGET (gtk_builder_get_object (priv->builder, "entra_ca_authority")));
+	gtk_widget_hide (GTK_WIDGET (gtk_builder_get_object (priv->builder, "entra_ca_client_id_label")));
+	gtk_widget_hide (GTK_WIDGET (gtk_builder_get_object (priv->builder, "entra_ca_client_id")));
+	gtk_widget_hide (GTK_WIDGET (gtk_builder_get_object (priv->builder, "entra_ca_redirect_uri_label")));
+	gtk_widget_hide (GTK_WIDGET (gtk_builder_get_object (priv->builder, "entra_ca_redirect_uri")));
+#endif
+
 	if (init_token_ui (self, priv, s_vpn) == FALSE)
 		g_return_val_if_reached (FALSE);
 
@@ -490,6 +548,32 @@ update_connection (NMVpnEditor *iface,
 	str = (char *) gtk_editable_get_text (GTK_EDITABLE (widget));
 	if (str && strlen (str))
 		nm_setting_vpn_add_data_item (s_vpn, NM_OPENCONNECT_KEY_REPORTED_OS, str);
+
+#ifdef WITH_SSO_MIB
+	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "enable_entra_ca_button"));
+	str = gtk_check_button_get_active (GTK_CHECK_BUTTON (widget))?"yes":"no";
+	nm_setting_vpn_add_data_item (s_vpn, NM_OPENCONNECT_KEY_ENTRA_CA, str);
+
+	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "entra_ca_sso_url"));
+	str = (char *) gtk_editable_get_text (GTK_EDITABLE (widget));
+	if (str && strlen (str))
+		nm_setting_vpn_add_data_item (s_vpn, NM_OPENCONNECT_KEY_ENTRA_CA_SSO_URL, str);
+
+	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "entra_ca_authority"));
+	str = (char *) gtk_editable_get_text (GTK_EDITABLE (widget));
+	if (str && strlen (str))
+		nm_setting_vpn_add_data_item (s_vpn, NM_OPENCONNECT_KEY_ENTRA_CA_AUTHORITY, str);
+
+	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "entra_ca_client_id"));
+	str = (char *) gtk_editable_get_text (GTK_EDITABLE (widget));
+	if (str && strlen (str))
+		nm_setting_vpn_add_data_item (s_vpn, NM_OPENCONNECT_KEY_ENTRA_CA_CLIENT_ID, str);
+
+	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "entra_ca_redirect_uri"));
+	str = (char *) gtk_editable_get_text (GTK_EDITABLE (widget));
+	if (str && strlen (str))
+		nm_setting_vpn_add_data_item (s_vpn, NM_OPENCONNECT_KEY_ENTRA_CA_REDIRECT_URI, str);
+#endif
 
 	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "token_mode"));
 	model = gtk_combo_box_get_model (GTK_COMBO_BOX (widget));

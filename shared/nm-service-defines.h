@@ -55,5 +55,10 @@
 #define NM_OPENCONNECT_KEY_MCACERT "mcacert"
 #define NM_OPENCONNECT_KEY_MCAKEY "mcakey"
 #define NM_OPENCONNECT_KEY_MCA_PASS "mca_key_pass"
+#define NM_OPENCONNECT_KEY_ENTRA_CA "entra_conditional_access"
+#define NM_OPENCONNECT_KEY_ENTRA_CA_SSO_URL "entra_conditional_access_sso_url"
+#define NM_OPENCONNECT_KEY_ENTRA_CA_AUTHORITY "entra_conditional_access_authority"
+#define NM_OPENCONNECT_KEY_ENTRA_CA_CLIENT_ID "entra_conditional_access_client_id"
+#define NM_OPENCONNECT_KEY_ENTRA_CA_REDIRECT_URI "entra_conditional_access_redirect_uri"
 
 #endif /* __NM_SERVICE_DEFINES_H__ */

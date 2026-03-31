@@ -267,9 +267,8 @@ You should only select this option if your connection is unreliable or non-funct
       </object>
     </child>
     <child>
-      <object class="GtkLabel" id="token_label">
-        <property name="visible">0</property>
-        <property name="label" translatable="1">Software Token Authentication</property>
+      <object class="GtkLabel" id="entra_ca_label">
+        <property name="label" translatable="1">Entra Conditional Access</property>
         <attributes>
           <attribute name="weight" value="bold"></attribute>
         </attributes>
@@ -284,6 +283,126 @@ You should only select this option if your connection is unreliable or non-funct
       </object>
     </child>
     <child>
+      <object class="GtkCheckButton" id="enable_entra_ca_button">
+        <property name="focusable">1</property>
+        <property name="label" translatable="1">Enable _Entra Conditional Access SSO</property>
+        <property name="use_underline">1</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">15</property>
+          <property name="column-span">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel" id="entra_ca_sso_url_label">
+        <property name="label" translatable="1">SSO _URL</property>
+        <property name="use_underline">1</property>
+        <property name="xalign">1</property>
+        <property name="mnemonic_widget">entra_ca_sso_url</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">16</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkEntry" id="entra_ca_sso_url">
+        <property name="focusable">1</property>
+        <property name="placeholder_text">https://login.microsoftonline.com/</property>
+        <property name="hexpand">1</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="row">16</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel" id="entra_ca_authority_label">
+        <property name="label" translatable="1">_Authority</property>
+        <property name="use_underline">1</property>
+        <property name="xalign">1</property>
+        <property name="mnemonic_widget">entra_ca_authority</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">17</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkEntry" id="entra_ca_authority">
+        <property name="focusable">1</property>
+        <property name="placeholder_text">https://login.microsoftonline.com/common</property>
+        <property name="hexpand">1</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="row">17</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel" id="entra_ca_client_id_label">
+        <property name="label" translatable="1">_Client ID</property>
+        <property name="use_underline">1</property>
+        <property name="xalign">1</property>
+        <property name="mnemonic_widget">entra_ca_client_id</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">18</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkEntry" id="entra_ca_client_id">
+        <property name="focusable">1</property>
+        <property name="placeholder_text">d7b530a4-7680-4c23-a8bf-c52c121d2e87</property>
+        <property name="hexpand">1</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="row">18</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel" id="entra_ca_redirect_uri_label">
+        <property name="label" translatable="1">_Redirect URI</property>
+        <property name="use_underline">1</property>
+        <property name="xalign">1</property>
+        <property name="mnemonic_widget">entra_ca_redirect_uri</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">19</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkEntry" id="entra_ca_redirect_uri">
+        <property name="focusable">1</property>
+        <property name="hexpand">1</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="row">19</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel" id="token_label">
+        <property name="visible">0</property>
+        <property name="label" translatable="1">Software Token Authentication</property>
+        <attributes>
+          <attribute name="weight" value="bold"></attribute>
+        </attributes>
+        <property name="xalign">0</property>
+        <property name="margin_top">12</property>
+        <property name="margin_bottom">6</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">20</property>
+          <property name="column-span">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
       <object class="GtkLabel" id="token_mode_label">
         <property name="visible">0</property>
         <property name="label" translatable="1">Token _Mode</property>
@@ -292,7 +411,7 @@ You should only select this option if your connection is unreliable or non-funct
         <property name="mnemonic_widget">token_mode</property>
         <layout>
           <property name="column">0</property>
-          <property name="row">15</property>
+          <property name="row">21</property>
         </layout>
       </object>
     </child>
@@ -310,7 +429,7 @@ You should only select this option if your connection is unreliable or non-funct
         </child>
         <layout>
           <property name="column">1</property>
-          <property name="row">15</property>
+          <property name="row">21</property>
         </layout>
       </object>
     </child>
@@ -324,7 +443,7 @@ You should only select this option if your connection is unreliable or non-funct
         <property name="sensitive">0</property>
         <layout>
           <property name="column">0</property>
-          <property name="row">16</property>
+          <property name="row">22</property>
         </layout>
       </object>
     </child>
@@ -338,7 +457,7 @@ You should only select this option if your connection is unreliable or non-funct
         <property name="sensitive">0</property>
         <layout>
           <property name="column">0</property>
-          <property name="row">17</property>
+          <property name="row">23</property>
           <property name="column-span">2</property>
         </layout>
       </object>
@@ -406,6 +525,10 @@ You should only select this option if your connection is unreliable or non-funct
       <widget name="reported_os_label"/>
       <widget name="token_mode_label"/>
       <widget name="token_secret_label"/>
+      <widget name="entra_ca_sso_url_label"/>
+      <widget name="entra_ca_authority_label"/>
+      <widget name="entra_ca_client_id_label"/>
+      <widget name="entra_ca_redirect_uri_label"/>
     </widgets>
   </object>
 </interface>
