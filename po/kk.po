@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NetworkManager-openconnect main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/NetworkManager-openconnect/issues\n"
-"POT-Creation-Date: 2026-03-10 21:22+0000\n"
-"PO-Revision-Date: 2026-03-14 12:51+0500\n"
+"POT-Creation-Date: 2026-04-02 14:00+0000\n"
+"PO-Revision-Date: 2026-04-02 21:28+0500\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <Kazakh>\n"
 "Language: kk\n"
@@ -37,73 +37,73 @@ msgstr "Cisco AnyConnect, Juniper және ocserv негізіндегі жел�
 msgid "The NetworkManager Developers"
 msgstr "NetworkManager әзірлеушілері"
 
-#: ../auth-dialog/main.c:848
+#: ../auth-dialog/main.c:1012
 #, c-format
 msgid "OpenConnect: %s: %s:%s"
 msgstr "OpenConnect: %s: %s:%s"
 
-#: ../auth-dialog/main.c:878
+#: ../auth-dialog/main.c:1042
 #, c-format
 msgid "Connect to VPN “%s”"
 msgstr "«%s» VPN желісіне қосылу"
 
-#: ../auth-dialog/main.c:880
+#: ../auth-dialog/main.c:1044
 msgid "Connect to VPN"
 msgstr "VPN желісіне қосылу"
 
-#: ../auth-dialog/main.c:937
+#: ../auth-dialog/main.c:1101
 msgid "<b>The certificate may be invalid or untrusted!</b>\n"
 msgstr "<b>Сертификат жарамсыз немесе сенімсіз болуы мүмкін!</b>\n"
 
-#: ../auth-dialog/main.c:938
+#: ../auth-dialog/main.c:1102
 msgid "<b>Reason: "
 msgstr "<b>Себебі: "
 
-#: ../auth-dialog/main.c:958 ../auth-dialog/main.c:1721
+#: ../auth-dialog/main.c:1122 ../auth-dialog/main.c:1907
 msgid "_Cancel"
 msgstr "_Бас тарту"
 
-#: ../auth-dialog/main.c:968
+#: ../auth-dialog/main.c:1132
 msgid "I really know what I am doing"
 msgstr "Мен не істеп жатқанымды білемін"
 
-#: ../auth-dialog/main.c:977
+#: ../auth-dialog/main.c:1141
 msgid "Connect anyway"
 msgstr "Бәрібір қосылу"
 
-#: ../auth-dialog/main.c:1644
+#: ../auth-dialog/main.c:1830
 msgid "_Close"
 msgstr "_Жабу"
 
-#: ../auth-dialog/main.c:1661
+#: ../auth-dialog/main.c:1847
 msgid "VPN host"
 msgstr "VPN хосты"
 
-#: ../auth-dialog/main.c:1672
+#: ../auth-dialog/main.c:1858
 msgid "C_onnect"
 msgstr "Қ_осылу"
 
-#: ../auth-dialog/main.c:1679
+#: ../auth-dialog/main.c:1865
 msgid "Automatically start connecting next time"
 msgstr "Келесі жолы автоматты түрде қосылуды бастау"
 
-#: ../auth-dialog/main.c:1698
+#: ../auth-dialog/main.c:1884
 msgid "Select a host to fetch the login form"
 msgstr "Кіру пішімін алу үшін хостты таңдаңыз"
 
-#: ../auth-dialog/main.c:1703
+#: ../auth-dialog/main.c:1889
 msgid "Contacting host, please wait…"
 msgstr "Хостқа хабарласуда, күте тұрыңыз…"
 
-#: ../auth-dialog/main.c:1715
+#: ../auth-dialog/main.c:1901
 msgid "_Login"
 msgstr "_Кіру"
 
-#: ../auth-dialog/main.c:1727
+#: ../auth-dialog/main.c:1913
 msgid "Save passwords"
 msgstr "Парольдерді сақтау"
 
-#: ../auth-dialog/main.c:1735
+#: ../auth-dialog/main.c:1921
 msgid "Log"
 msgstr "Журнал"
 
@@ -178,38 +178,62 @@ msgstr ""
 "Егер сіздің байланысыңыз сенімсіз болса немесе бұл опциясыз жұмыс істемесе ғана оны таңдауыңыз керек."
 
 #: ../properties/nm-openconnect-dialog.ui.h:19
+msgid "Entra Conditional Access"
+msgstr "Entra шартты қолжетімділігі"
+
+#: ../properties/nm-openconnect-dialog.ui.h:20
+msgid "Enable _Entra Conditional Access SSO"
+msgstr "_Entra шартты қолжетімділігі арқылы SSO іске қосу"
+
+#: ../properties/nm-openconnect-dialog.ui.h:21
+msgid "SSO _URL"
+msgstr "SSO _URL"
+
+#: ../properties/nm-openconnect-dialog.ui.h:22
+msgid "_Authority"
+msgstr "_Орталық"
+
+#: ../properties/nm-openconnect-dialog.ui.h:23
+msgid "_Client ID"
+msgstr "_Клиент ID-і"
+
+#: ../properties/nm-openconnect-dialog.ui.h:24
+msgid "_Redirect URI"
+msgstr "Қа_йта бағыттау URI"
+
+#: ../properties/nm-openconnect-dialog.ui.h:25
 msgid "Software Token Authentication"
 msgstr "Бағдарламалық токен аутентификациясы"
 
-#: ../properties/nm-openconnect-dialog.ui.h:20
+#: ../properties/nm-openconnect-dialog.ui.h:26
 msgid "Token _Mode"
 msgstr "Токен _режимі"
 
-#: ../properties/nm-openconnect-dialog.ui.h:21
+#: ../properties/nm-openconnect-dialog.ui.h:27
 msgid "Token Sec_ret"
 msgstr "Токен құпи_ясы"
 
-#: ../properties/nm-openconnect-dialog.ui.h:22
+#: ../properties/nm-openconnect-dialog.ui.h:28
 msgid "Disabled"
 msgstr "Сөндірілген"
 
-#: ../properties/nm-openconnect-dialog.ui.h:23
+#: ../properties/nm-openconnect-dialog.ui.h:29
 msgid "RSA SecurID — read from ~/.stokenrc"
 msgstr "RSA SecurID — ~/.stokenrc файлынан оқу"
 
-#: ../properties/nm-openconnect-dialog.ui.h:24
+#: ../properties/nm-openconnect-dialog.ui.h:30
 msgid "RSA SecurID — manually entered"
 msgstr "RSA SecurID — қолмен енгізілген"
 
-#: ../properties/nm-openconnect-dialog.ui.h:25
+#: ../properties/nm-openconnect-dialog.ui.h:31
 msgid "TOTP — manually entered"
 msgstr "TOTP — қолмен енгізілген"
 
-#: ../properties/nm-openconnect-dialog.ui.h:26
+#: ../properties/nm-openconnect-dialog.ui.h:32
 msgid "HOTP — manually entered"
 msgstr "HOTP — қолмен енгізілген"
 
-#: ../properties/nm-openconnect-dialog.ui.h:27
+#: ../properties/nm-openconnect-dialog.ui.h:33
 msgid "Yubikey OATH"
 msgstr "Yubikey OATH"
 
