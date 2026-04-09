@@ -1753,7 +1753,7 @@ static void connect_host(auth_ui_data *ui_data)
 #ifdef WITH_SSO_MIB
 	/* Force gateway path with prelogin-cookie as the credential field.
 	 * This is what the automated Entra SSO cookie-based flow requires. */
-	if (!openconnect_get_urlpath(ui_data->vpninfo))
+	if (ui_data->entra_ca_enabled && !openconnect_get_urlpath(ui_data->vpninfo))
 		openconnect_set_urlpath(ui_data->vpninfo, "gateway:prelogin-cookie");
 #endif
 
