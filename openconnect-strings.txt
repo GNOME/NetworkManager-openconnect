@@ -667,7 +667,7 @@ _("deflate failed %d\n");
 
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/f26b11e76:/cstp.c#l813
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/8e7efd51f:/gpst.c#l648
-// https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l1778
+// https://git.infradead.org/users/dwmw2/openconnect.git/blob/c991c3789:/pulse.c#l2874
 _("Short packet received (%d bytes)\n");
 
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/eef00ae2f:/cstp.c#l504
@@ -1054,7 +1054,7 @@ _(""
 "be able to reconnect if dead peer is detected. If reconnection DOES work,\n"
 "please report to <%s>\n");
 
-// https://git.infradead.org/users/dwmw2/openconnect.git/blob/8b21650a5:/fortinet.c#l158
+// https://git.infradead.org/users/dwmw2/openconnect.git/blob/81eec91a7:/fortinet.c#l514
 _("Reported platform is %s\n");
 
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/8b21650a5:/fortinet.c#l172
@@ -3308,11 +3308,11 @@ _("Attempting HTTP NTLMv%d authentication to server '%s'\n");
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/d4606b645:/nullppp.c#l80
 _("Terminating because nullppp has reached network state.\n");
 
-// https://git.infradead.org/users/dwmw2/openconnect.git/blob/e410cdfcf:/oath.c#l99
-_("Invalid base32 token string\n");
-
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/e410cdfcf:/oath.c#l107
 _("Failed to allocate memory to decode OATH secret\n");
+
+// https://git.infradead.org/users/dwmw2/openconnect.git/blob/ad7c664b3:/oath.c#l140
+_("Invalid base32 token string\n");
 
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/6f0ee16cc:/oath.c#l114
 _("This version of OpenConnect was built without PSKC support\n");
@@ -4126,6 +4126,9 @@ _("Invalid PPP encapsulation\n");
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/a47406b43:/ppp.c#l1035
 _("Packet contains %d bytes after payload. Assuming concatenated packet.\n");
 
+// https://git.infradead.org/users/dwmw2/openconnect.git/blob/237fc974b:/ppp.c#l1261
+_("Sending Protocol-Reject for %s\n");
+
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/a47406b43:/ppp.c#l1085
 _("Unexpected IPv%d packet in PPP state %s.\n");
 
@@ -4135,8 +4138,8 @@ _("Received IPv%d data packet of %d bytes over %s\n");
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/a47406b43:/ppp.c#l1095
 _("Expected %d PPP header bytes but got %ld, shifting payload.\n");
 
-// https://git.infradead.org/users/dwmw2/openconnect.git/blob/a47406b43:/ppp.c#l1118
-_("Sending Protocol-Reject for %s. Payload:\n");
+// https://git.infradead.org/users/dwmw2/openconnect.git/blob/237fc974b:/ppp.c#l1309
+_("Sending Protocol-Reject for unknown protocol 0x%04x\n");
 
 // https://git.infradead.org/users/dwmw2/openconnect.git/blob/a47406b43:/ppp.c#l1194
 _("Detected dead peer!\n");
