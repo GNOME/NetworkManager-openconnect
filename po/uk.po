@@ -7,18 +7,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: network-manager-openconnect\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/NetworkManager-openconnec"
-"t/issues\n"
-"POT-Creation-Date: 2026-04-01 07:50+0000\n"
-"PO-Revision-Date: 2026-04-01 15:53+0300\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/NetworkManager-openconne"
+"ct/issues\n"
+"POT-Creation-Date: 2026-06-18 15:12+0000\n"
+"PO-Revision-Date: 2026-06-20 21:37+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
-"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 23.04.3\n"
 
 #: ../appdata/network-manager-openconnect.metainfo.xml.in.h:1
@@ -282,7 +282,8 @@ msgstr ""
 #: ../shared/nm-utils/nm-shared-utils.c:207
 #, c-format
 msgid "'%s::%s' is not a valid property name; '%s' is not a GObject subtype"
-msgstr "«%s::%s» не є коректною назвою властивості; «%s» не є підтипом GObject"
+msgstr ""
+"«%s::%s» не є коректною назвою властивості; «%s» не є підтипом GObject"
 
 #: ../shared/nm-utils/nm-shared-utils.c:216
 #, c-format
@@ -676,7 +677,8 @@ msgstr "Отримано невідомий пакет DTLS\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/04671ef02:/ppp.c#l1708
 #: ../openconnect-strings.txt:176
 msgid "Error creating connect request for DTLS session\n"
-msgstr "Помилка під час спроби створення запиту на з'єднання для сеансу DTLS\n"
+msgstr ""
+"Помилка під час спроби створення запиту на з'єднання для сеансу DTLS\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/de93bad15:/array.c#l1132
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/04671ef02:/ppp.c#l1724
@@ -1572,7 +1574,7 @@ msgstr "не вдалося запакувати %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/f26b11e76:/cstp.c#l813
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/8e7efd51f:/gpst.c#l648
-#. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l1778
+#. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c991c3789:/pulse.c#l2874
 #: ../openconnect-strings.txt:671
 #, c-format
 msgid "Short packet received (%d bytes)\n"
@@ -1582,7 +1584,8 @@ msgstr "Отримано надто короткий пакет (%d байтів
 #: ../openconnect-strings.txt:674
 #, c-format
 msgid "Unexpected packet length. SSL_read returned %d but packet is\n"
-msgstr "Неочікувана довжина пакета. SSL_read повернуто %d, але розмір пакета\n"
+msgstr ""
+"Неочікувана довжина пакета. SSL_read повернуто %d, але розмір пакета\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/eef00ae2f:/cstp.c#l516
 #: ../openconnect-strings.txt:677
@@ -1685,7 +1688,8 @@ msgstr "Недостатньо даних під час записування �
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/e33b27beb:/digest.c#l27
 #: ../openconnect-strings.txt:739
 msgid "Attempting Digest authentication to proxy\n"
-msgstr "Спроба виконати розпізнавання за контрольною сумою на проксі-сервері\n"
+msgstr ""
+"Спроба виконати розпізнавання за контрольною сумою на проксі-сервері\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/06723682f:/digest.c#l257
 #: ../openconnect-strings.txt:742
@@ -2281,7 +2285,7 @@ msgstr ""
 "з'єднання ПРАЦЮЄ,\n"
 "будь ласка, повідомте про це на адресу <%s>\n"
 
-#. https://git.infradead.org/users/dwmw2/openconnect.git/blob/8b21650a5:/fortinet.c#l158
+#. https://git.infradead.org/users/dwmw2/openconnect.git/blob/81eec91a7:/fortinet.c#l514
 #: ../openconnect-strings.txt:1058
 #, c-format
 msgid "Reported platform is %s\n"
@@ -3142,7 +3146,8 @@ msgstr ""
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/7ec9c8e13:/openssl.c#l1385
 #: ../openconnect-strings.txt:1528
 msgid "Server presented different cert on rehandshake\n"
-msgstr "Сервером надано інший сертифікат при повторному узгодженні з'єднання\n"
+msgstr ""
+"Сервером надано інший сертифікат при повторному узгодженні з'єднання\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/06dffc5dd:/gnutls.c#l1980
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/7ec9c8e13:/openssl.c#l1388
@@ -4049,7 +4054,8 @@ msgstr ""
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/cfe8cc43e:/oncp.c#l1277
 #: ../openconnect-strings.txt:2020
 msgid "Ignoring ESP keys since ESP support not available in this build\n"
-msgstr "Імпортуємо ключі ESP, оскільки у цій збірці недоступна підтримка ESP\n"
+msgstr ""
+"Імпортуємо ключі ESP, оскільки у цій збірці недоступна підтримка ESP\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/90b2ffc03:/gpst.c#l632
 #: ../openconnect-strings.txt:2023
@@ -4485,7 +4491,8 @@ msgstr "Не вдалося відкрити зовнішній перегляд
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/d738b6f2c:/hpke.c#l124
 #: ../openconnect-strings.txt:2256
 msgid "Accepted incoming external-browser connection on port 29786\n"
-msgstr "Прийнято вхідне з'єднання від зовнішнього переглядача на порту 29786\n"
+msgstr ""
+"Прийнято вхідне з'єднання від зовнішнього переглядача на порту 29786\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/d738b6f2c:/hpke.c#l131
 #: ../openconnect-strings.txt:2259
@@ -6422,16 +6429,16 @@ msgstr "Спроба виконати розпізнавання за HTTP NTLMv
 msgid "Terminating because nullppp has reached network state.\n"
 msgstr "Перериваємося, оскільки nullppp досягнуто стану мережі.\n"
 
-#. https://git.infradead.org/users/dwmw2/openconnect.git/blob/e410cdfcf:/oath.c#l99
-#: ../openconnect-strings.txt:3312
-msgid "Invalid base32 token string\n"
-msgstr "Некоректний рядок ключа base32\n"
-
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/e410cdfcf:/oath.c#l107
-#: ../openconnect-strings.txt:3315
+#: ../openconnect-strings.txt:3312
 msgid "Failed to allocate memory to decode OATH secret\n"
 msgstr ""
 "Не вдалося отримати пам'ять для розшифрування реєстраційних даних OATH\n"
+
+#. https://git.infradead.org/users/dwmw2/openconnect.git/blob/ad7c664b3:/oath.c#l140
+#: ../openconnect-strings.txt:3315
+msgid "Invalid base32 token string\n"
+msgstr "Некоректний рядок ключа base32\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/6f0ee16cc:/oath.c#l114
 #: ../openconnect-strings.txt:3318
@@ -7666,7 +7673,8 @@ msgstr ""
 #: ../openconnect-strings.txt:4002
 #, c-format
 msgid "Received MRU %d from server. Nak-offering larger MRU of %d (our MTU)\n"
-msgstr "Отримано MRU %d від сервера. Nak-пропонуємо більший MRU %d (наш MTU)\n"
+msgstr ""
+"Отримано MRU %d від сервера. Nak-пропонуємо більший MRU %d (наш MTU)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/a47406b43:/ppp.c#l364
 #: ../openconnect-strings.txt:4005
@@ -7903,81 +7911,90 @@ msgstr "Некоректна інкапсуляція PPP\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/a47406b43:/ppp.c#l1035
 #: ../openconnect-strings.txt:4127
 #, c-format
-msgid "Packet contains %d bytes after payload. Assuming concatenated packet.\n"
+msgid ""
+"Packet contains %d bytes after payload. Assuming concatenated packet.\n"
 msgstr ""
 "У пакеті міститься %d байтів після вмісту. Припускаємо обрізаний пакет.\n"
 
-#. https://git.infradead.org/users/dwmw2/openconnect.git/blob/a47406b43:/ppp.c#l1085
+#. https://git.infradead.org/users/dwmw2/openconnect.git/blob/237fc974b:/ppp.c#l1261
 #: ../openconnect-strings.txt:4130
+#, c-format
+#| msgid "Sending Protocol-Reject for %s. Payload:\n"
+msgid "Sending Protocol-Reject for %s\n"
+msgstr "Надсилаємо Protocol-Reject для %s\n"
+
+#. https://git.infradead.org/users/dwmw2/openconnect.git/blob/a47406b43:/ppp.c#l1085
+#: ../openconnect-strings.txt:4133
 #, c-format
 msgid "Unexpected IPv%d packet in PPP state %s.\n"
 msgstr "Неочікуваний пакет IPv%d у стані PPP %s.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/d2402eb30:/ppp.c#l1241
-#: ../openconnect-strings.txt:4133
+#: ../openconnect-strings.txt:4136
 #, c-format
 msgid "Received IPv%d data packet of %d bytes over %s\n"
 msgstr "Отримано пакет даних IPv%d розміром %d байтів з використанням %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/a47406b43:/ppp.c#l1095
-#: ../openconnect-strings.txt:4136
+#: ../openconnect-strings.txt:4139
 #, c-format
 msgid "Expected %d PPP header bytes but got %ld, shifting payload.\n"
 msgstr "Мало бути %d байтів заголовка PPP, але маємо %ld, зсуваємо вміст.\n"
 
-#. https://git.infradead.org/users/dwmw2/openconnect.git/blob/a47406b43:/ppp.c#l1118
-#: ../openconnect-strings.txt:4139
+#. https://git.infradead.org/users/dwmw2/openconnect.git/blob/237fc974b:/ppp.c#l1309
+#: ../openconnect-strings.txt:4142
 #, c-format
-msgid "Sending Protocol-Reject for %s. Payload:\n"
-msgstr "Надсилаємо Protocol-Reject для %s. Вміст:\n"
+#| msgid "Sending Protocol-Reject for %s. Payload:\n"
+msgid "Sending Protocol-Reject for unknown protocol 0x%04x\n"
+msgstr "Надсилаємо Protocol-Reject для невідомого протоколу 0x%04x\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/a47406b43:/ppp.c#l1194
-#: ../openconnect-strings.txt:4142
+#: ../openconnect-strings.txt:4145
 msgid "Detected dead peer!\n"
 msgstr "Виявлено непрацездатний вузол!\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/6a4220b71:/ppp.c#l1371
-#: ../openconnect-strings.txt:4145
+#: ../openconnect-strings.txt:4148
 msgid "Failed to establish PPP\n"
 msgstr "Не вдалося встановити PPP\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/a47406b43:/ppp.c#l1212
-#: ../openconnect-strings.txt:4148
+#: ../openconnect-strings.txt:4151
 msgid "Send PPP discard request as keepalive\n"
 msgstr "Надіслати запит щодо відкидання PPP як запит підтримання зв'язку\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/a47406b43:/ppp.c#l1216
-#: ../openconnect-strings.txt:4151
+#: ../openconnect-strings.txt:4154
 msgid "Send PPP echo request as DPD\n"
 msgstr "Надіслати луна-запит PPP як DPD\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/d2402eb30:/ppp.c#l1444
-#: ../openconnect-strings.txt:4154
+#: ../openconnect-strings.txt:4157
 #, c-format
 msgid "Sending PPP %s %s packet over %s (id %d, %d bytes total)\n"
 msgstr ""
 "Надсилаємо PPP пакет %s %s з використанням %s (ід. %d, %d байтів загалом)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/d2402eb30:/ppp.c#l1450
-#: ../openconnect-strings.txt:4157
+#: ../openconnect-strings.txt:4160
 #, c-format
 msgid "Sending PPP %s packet over %s (%d bytes total)\n"
 msgstr "Надсилаємо пакет PPP %s з використанням %s (%d байтів загалом)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/04671ef02:/ppp.c#l1519
-#: ../openconnect-strings.txt:4160
+#: ../openconnect-strings.txt:4163
 #, c-format
 msgid "PPP connect called with invalid DTLS state %d\n"
 msgstr "Викликано connect PPP із некоректним станом DTLS %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/04671ef02:/ppp.c#l1540
-#: ../openconnect-strings.txt:4163
+#: ../openconnect-strings.txt:4166
 msgid "DTLS tunnel connected; exiting HTTPS mainloop.\n"
 msgstr ""
 "Встановлено з'єднання із тунелем DTLS; виходимо із основного циклу HTTPS.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/04671ef02:/ppp.c#l1574
-#: ../openconnect-strings.txt:4166
+#: ../openconnect-strings.txt:4169
 #, c-format
 msgid "Failed to connect DTLS tunnel; using HTTPS instead (state %d).\n"
 msgstr ""
@@ -7985,28 +8002,28 @@ msgstr ""
 "нього HTTPS (стан %d).\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/04671ef02:/ppp.c#l1599
-#: ../openconnect-strings.txt:4169
+#: ../openconnect-strings.txt:4172
 msgid "Establishing PPP tunnel over TLS failed\n"
 msgstr "Спроба встановити тунель PPP з TLS зазнала невдачі\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/04671ef02:/ppp.c#l1610
-#: ../openconnect-strings.txt:4172
+#: ../openconnect-strings.txt:4175
 #, c-format
 msgid "Invalid DTLS state %d\n"
 msgstr "Некоректний стан DTLS — %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/04671ef02:/ppp.c#l1677
-#: ../openconnect-strings.txt:4175
+#: ../openconnect-strings.txt:4178
 msgid "Reset PPP failed\n"
 msgstr "Невдала спроба відновлення початкового стану PPP\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/04671ef02:/ppp.c#l1698
-#: ../openconnect-strings.txt:4178
+#: ../openconnect-strings.txt:4181
 msgid "Failed to authenticate DTLS session\n"
 msgstr "Не вдалося пройти розпізнавання для сеансу DTLS\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l250
-#: ../openconnect-strings.txt:4181
+#: ../openconnect-strings.txt:4184
 #, c-format
 msgid "Received internal Legacy IP address %s\n"
 msgstr "Отримано внутрішню застарілу IP-адресу %s\n"
@@ -8016,293 +8033,293 @@ msgstr "Отримано внутрішню застарілу IP-адресу %
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/49fbe6f19:/pulse.c#l343
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/49fbe6f19:/pulse.c#l366
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/35cce8ea8:/pulse.c#l499
-#: ../openconnect-strings.txt:4188
+#: ../openconnect-strings.txt:4191
 msgid "Failed to handle IPv6 address\n"
 msgstr "Не вдалося обробити адресу IPv6\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l303
-#: ../openconnect-strings.txt:4191
+#: ../openconnect-strings.txt:4194
 #, c-format
 msgid "Received internal IPv6 address %s\n"
 msgstr "Отримано внутрішню адресу IPv6 %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/49fbe6f19:/pulse.c#l358
-#: ../openconnect-strings.txt:4194
+#: ../openconnect-strings.txt:4197
 #, c-format
 msgid "Received IPv6 split include %s\n"
 msgstr "Отримано маршрут включення поділу IPv6 %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/49fbe6f19:/pulse.c#l381
-#: ../openconnect-strings.txt:4197
+#: ../openconnect-strings.txt:4200
 #, c-format
 msgid "Received IPv6 split exclude %s\n"
 msgstr "Отримано маршрут виключення поділу IPv6 %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l311
-#: ../openconnect-strings.txt:4200
+#: ../openconnect-strings.txt:4203
 #, c-format
 msgid "Unexpected length %d for attr 0x%x\n"
 msgstr "Неочікувана довжина %d для атрибута 0x%x\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l362
-#: ../openconnect-strings.txt:4203
+#: ../openconnect-strings.txt:4206
 #, c-format
 msgid "ESP encryption: 0x%04x (%s)\n"
 msgstr "Шифрування ESP: 0x%04x (%s)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l383
-#: ../openconnect-strings.txt:4206
+#: ../openconnect-strings.txt:4209
 #, c-format
 msgid "ESP HMAC: 0x%04x (%s)\n"
 msgstr "HMAC ESP: 0x%04x (%s)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l433
-#: ../openconnect-strings.txt:4209
+#: ../openconnect-strings.txt:4212
 #, c-format
 msgid "ESP only: %d\n"
 msgstr "Лише ESP: %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/35cce8ea8:/pulse.c#l503
-#: ../openconnect-strings.txt:4212
+#: ../openconnect-strings.txt:4215
 #, c-format
 msgid "Received internal gateway IPv6 address %s\n"
 msgstr "Отримано внутрішню адресу IPv6 шлюзу %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/486cfb839:/pulse.c#l506
-#: ../openconnect-strings.txt:4215
+#: ../openconnect-strings.txt:4218
 #, c-format
 msgid "Received proxy auto-config (PAC) payload of size %d\n"
 msgstr "Отримано дані автоналаштовування проксі (PAC) розміром %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/486cfb839:/pulse.c#l511
-#: ../openconnect-strings.txt:4218
+#: ../openconnect-strings.txt:4221
 #, c-format
 msgid "Received proxy auto-config (PAC) URL: %.*s\n"
 msgstr "Отримано адресу автоналаштовування проксі (PAC): %.*s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/7bbbc9cd0:/pulse.c#l515
-#: ../openconnect-strings.txt:4221
+#: ../openconnect-strings.txt:4224
 #, c-format
 msgid "Pulse ESP tunnel allowed to carry 6in4 or 4in6 traffic: %d\n"
 msgstr "Тунель ESP Pulse може нести обмін даними 6in4 або 4in6: %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/85ec0a512:/pulse.c#l549
-#: ../openconnect-strings.txt:4224
+#: ../openconnect-strings.txt:4227
 #, c-format
 msgid "Unknown attr 0x%04x len %d:%s\n"
 msgstr "Невідомий атрибут 0x%04x довжини %d:%s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l486
-#: ../openconnect-strings.txt:4227
+#: ../openconnect-strings.txt:4230
 #, c-format
 msgid "Read %d bytes of IF-T/TLS record\n"
 msgstr "Прочитано %d байтів із запису IF-T/TLS\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/35e03f856:/pulse.c#l506
-#: ../openconnect-strings.txt:4230
+#: ../openconnect-strings.txt:4233
 msgid "Short write to IF-T/TLS\n"
 msgstr "Недостатньо даних для запису до IF-T/TLS\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l498
-#: ../openconnect-strings.txt:4233
+#: ../openconnect-strings.txt:4236
 msgid "Error creating IF-T packet\n"
 msgstr "Помилка під час спроби створення пакета IF-T\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l529
-#: ../openconnect-strings.txt:4236
+#: ../openconnect-strings.txt:4239
 msgid "Error creating EAP packet\n"
 msgstr "Помилка під час спроби створення пакета EAP\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l564
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l1106
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l1169
-#: ../openconnect-strings.txt:4241
+#: ../openconnect-strings.txt:4244
 msgid "Unexpected IF-T/TLS authentication challenge:\n"
 msgstr "Неочікуваний виклик розпізнавання IF-T/TLS:\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l582
-#: ../openconnect-strings.txt:4244
+#: ../openconnect-strings.txt:4247
 msgid "Unexpected EAP-TTLS payload:\n"
 msgstr "Неочікуваний вміст EAP-TTLS:\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l615
-#: ../openconnect-strings.txt:4247
+#: ../openconnect-strings.txt:4250
 #, c-format
 msgid "AVP 0x%x/0x%x:%s\n"
 msgstr "AVP 0x%x/0x%x:%s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l617
-#: ../openconnect-strings.txt:4250
+#: ../openconnect-strings.txt:4253
 #, c-format
 msgid "AVP %d:%s\n"
 msgstr "AVP %d:%s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l684
-#: ../openconnect-strings.txt:4253
+#: ../openconnect-strings.txt:4256
 msgid "Enter Pulse user realm:"
 msgstr "Введіть область користувача Pulse:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l689
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l732
-#: ../openconnect-strings.txt:4257
+#: ../openconnect-strings.txt:4260
 msgid "Realm:"
 msgstr "Область:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l727
-#: ../openconnect-strings.txt:4260
+#: ../openconnect-strings.txt:4263
 msgid "Choose Pulse user realm:"
 msgstr "Виберіть область користувача Pulse:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/33a746590:/pulse.c#l795
-#: ../openconnect-strings.txt:4263
+#: ../openconnect-strings.txt:4266
 msgid "Choose Pulse region:"
 msgstr "Виберіть область Pulse:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/33a746590:/pulse.c#l797
-#: ../openconnect-strings.txt:4266
+#: ../openconnect-strings.txt:4269
 msgid "Region:"
 msgstr "Область:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l743
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l1235
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l1278
-#: ../openconnect-strings.txt:4271
+#: ../openconnect-strings.txt:4274
 msgid "Failed to parse AVP\n"
 msgstr "Не вдалося обробити AVP\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l810
-#: ../openconnect-strings.txt:4274
+#: ../openconnect-strings.txt:4277
 msgid "Session limit reached. Choose session to kill:\n"
 msgstr ""
 "Досягнуто максимальної кількості сеансів. Виберіть сеанс, який слід "
 "завершити:\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l815
-#: ../openconnect-strings.txt:4277
+#: ../openconnect-strings.txt:4280
 msgid "Session:"
 msgstr "Сеанс:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l831
-#: ../openconnect-strings.txt:4280
+#: ../openconnect-strings.txt:4283
 msgid "Failed to parse session list\n"
 msgstr "Не вдалося обробити список сеансів\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/45cbcd27c:/pulse.c#l1012
-#: ../openconnect-strings.txt:4283
+#: ../openconnect-strings.txt:4286
 msgid "Enter secondary credentials:"
 msgstr "Введіть вторинні реєстраційні дані:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/45cbcd27c:/pulse.c#l1012
-#: ../openconnect-strings.txt:4286
+#: ../openconnect-strings.txt:4289
 msgid "Enter user credentials:"
 msgstr "Введіть реєстраційні дані користувача:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/45cbcd27c:/pulse.c#l1022
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/45cbcd27c:/pulse.c#l1115
-#: ../openconnect-strings.txt:4290
+#: ../openconnect-strings.txt:4293
 msgid "Secondary username:"
 msgstr "Вторинне ім'я користувача:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/45cbcd27c:/pulse.c#l1022
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/45cbcd27c:/pulse.c#l1115
-#: ../openconnect-strings.txt:4294
+#: ../openconnect-strings.txt:4297
 msgid "Username:"
 msgstr "Користувач:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/45cbcd27c:/pulse.c#l1032
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/465198ce3:/stoken.c#l89
-#: ../openconnect-strings.txt:4298
+#: ../openconnect-strings.txt:4301
 msgid "Password:"
 msgstr "Пароль:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/45cbcd27c:/pulse.c#l1032
-#: ../openconnect-strings.txt:4301
+#: ../openconnect-strings.txt:4304
 msgid "Secondary password:"
 msgstr "Вторинний пароль:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/48e69d156:/pulse.c#l1122
-#: ../openconnect-strings.txt:4304
+#: ../openconnect-strings.txt:4307
 msgid "Password expired. Please change password:"
 msgstr "Строк дії пароля вичерпано. Будь ласка, змініть пароль:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/48e69d156:/pulse.c#l1126
-#: ../openconnect-strings.txt:4307
+#: ../openconnect-strings.txt:4310
 msgid "Current password:"
 msgstr "Поточний пароль:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/48e69d156:/pulse.c#l1131
-#: ../openconnect-strings.txt:4310
+#: ../openconnect-strings.txt:4313
 msgid "New password:"
 msgstr "Новий пароль:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/48e69d156:/pulse.c#l1136
-#: ../openconnect-strings.txt:4313
+#: ../openconnect-strings.txt:4316
 msgid "Verify new password:"
 msgstr "Підтвердження нового пароля:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/48e69d156:/pulse.c#l1148
-#: ../openconnect-strings.txt:4316
+#: ../openconnect-strings.txt:4319
 msgid "Passwords not provided.\n"
 msgstr "Не вказано паролі.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/48e69d156:/pulse.c#l1154
-#: ../openconnect-strings.txt:4319
+#: ../openconnect-strings.txt:4322
 msgid "Passwords do not match.\n"
 msgstr "Вказано різні паролі.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/48e69d156:/pulse.c#l1159
-#: ../openconnect-strings.txt:4322
+#: ../openconnect-strings.txt:4325
 msgid "Current password too long.\n"
 msgstr "Поточний пароль є надто довгим.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/48e69d156:/pulse.c#l1164
-#: ../openconnect-strings.txt:4325
+#: ../openconnect-strings.txt:4328
 msgid "New password too long.\n"
 msgstr "Новий пароль є надто довгим.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/569a7d6aa:/pulse.c#l1084
-#: ../openconnect-strings.txt:4328
+#: ../openconnect-strings.txt:4331
 msgid "Token code request:"
 msgstr "Запит щодо коду ключа:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/45cbcd27c:/pulse.c#l1129
-#: ../openconnect-strings.txt:4331
+#: ../openconnect-strings.txt:4334
 msgid "Please enter response:"
 msgstr "Будь ласка, введіть відповідь:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/45cbcd27c:/pulse.c#l1133
-#: ../openconnect-strings.txt:4334
+#: ../openconnect-strings.txt:4337
 msgid "Please enter your passcode:"
 msgstr "Будь ласка, введіть ваш пароль:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/45cbcd27c:/pulse.c#l1135
-#: ../openconnect-strings.txt:4337
+#: ../openconnect-strings.txt:4340
 msgid "Please enter your secondary token information:"
 msgstr "Будь ласка, введіть відомості щодо вашого вторинного ключа:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l1025
-#: ../openconnect-strings.txt:4340
+#: ../openconnect-strings.txt:4343
 msgid "Error creating Pulse connection request\n"
 msgstr "Помилка під час спроби створити запит щодо з'єднання Pulse\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l1066
-#: ../openconnect-strings.txt:4343
+#: ../openconnect-strings.txt:4346
 msgid "Unexpected response to IF-T/TLS version negotiation:\n"
 msgstr "Неочікувана відповідь на узгодження версії IF-T/TLS:\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l1071
-#: ../openconnect-strings.txt:4346
+#: ../openconnect-strings.txt:4349
 #, c-format
 msgid "IF-T/TLS version from server: %d\n"
 msgstr "Версія IF-T/TLS з сервера: %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l1197
-#: ../openconnect-strings.txt:4349
+#: ../openconnect-strings.txt:4352
 msgid "Failed to establish EAP-TTLS session\n"
 msgstr "Не вдалося встановити сеанс EAP-TTLS\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b02101eb6:/pulse.c#l1701
-#: ../openconnect-strings.txt:4352
+#: ../openconnect-strings.txt:4355
 msgid ""
 "WARNING: Server provided certificate MD5 does not match its actual "
 "certificate.\n"
@@ -8311,23 +8328,23 @@ msgstr ""
 "контрольній сумі сертифіката.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/270eda80a:/pulse.c#l1489
-#: ../openconnect-strings.txt:4357
+#: ../openconnect-strings.txt:4360
 msgid "Authentication failure: Account locked out\n"
 msgstr "Помилка під час розпізнавання: обліковий запис заблоковано\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4261aed85:/pulse.c#l1715
-#: ../openconnect-strings.txt:4360
+#: ../openconnect-strings.txt:4363
 msgid "Authentication failure: Client certificate required\n"
 msgstr "Помилка розпізнавання: потрібен клієнтський сертифікат\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/270eda80a:/pulse.c#l1492
-#: ../openconnect-strings.txt:4363
+#: ../openconnect-strings.txt:4366
 #, c-format
 msgid "Authentication failure: Code 0x%02x\n"
 msgstr "Помилка під час розпізнавання: код 0x%02x\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/62653d993:/pulse.c#l1635
-#: ../openconnect-strings.txt:4366
+#: ../openconnect-strings.txt:4369
 #, c-format
 msgid ""
 "Unknown D73 prompt value 0x%x. Will prompt for both username and password.\n"
@@ -8336,20 +8353,20 @@ msgstr ""
 "користувача і пароля.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/62653d993:/pulse.c#l1638
-#: ../openconnect-strings.txt:4370
+#: ../openconnect-strings.txt:4373
 msgid "Please report this value and the behaviour of the official client.\n"
 msgstr ""
 "Будь ласка, повідомте про це значення та поведінку програми розробникам "
 "офіційного клієнта.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/48e69d156:/pulse.c#l1795
-#: ../openconnect-strings.txt:4373
+#: ../openconnect-strings.txt:4376
 #, c-format
 msgid "Authentication failure: %.*s\n"
 msgstr "Критична помилка розпізнавання: %.*s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/9ec9c8621:/pulse.c#l1819
-#: ../openconnect-strings.txt:4376
+#: ../openconnect-strings.txt:4379
 msgid ""
 "Pulse server requested Host Checker; not yet supported\n"
 "Try Juniper mode (--protocol=nc)\n"
@@ -8359,7 +8376,7 @@ msgstr ""
 "Спробуйте режим Juniper (--protocol=nc)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/7e41de54b:/pulse.c#l1840
-#: ../openconnect-strings.txt:4381
+#: ../openconnect-strings.txt:4384
 #, c-format
 msgid ""
 "Pulse server is trying to authenticate via EAP-TLS over EAP-TTLS, which we\n"
@@ -8382,46 +8399,46 @@ msgstr ""
 "Будь ласка, повідомте про результати сюди: <%s>.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/f96dae330:/pulse.c#l1839
-#: ../openconnect-strings.txt:4391
+#: ../openconnect-strings.txt:4394
 #, c-format
 msgid "Pulse server requested unexpected EAP type 0x%x\n"
 msgstr "Сервером Pulse надіслано запит щодо неочікуваного типу EAP 0x%x\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/569a7d6aa:/pulse.c#l1527
-#: ../openconnect-strings.txt:4394
+#: ../openconnect-strings.txt:4397
 msgid "Unhandled Pulse authentication packet, or authentication failure\n"
 msgstr ""
 "Непридатний до обробки пакет розпізнавання Pulse або критична помилка під "
 "час спроби розпізнавання\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l1350
-#: ../openconnect-strings.txt:4397
+#: ../openconnect-strings.txt:4400
 msgid "Pulse authentication cookie not accepted\n"
 msgstr "Куку розпізнавання Pulse не прийнято\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l1356
-#: ../openconnect-strings.txt:4400
+#: ../openconnect-strings.txt:4403
 msgid "Pulse realm entry\n"
 msgstr "Вхід до області Pulse\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l1362
-#: ../openconnect-strings.txt:4403
+#: ../openconnect-strings.txt:4406
 msgid "Pulse realm choice\n"
 msgstr "Вибір області Pulse\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/33a746590:/pulse.c#l1847
-#: ../openconnect-strings.txt:4406
+#: ../openconnect-strings.txt:4409
 msgid "Pulse region choice\n"
 msgstr "Вибір області Pulse\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l1369
-#: ../openconnect-strings.txt:4409
+#: ../openconnect-strings.txt:4412
 #, c-format
 msgid "Pulse password auth request, code 0x%02x\n"
 msgstr "Запит щодо розпізнавання за паролем у Pulse, код 0x%02x\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/48e69d156:/pulse.c#l1867
-#: ../openconnect-strings.txt:4412
+#: ../openconnect-strings.txt:4415
 #, c-format
 msgid "Pulse password request with unknown code 0x%02x. Please report.\n"
 msgstr ""
@@ -8429,87 +8446,87 @@ msgstr ""
 "це розробникам.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/569a7d6aa:/pulse.c#l1572
-#: ../openconnect-strings.txt:4415
+#: ../openconnect-strings.txt:4418
 msgid "Pulse password general token code request\n"
 msgstr "Запит щодо коду загального ключа пароля Pulse\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l1379
-#: ../openconnect-strings.txt:4418
+#: ../openconnect-strings.txt:4421
 #, c-format
 msgid "Pulse session limit, %d sessions\n"
 msgstr "Обмеження на кількість сеансів Pulse, %d сеансів\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l1386
-#: ../openconnect-strings.txt:4421
+#: ../openconnect-strings.txt:4424
 msgid "Unhandled Pulse auth request\n"
 msgstr "Непридатний до обробки запит щодо розпізнавання у Pulse\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l1423
-#: ../openconnect-strings.txt:4424
+#: ../openconnect-strings.txt:4427
 msgid "Unexpected response instead of IF-T/TLS auth success:\n"
 msgstr ""
 "Неочікувана відповідь замість повідомлення про успіх розпізнавання IF-T/"
 "TLS:\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/9c45fd072:/pulse.c#l2007
-#: ../openconnect-strings.txt:4427
+#: ../openconnect-strings.txt:4430
 msgid "EAP-TTLS failure: Flushing output with pending input bytes\n"
 msgstr ""
 "Помилка EAP-TTLS: спорожнення виведених даних із вхідними байтами у черзі "
 "обробки\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/9c45fd072:/pulse.c#l2030
-#: ../openconnect-strings.txt:4430
+#: ../openconnect-strings.txt:4433
 msgid "Error creating EAP-TTLS buffer\n"
 msgstr "Помилка під час спроби створити буфер EAP-TTLS\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/9c45fd072:/pulse.c#l2078
-#: ../openconnect-strings.txt:4433
+#: ../openconnect-strings.txt:4436
 #, c-format
 msgid "Failed to read EAP-TTLS Acknowledge: %s\n"
 msgstr "Не вдалося прочитати Acknowledge EAP-TTLS: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/9c45fd072:/pulse.c#l2084
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l1492
-#: ../openconnect-strings.txt:4437
+#: ../openconnect-strings.txt:4440
 #, c-format
 msgid "Read %d bytes of IF-T/TLS EAP-TTLS record\n"
 msgstr "Прочитано %d байтів із запису EAP-TTLS IF-T/TLS\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/9c45fd072:/pulse.c#l2095
-#: ../openconnect-strings.txt:4440
+#: ../openconnect-strings.txt:4443
 msgid "Bad EAP-TTLS Acknowledge packet\n"
 msgstr "Помилковий пакет Acknowledge EAP-TTLS\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/9c45fd072:/pulse.c#l2135
-#: ../openconnect-strings.txt:4443
+#: ../openconnect-strings.txt:4446
 #, c-format
 msgid "Bad EAP-TTLS packet (len %d, left %d)\n"
 msgstr "Помилковий пакет EAP-TTLS (довжина %d, лишилося %d)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l1638
-#: ../openconnect-strings.txt:4446
+#: ../openconnect-strings.txt:4449
 msgid "Unexpected Pulse config packet:\n"
 msgstr "Неочікуваний пакет налаштування Pulse:\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/bad0f0430:/pulse.c#l2352
-#: ../openconnect-strings.txt:4449
+#: ../openconnect-strings.txt:4452
 msgid "Processing Pulse main config packet for server version >= 9.1R14\n"
 msgstr ""
 "Обробляємо пакет основних налаштувань Pulse для версії сервера >= 9.1R14\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/3bcb811e0:/pulse.c#l2364
-#: ../openconnect-strings.txt:4452
+#: ../openconnect-strings.txt:4455
 msgid "attr_flag 0x2c00: known for Pulse version >= 9.1R14\n"
 msgstr "attr_flag 0x2c00: відомий для версії Pulse >= 9.1R14\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/3bcb811e0:/pulse.c#l2368
-#: ../openconnect-strings.txt:4455
+#: ../openconnect-strings.txt:4458
 msgid "attr_flag 0x2e00: known for Pulse version >= 9.1R16\n"
 msgstr "attr_flag 0x2e00: відомий для версії Pulse >= 9.1R16\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/3bcb811e0:/pulse.c#l2372
-#: ../openconnect-strings.txt:4458
+#: ../openconnect-strings.txt:4461
 #, c-format
 msgid "attr_flag 0x%04x: unknown Pulse version. Please report to <%s>\n"
 msgstr ""
@@ -8517,7 +8534,7 @@ msgstr ""
 "адресою <%s>\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/bad0f0430:/pulse.c#l2373
-#: ../openconnect-strings.txt:4461
+#: ../openconnect-strings.txt:4464
 #, c-format
 msgid "If any of the above attributes are meaningful, please report to <%s>\n"
 msgstr ""
@@ -8525,45 +8542,46 @@ msgstr ""
 "про це за адресою <%s>\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/bad0f0430:/pulse.c#l2378
-#: ../openconnect-strings.txt:4464
+#: ../openconnect-strings.txt:4467
 msgid "Processing Pulse main config packet for server version < 9.1R14\n"
 msgstr ""
 "Обробляємо пакет основних налаштувань Pulse для версії сервера < 9.1R14\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/eea59ff04:/pulse.c#l1678
-#: ../openconnect-strings.txt:4467
+#: ../openconnect-strings.txt:4470
 #, c-format
 msgid "Receive route of unknown type 0x%08x\n"
 msgstr "Отримано маршрут невідомого типу 0x%08x\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/bad0f0430:/pulse.c#l2500
-#: ../openconnect-strings.txt:4470
+#: ../openconnect-strings.txt:4473
 msgid "Processing Pulse ESP config packet\n"
 msgstr "Обробка пакета налаштовування ESP Pulse\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/35e03f856:/pulse.c#l1755
-#: ../openconnect-strings.txt:4473
+#: ../openconnect-strings.txt:4476
 msgid "Invalid ESP config packet:\n"
 msgstr "Некоректній пакет налаштовування ESP:\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/35e03f856:/pulse.c#l1767
-#: ../openconnect-strings.txt:4476
+#: ../openconnect-strings.txt:4479
 msgid "Invalid ESP setup\n"
 msgstr "Некоректне налаштування ESP\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/453079329:/pulse.c#l2677
-#: ../openconnect-strings.txt:4479
+#: ../openconnect-strings.txt:4482
 msgid "Short IF-T/TLS packet when expecting configuration:\n"
 msgstr "Короткий пакет IF-T/TLS, а мали бути налаштування:\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/3d6e371b6:/pulse.c#l2615
-#: ../openconnect-strings.txt:4482
-msgid "Unexpected IF-T/TLS packet when expecting configuration: wrong vendor\n"
+#: ../openconnect-strings.txt:4485
+msgid ""
+"Unexpected IF-T/TLS packet when expecting configuration: wrong vendor\n"
 msgstr ""
 "Неочікуваний пакет IF-T/TLS, а мали бути налаштування: помилковий виробник\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/453079329:/pulse.c#l2694
-#: ../openconnect-strings.txt:4485
+#: ../openconnect-strings.txt:4488
 #, c-format
 msgid ""
 "Unreasonably large IF-T/TLS packet (%u > 1 MiB) when expecting configuration"
@@ -8575,54 +8593,54 @@ msgstr ""
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/3d6e371b6:/pulse.c#l2651
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/3d6e371b6:/pulse.c#l2656
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/3d6e371b6:/pulse.c#l2695
-#: ../openconnect-strings.txt:4493
+#: ../openconnect-strings.txt:4496
 #, c-format
 msgid "Unexpected Pulse configuration packet: %s\n"
 msgstr "Неочікуваний пакет налаштовування Pulse: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/3d6e371b6:/pulse.c#l2640
-#: ../openconnect-strings.txt:4496
+#: ../openconnect-strings.txt:4499
 msgid "wrong type field (!= 1)"
 msgstr "помилкове поле типу (!= 1)"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/3d6e371b6:/pulse.c#l2645
-#: ../openconnect-strings.txt:4499
+#: ../openconnect-strings.txt:4502
 msgid "too short"
 msgstr "закороткий"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/3d6e371b6:/pulse.c#l2652
-#: ../openconnect-strings.txt:4502
+#: ../openconnect-strings.txt:4505
 msgid "non-zero values at offsets 0x10, 0x14, 0x18, 0x1c, or 0x24"
 msgstr "ненульові значення зі зсувом 0x10, 0x14, 0x18, 0x1c або 0x24"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/3d6e371b6:/pulse.c#l2657
-#: ../openconnect-strings.txt:4505
+#: ../openconnect-strings.txt:4508
 msgid "length at offset 0x28 != packet length - 0x10"
 msgstr "довжина зі зсувом 0x28 != довжина пакета - 0x10"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/3d6e371b6:/pulse.c#l2696
-#: ../openconnect-strings.txt:4508
+#: ../openconnect-strings.txt:4511
 msgid "identifier at offset 0x20 is unknown"
 msgstr "ідентифікатор зі зсувом 0x20 є невідомим"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/808a702d0:/pulse.c#l2571
-#: ../openconnect-strings.txt:4511
+#: ../openconnect-strings.txt:4514
 msgid "Insufficient configuration found\n"
 msgstr "Виявлено недостатність налаштувань\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/35e03f856:/pulse.c#l2000
-#: ../openconnect-strings.txt:4514
+#: ../openconnect-strings.txt:4517
 msgid "ESP rekey failed\n"
 msgstr "Помилка під час спроби зміни ключів ESP\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/f1540c9d0:/pulse.c#l2732
-#: ../openconnect-strings.txt:4517
+#: ../openconnect-strings.txt:4520
 #, c-format
 msgid "Pulse fatal error (reason: %ld): %s\n"
 msgstr "Критична помилка Pulse (причина: %ld): %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/cf4c5dcfb:/pulse.c#l2771
-#: ../openconnect-strings.txt:4520
+#: ../openconnect-strings.txt:4523
 #, c-format
 msgid ""
 "Unknown Pulse packet of %d bytes (vendor 0x%03x, type 0x%02x, hdr_len %d, "
@@ -8632,25 +8650,25 @@ msgstr ""
 "заголовка %d, ідентифікатор %d)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b795ff352:/pulse.c#l1966
-#: ../openconnect-strings.txt:4525
+#: ../openconnect-strings.txt:4528
 #, c-format
 msgid "Sending IF-T/TLS data packet of %d bytes\n"
 msgstr "Надсилаємо пакет даних IF-T/TLS у %d байтів\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/e49e49e33:/script.c#l130
-#: ../openconnect-strings.txt:4528
+#: ../openconnect-strings.txt:4531
 #, c-format
 msgid "Discard bad split include: \"%s\"\n"
 msgstr "Відкидаємо помилкове включення поділу: «%s»\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/e49e49e33:/script.c#l134
-#: ../openconnect-strings.txt:4531
+#: ../openconnect-strings.txt:4534
 #, c-format
 msgid "Discard bad split exclude: \"%s\"\n"
 msgstr "Відкидаємо помилкове виключення поділу: «%s»\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/e49e49e33:/script.c#l161
-#: ../openconnect-strings.txt:4534
+#: ../openconnect-strings.txt:4537
 #, c-format
 msgid ""
 "WARNING: Split include \"%s\" has host bits set, replacing with \"%s/%d\".\n"
@@ -8659,7 +8677,7 @@ msgstr ""
 "%d».\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/e49e49e33:/script.c#l165
-#: ../openconnect-strings.txt:4538
+#: ../openconnect-strings.txt:4541
 #, c-format
 msgid ""
 "WARNING: Split exclude \"%s\" has host bits set, replacing with \"%s/%d\".\n"
@@ -8668,318 +8686,318 @@ msgstr ""
 "«%s/%d».\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/e49e49e33:/script.c#l272
-#: ../openconnect-strings.txt:4542
+#: ../openconnect-strings.txt:4545
 #, c-format
 msgid "Ignoring legacy network because address \"%s\" is invalid.\n"
 msgstr "Ігноруємо застарілу мережу, оскільки адреса «%s» є некоректною.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/e49e49e33:/script.c#l277
-#: ../openconnect-strings.txt:4545
+#: ../openconnect-strings.txt:4548
 #, c-format
 msgid "Ignoring legacy network because netmask \"%s\" is invalid.\n"
 msgstr ""
 "Ігноруємо застарілу мережу, оскільки маска мережі «%s» є некоректною.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b056e27c9:/script.c#l594
-#: ../openconnect-strings.txt:4548
+#: ../openconnect-strings.txt:4551
 #, c-format
 msgid "Failed to get script exit status: %s\n"
 msgstr "Не вдалося отримати стан виходу зі скрипту: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/ba8e9e8bb:/script.c#l599
-#: ../openconnect-strings.txt:4551
+#: ../openconnect-strings.txt:4554
 #, c-format
 msgid "Script '%s' returned error %ld\n"
 msgstr "Скриптом «%s» повернуто повідомлення про помилку %ld\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/adc0b0cef:/script.c#l611
-#: ../openconnect-strings.txt:4554
+#: ../openconnect-strings.txt:4557
 msgid "Script did not complete within 10 seconds.\n"
 msgstr "Роботу скрипту не було завершено протягом 10 секунд.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/887c9d97e:/script.c#l368
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/dd0df3770:/script.c#l377
-#: ../openconnect-strings.txt:4558
+#: ../openconnect-strings.txt:4561
 #, c-format
 msgid "Failed to spawn script '%s' for %s: %s\n"
 msgstr "Не вдалося запустити скрипт «%s» для %s: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c0ed1606a:/script.c#l682
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/be40969ca:/tun.c#l475
-#: ../openconnect-strings.txt:4562
+#: ../openconnect-strings.txt:4565
 msgid "setpgid"
 msgstr "setpgid"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/f90b4428d:/script.c#l334
-#: ../openconnect-strings.txt:4565
+#: ../openconnect-strings.txt:4568
 #, c-format
 msgid "Script '%s' exited abnormally (%x)\n"
 msgstr "Скрипт «%s» завершив роботу нештатно (%x)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/f90b4428d:/script.c#l343
-#: ../openconnect-strings.txt:4568
+#: ../openconnect-strings.txt:4571
 #, c-format
 msgid "Script '%s' returned error %d\n"
 msgstr "Скриптом «%s» повернуто повідомлення про помилку %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/fe2f766b6:/ssl.c#l110
-#: ../openconnect-strings.txt:4571
+#: ../openconnect-strings.txt:4574
 msgid "Failed select() for socket connect"
 msgstr "Не вдалося виконати select() для з'єднання сокетів"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/2412b1da5:/ssl.c#l999
-#: ../openconnect-strings.txt:4574
+#: ../openconnect-strings.txt:4577
 msgid "Socket connect cancelled\n"
 msgstr "З'єднання сокетів скасовано\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/8388bc370:/ssl.c#l191
-#: ../openconnect-strings.txt:4577
+#: ../openconnect-strings.txt:4580
 msgid "Failed select() for socket accept"
 msgstr "Помилка select() для прийняття сокета"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/8388bc370:/ssl.c#l196
-#: ../openconnect-strings.txt:4580
+#: ../openconnect-strings.txt:4583
 msgid "Socket accept cancelled\n"
 msgstr "Скасовано прийняття сокета\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/8388bc370:/ssl.c#l207
-#: ../openconnect-strings.txt:4583
+#: ../openconnect-strings.txt:4586
 #, c-format
 msgid "Failed to accept local connection: %s\n"
 msgstr "Не вдалося прийняти локальне з'єднання: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b69aa4e48:/ssl.c#l194
-#: ../openconnect-strings.txt:4586
+#: ../openconnect-strings.txt:4589
 msgid "Failed setsockopt(TCP_NODELAY) on TLS socket:"
 msgstr "Помилка setsockopt(TCP_NODELAY) на сокеті TLS:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/cda04d3b1:/ssl.c#l159
-#: ../openconnect-strings.txt:4589
+#: ../openconnect-strings.txt:4592
 #, c-format
 msgid "Failed to reconnect to proxy %s: %s\n"
 msgstr "Не вдалося повторно з'єднатися із проксі-сервером %s: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/cda04d3b1:/ssl.c#l163
-#: ../openconnect-strings.txt:4592
+#: ../openconnect-strings.txt:4595
 #, c-format
 msgid "Failed to reconnect to host %s: %s\n"
 msgstr "Не вдалося повторно з'єднатися із вузлом %s: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/eef00ae2f:/ssl.c#l943
-#: ../openconnect-strings.txt:4595
+#: ../openconnect-strings.txt:4598
 #, c-format
 msgid "Proxy from libproxy: %s://%s:%d/\n"
 msgstr "Проксі від libproxy: %s://%s:%d/\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/2f55fec32:/ssl.c#l258
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/2f55fec32:/ssl.c#l342
-#: ../openconnect-strings.txt:4599
+#: ../openconnect-strings.txt:4602
 msgid "Reconnecting to DynDNS server using previously cached IP address\n"
 msgstr ""
 "Повторно встановлюємо з'єднання із сервером DynDNS за допомогою раніше "
 "кешованої IP-адреси\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4bcce5703:/ssl.c#l223
-#: ../openconnect-strings.txt:4602
+#: ../openconnect-strings.txt:4605
 #, c-format
 msgid "Attempting to connect to proxy %s%s%s:%s\n"
 msgstr "Намагаємося з'єднатися із проксі-сервером %s%s%s:%s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4bcce5703:/ssl.c#l224
-#: ../openconnect-strings.txt:4605
+#: ../openconnect-strings.txt:4608
 #, c-format
 msgid "Attempting to connect to server %s%s%s:%s\n"
 msgstr "Намагаємося з'єднатися із сервером %s%s%s:%s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/cda04d3b1:/ssl.c#l294
-#: ../openconnect-strings.txt:4608
+#: ../openconnect-strings.txt:4611
 #, c-format
 msgid "Connected to %s%s%s:%s\n"
 msgstr "З'єднано із %s%s%s:%s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/eef00ae2f:/ssl.c#l1001
-#: ../openconnect-strings.txt:4611
+#: ../openconnect-strings.txt:4614
 msgid "Failed to allocate sockaddr storage\n"
 msgstr "Не вдалося розмістити у пам'яті сховище даних sockaddr\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/cda04d3b1:/ssl.c#l340
-#: ../openconnect-strings.txt:4614
+#: ../openconnect-strings.txt:4617
 #, c-format
 msgid "Failed to connect to %s%s%s:%s: %s\n"
 msgstr "Не вдалося з'єднатися із %s%s%s:%s: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/2f55fec32:/ssl.c#l327
-#: ../openconnect-strings.txt:4617
+#: ../openconnect-strings.txt:4620
 msgid "Forgetting non-functional previous peer address\n"
 msgstr "Забуваємо про непрацездатну попередню адресу вузла\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/eef00ae2f:/ssl.c#l1016
-#: ../openconnect-strings.txt:4620
+#: ../openconnect-strings.txt:4623
 #, c-format
 msgid "Failed to connect to host %s\n"
 msgstr "Не вдалося з'єднатися із вузлом %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/9e50ba476:/ssl.c#l306
-#: ../openconnect-strings.txt:4623
+#: ../openconnect-strings.txt:4626
 #, c-format
 msgid "Reconnecting to proxy %s\n"
 msgstr "Повторно з'єднуємося із проксі-сервером %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/eef00ae2f:/ssl.c#l1135
-#: ../openconnect-strings.txt:4626
+#: ../openconnect-strings.txt:4629
 #, c-format
 msgid "statvfs: %s\n"
 msgstr "statvfs: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/e57699e1d:/ssl.c#l404
-#: ../openconnect-strings.txt:4629
+#: ../openconnect-strings.txt:4632
 msgid "Could not obtain file system ID for passphrase\n"
 msgstr "Не вдалося отримати ідентифікатор файлової системи для пароля\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/45f8f22de:/ssl.c#l419
-#: ../openconnect-strings.txt:4632
+#: ../openconnect-strings.txt:4635
 #, c-format
 msgid "Failed to open private key file '%s': %s\n"
 msgstr "Не вдалося відкрити файл закритого ключа «%s»: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/eef00ae2f:/ssl.c#l1152
-#: ../openconnect-strings.txt:4635
+#: ../openconnect-strings.txt:4638
 #, c-format
 msgid "statfs: %s\n"
 msgstr "statfs: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/dd9b0ab34:/ssl.c#l415
-#: ../openconnect-strings.txt:4638
+#: ../openconnect-strings.txt:4641
 msgid "No error"
 msgstr "Немає помилок"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/473903c0f:/ssl.c#l422
-#: ../openconnect-strings.txt:4641
+#: ../openconnect-strings.txt:4644
 msgid "Keystore locked"
 msgstr "Сховище ключів заблоковано"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/dd9b0ab34:/ssl.c#l417
-#: ../openconnect-strings.txt:4644
+#: ../openconnect-strings.txt:4647
 msgid "Keystore uninitialized"
 msgstr "Неініціалізоване сховище ключів"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/dd9b0ab34:/ssl.c#l418
-#: ../openconnect-strings.txt:4647
+#: ../openconnect-strings.txt:4650
 msgid "System error"
 msgstr "Системна помилка"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/dd9b0ab34:/ssl.c#l419
-#: ../openconnect-strings.txt:4650
+#: ../openconnect-strings.txt:4653
 msgid "Protocol error"
 msgstr "Помилка протоколу"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/dd9b0ab34:/ssl.c#l420
-#: ../openconnect-strings.txt:4653
+#: ../openconnect-strings.txt:4656
 msgid "Permission denied"
 msgstr "Відмовлено у доступі"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/dd9b0ab34:/ssl.c#l421
-#: ../openconnect-strings.txt:4656
+#: ../openconnect-strings.txt:4659
 msgid "Key not found"
 msgstr "Ключ не знайдено"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/dd9b0ab34:/ssl.c#l422
-#: ../openconnect-strings.txt:4659
+#: ../openconnect-strings.txt:4662
 msgid "Value corrupted"
 msgstr "Значення пошкоджено"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/dd9b0ab34:/ssl.c#l423
-#: ../openconnect-strings.txt:4662
+#: ../openconnect-strings.txt:4665
 msgid "Undefined action"
 msgstr "Невизначена дія"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/ed16cfcf0:/ssl.c#l465
-#: ../openconnect-strings.txt:4665
+#: ../openconnect-strings.txt:4668
 msgid "Wrong password"
 msgstr "Неправильний пароль"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/dd9b0ab34:/ssl.c#l428
-#: ../openconnect-strings.txt:4668
+#: ../openconnect-strings.txt:4671
 msgid "Unknown error"
 msgstr "Невідома помилка"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/e1a3be3da:/ssl.c#l885
-#: ../openconnect-strings.txt:4671
+#: ../openconnect-strings.txt:4674
 msgid "Got cancel on legacy fd\n"
 msgstr "Скасовано на застарілому дескрипторі файла\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/e1a3be3da:/ssl.c#l900
-#: ../openconnect-strings.txt:4674
+#: ../openconnect-strings.txt:4677
 msgid "Got cancel command\n"
 msgstr "Отримано команду скасування\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/e1a3be3da:/ssl.c#l905
-#: ../openconnect-strings.txt:4677
+#: ../openconnect-strings.txt:4680
 msgid "Got pause command\n"
 msgstr "Отримано команду призупинення\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/fe2f766b6:/ssl.c#l843
-#: ../openconnect-strings.txt:4680
+#: ../openconnect-strings.txt:4683
 msgid "Failed select() for command socket"
 msgstr "Не вдалося виконати select() для командного сокета"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/ccb1573f0:/ssl.c#l938
-#: ../openconnect-strings.txt:4683
+#: ../openconnect-strings.txt:4686
 #, c-format
 msgid "%s() used with unsupported mode '%s'\n"
 msgstr "%s() використано із непідтримуваним режимом «%s»\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/848ceff1d:/ssl.c#l931
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/f359a42a9:/tun-win32.c#l570
-#: ../openconnect-strings.txt:4687
+#: ../openconnect-strings.txt:4690
 #, c-format
 msgid "Failed to open %s: %s\n"
 msgstr "Не вдалося відкрити %s: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/848ceff1d:/ssl.c#l938
-#: ../openconnect-strings.txt:4690
+#: ../openconnect-strings.txt:4693
 #, c-format
 msgid "Failed to fstat() %s: %s\n"
 msgstr "Помилка fstat() %s: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/848ceff1d:/ssl.c#l945
-#: ../openconnect-strings.txt:4693
+#: ../openconnect-strings.txt:4696
 #, c-format
 msgid "File %s is empty\n"
 msgstr "Файл %s є порожнім\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/3b8bb9a99:/ssl.c#l973
-#: ../openconnect-strings.txt:4696
+#: ../openconnect-strings.txt:4699
 #, c-format
 msgid "File %s has suspicious size %<PRId64>\n"
 msgstr "Розмір файла %s є підозріливим — %<PRId64>\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/848ceff1d:/ssl.c#l960
-#: ../openconnect-strings.txt:4699
+#: ../openconnect-strings.txt:4702
 #, c-format
 msgid "Failed to allocate %d bytes for %s\n"
 msgstr "Не вдалося розмістити у пам'яті %d байтів %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/848ceff1d:/ssl.c#l968
-#: ../openconnect-strings.txt:4702
+#: ../openconnect-strings.txt:4705
 #, c-format
 msgid "Failed to read %s: %s\n"
 msgstr "Не вдалося прочитати %s: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/8721d4074:/ssl.c#l818
-#: ../openconnect-strings.txt:4705
+#: ../openconnect-strings.txt:4708
 #, c-format
 msgid "Unknown protocol family %d. Cannot create UDP server address\n"
 msgstr ""
 "Невідоме сімейство протоколів %d. Неможливо створити адресу сервера UDP.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c2b6cb710:/ssl.c#l832
-#: ../openconnect-strings.txt:4708
+#: ../openconnect-strings.txt:4711
 msgid "Open UDP socket"
 msgstr "Відкритий сокет UDP"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c2b6cb710:/ssl.c#l863
-#: ../openconnect-strings.txt:4711
+#: ../openconnect-strings.txt:4714
 #, c-format
 msgid "Unknown protocol family %d. Cannot use UDP transport\n"
 msgstr ""
@@ -8987,110 +9005,110 @@ msgstr ""
 "UDP.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c2b6cb710:/ssl.c#l871
-#: ../openconnect-strings.txt:4714
+#: ../openconnect-strings.txt:4717
 msgid "Bind UDP socket"
 msgstr "Пов'язування сокета UDP"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/aebbd342d:/ssl.c#l1107
-#: ../openconnect-strings.txt:4717
+#: ../openconnect-strings.txt:4720
 msgid "Connect UDP socket"
 msgstr "З'єднання із сокетом UDP"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/9b6885730:/ssl.c#l1007
-#: ../openconnect-strings.txt:4720
+#: ../openconnect-strings.txt:4723
 msgid "Make UDP socket non-blocking"
 msgstr "Зробити сокет UDP неблокувальним"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/613bca6f9:/ssl.c#l910
-#: ../openconnect-strings.txt:4723
+#: ../openconnect-strings.txt:4726
 msgid "Cookie is no longer valid, ending session\n"
 msgstr "Строк дії куки вичерпано, завершуємо сеанс\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/613bca6f9:/ssl.c#l914
-#: ../openconnect-strings.txt:4726
+#: ../openconnect-strings.txt:4729
 #, c-format
 msgid "sleep %ds, remaining timeout %ds\n"
 msgstr "присипляння на %d с, лишилося часу очікування — %d с\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/fe2f766b6:/ssl.c#l1121
-#: ../openconnect-strings.txt:4729
+#: ../openconnect-strings.txt:4732
 msgid "Failed select() for socket send"
 msgstr "Не вдалося виконати select() для сокета надсилання"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/fe2f766b6:/ssl.c#l1160
-#: ../openconnect-strings.txt:4732
+#: ../openconnect-strings.txt:4735
 msgid "Failed select() for socket recv"
 msgstr "Не вдалося виконати select() для сокета отримання"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4dd05b4f2:/sspi.c#l180
-#: ../openconnect-strings.txt:4735
+#: ../openconnect-strings.txt:4738
 #, c-format
 msgid "SSPI token too large (%ld bytes)\n"
 msgstr "Ключ SSPI є надто великим (%ld байтів)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4dd05b4f2:/sspi.c#l194
-#: ../openconnect-strings.txt:4738
+#: ../openconnect-strings.txt:4741
 #, c-format
 msgid "Sending SSPI token of %lu bytes\n"
 msgstr "Надсилаємо ключ SSPI із %lu байтів\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4dd05b4f2:/sspi.c#l199
-#: ../openconnect-strings.txt:4741
+#: ../openconnect-strings.txt:4744
 #, c-format
 msgid "Failed to send SSPI authentication token to proxy: %s\n"
 msgstr "Не вдалося надіслати ключ розпізнавання SSPI на проксі-сервер: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4dd05b4f2:/sspi.c#l207
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4dd05b4f2:/sspi.c#l228
-#: ../openconnect-strings.txt:4745
+#: ../openconnect-strings.txt:4748
 #, c-format
 msgid "Failed to receive SSPI authentication token from proxy: %s\n"
 msgstr "Не вдалося отримати ключ розпізнавання SSPI з проксі-сервера: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4dd05b4f2:/sspi.c#l213
-#: ../openconnect-strings.txt:4748
+#: ../openconnect-strings.txt:4751
 msgid "SOCKS server reported SSPI context failure\n"
 msgstr "Сервером SOCKS повідомлено про помилку контексту SSPI\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4dd05b4f2:/sspi.c#l217
-#: ../openconnect-strings.txt:4751
+#: ../openconnect-strings.txt:4754
 #, c-format
 msgid "Unknown SSPI status response (0x%02x) from SOCKS server\n"
 msgstr "Невідома відповідь щодо стану SSPI (0x%02x) від сервера SOCKS\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4dd05b4f2:/sspi.c#l232
-#: ../openconnect-strings.txt:4754
+#: ../openconnect-strings.txt:4757
 #, c-format
 msgid "Got SSPI token of %lu bytes: %02x %02x %02x %02x\n"
 msgstr "Отримано ключ SSPI з %lu байтів: %02x %02x %02x %02x\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4dd05b4f2:/sspi.c#l248
-#: ../openconnect-strings.txt:4757
+#: ../openconnect-strings.txt:4760
 #, c-format
 msgid "QueryContextAttributes() failed: %lx\n"
 msgstr "Помилка QueryContextAttributes(): %lx\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4dd05b4f2:/sspi.c#l284
-#: ../openconnect-strings.txt:4760
+#: ../openconnect-strings.txt:4763
 #, c-format
 msgid "EncryptMessage() failed: %lx\n"
 msgstr "Помилка EncryptMessage(): %lx\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4dd05b4f2:/sspi.c#l296
-#: ../openconnect-strings.txt:4763
+#: ../openconnect-strings.txt:4766
 #, c-format
 msgid "EncryptMessage() result too large (%lu + %lu + %lu)\n"
 msgstr ""
 "Результат виконання EncryptMessage() є надто великим (%lu + %lu + %lu)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4dd05b4f2:/sspi.c#l318
-#: ../openconnect-strings.txt:4766
+#: ../openconnect-strings.txt:4769
 #, c-format
 msgid "Sending SSPI protection negotiation of %u bytes\n"
 msgstr "Надсилаємо узгодження захисту SSPI з %u байтів\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4dd05b4f2:/sspi.c#l323
-#: ../openconnect-strings.txt:4769
+#: ../openconnect-strings.txt:4772
 #, c-format
 msgid "Failed to send SSPI protection response to proxy: %s\n"
 msgstr ""
@@ -9098,109 +9116,109 @@ msgstr ""
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4dd05b4f2:/sspi.c#l331
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4dd05b4f2:/sspi.c#l341
-#: ../openconnect-strings.txt:4773
+#: ../openconnect-strings.txt:4776
 #, c-format
 msgid "Failed to receive SSPI protection response from proxy: %s\n"
 msgstr ""
 "Не вдалося отримати відповідь щодо захисту SSPI від проксі-сервера: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4dd05b4f2:/sspi.c#l346
-#: ../openconnect-strings.txt:4776
+#: ../openconnect-strings.txt:4779
 #, c-format
 msgid "Got SSPI protection response of %d bytes: %02x %02x %02x %02x\n"
 msgstr ""
 "Отримано відповідь щодо захисту SSPI з %d байтів: %02x %02x %02x %02x\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4dd05b4f2:/sspi.c#l362
-#: ../openconnect-strings.txt:4779
+#: ../openconnect-strings.txt:4782
 #, c-format
 msgid "DecryptMessage failed: %lx\n"
 msgstr "Помилка DecryptMessage: %lx\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4dd05b4f2:/sspi.c#l367
-#: ../openconnect-strings.txt:4782
+#: ../openconnect-strings.txt:4785
 #, c-format
 msgid "Invalid SSPI protection response from proxy (%lu bytes)\n"
 msgstr ""
 "Некоректна відповідь щодо захисту SSPI від проксі-сервера (%lu байтів)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/465198ce3:/stoken.c#l77
-#: ../openconnect-strings.txt:4785
+#: ../openconnect-strings.txt:4788
 msgid "Enter credentials to unlock software token."
 msgstr ""
 "Введіть реєстраційні дані, щоб розблокувати ключ програмного забезпечення."
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/465198ce3:/stoken.c#l82
-#: ../openconnect-strings.txt:4788
+#: ../openconnect-strings.txt:4791
 msgid "Device ID:"
 msgstr "Ід. пристрою:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/465198ce3:/stoken.c#l118
-#: ../openconnect-strings.txt:4791
+#: ../openconnect-strings.txt:4794
 msgid "User bypassed soft token.\n"
 msgstr "Програмний ключ обійдено користувачем.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/465198ce3:/stoken.c#l124
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/465198ce3:/stoken.c#l209
-#: ../openconnect-strings.txt:4795
+#: ../openconnect-strings.txt:4798
 msgid "All fields are required; try again.\n"
 msgstr "Слід вказати вміст усіх полів; повторіть спробу.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/465198ce3:/stoken.c#l134
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/465198ce3:/stoken.c#l304
-#: ../openconnect-strings.txt:4799
+#: ../openconnect-strings.txt:4802
 msgid "General failure in libstoken.\n"
 msgstr "Загальна помилка у libstoken.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/465198ce3:/stoken.c#l138
-#: ../openconnect-strings.txt:4802
+#: ../openconnect-strings.txt:4805
 msgid "Incorrect device ID or password; try again.\n"
 msgstr "Помилковий ідентифікатор пристрою або пароль; повторіть спробу.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/465198ce3:/stoken.c#l142
-#: ../openconnect-strings.txt:4805
+#: ../openconnect-strings.txt:4808
 msgid "Soft token init was successful.\n"
 msgstr "Ініціалізацію програмного ключа виконано успішно.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/465198ce3:/stoken.c#l185
-#: ../openconnect-strings.txt:4808
+#: ../openconnect-strings.txt:4811
 msgid "Enter software token PIN."
 msgstr "Введіть пінкод програмного ключа."
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/465198ce3:/stoken.c#l189
-#: ../openconnect-strings.txt:4811
+#: ../openconnect-strings.txt:4814
 msgid "PIN:"
 msgstr "Пінкод:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/465198ce3:/stoken.c#l216
-#: ../openconnect-strings.txt:4814
+#: ../openconnect-strings.txt:4817
 msgid "Invalid PIN format; try again.\n"
 msgstr "Некоректний формат пінкоду; повторіть спробу.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/465198ce3:/stoken.c#l299
-#: ../openconnect-strings.txt:4817
+#: ../openconnect-strings.txt:4820
 msgid "Generating RSA token code\n"
 msgstr "Створюємо код ключа RSA\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/f359a42a9:/tun-win32.c#l102
-#: ../openconnect-strings.txt:4820
+#: ../openconnect-strings.txt:4823
 msgid "Cannot allocate memory for adapter info\n"
 msgstr "Не вдалося розмістити у пам'яті дані адаптера\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/f359a42a9:/tun-win32.c#l139
-#: ../openconnect-strings.txt:4823
+#: ../openconnect-strings.txt:4826
 #, c-format
 msgid "Ignoring non-matching interface \"%S\"\n"
 msgstr "Ігноруємо невідповідний інтерфейс «%S»\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/fde5f7d96:/tun-win32.c#l235
-#: ../openconnect-strings.txt:4826
+#: ../openconnect-strings.txt:4829
 #, c-format
 msgid "Interface \"%S\" is not supported\n"
 msgstr "Підтримки інтерфейсу «%S» не передбачено\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c34334152:/tun-win32.c#l143
-#: ../openconnect-strings.txt:4829
+#: ../openconnect-strings.txt:4832
 #, c-format
 msgid "Error accessing registry key for network adapters: %s (%ld)\n"
 msgstr ""
@@ -9208,27 +9226,28 @@ msgstr ""
 "(%ld)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c34334152:/tun-win32.c#l168
-#: ../openconnect-strings.txt:4832
+#: ../openconnect-strings.txt:4835
 #, c-format
 msgid "Cannot open registry key %s: %s (%ld)\n"
 msgstr "Не вдалося відкрити ключ реєстру %s: %s (%ld)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/6dcfbe1b1:/tun-win32.c#l116
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/6dcfbe1b1:/tun-win32.c#l174
-#: ../openconnect-strings.txt:4836
+#: ../openconnect-strings.txt:4839
 #, c-format
 msgid "Cannot read registry key %s\\%s: value not found\n"
 msgstr "Не вдалося прочитати ключ реєстру %s\\%s: значення не знайдено\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/6dcfbe1b1:/tun-win32.c#l121
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/6dcfbe1b1:/tun-win32.c#l184
-#: ../openconnect-strings.txt:4840
+#: ../openconnect-strings.txt:4843
 #, c-format
 msgid "Cannot read registry key %s\\%s: value is not a string (%ld)\n"
-msgstr "Не вдалося прочитати ключ реєстру %s\\%s: значення не є рядком (%ld)\n"
+msgstr ""
+"Не вдалося прочитати ключ реєстру %s\\%s: значення не є рядком (%ld)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/6dcfbe1b1:/tun-win32.c#l126
-#: ../openconnect-strings.txt:4843
+#: ../openconnect-strings.txt:4846
 #, c-format
 msgid "Cannot read registry key %s\\%s or is not string: %s (%ld)\n"
 msgstr ""
@@ -9236,25 +9255,25 @@ msgstr ""
 "(%ld)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/60d1f092e:/tun-win32.c#l118
-#: ../openconnect-strings.txt:4846
+#: ../openconnect-strings.txt:4849
 #, c-format
 msgid "%s\\ComponentId is unknown '%s'\n"
 msgstr "%s\\Невідомий ComponentId «%s»\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/0be961a51:/tun-win32.c#l114
-#: ../openconnect-strings.txt:4849
+#: ../openconnect-strings.txt:4852
 #, c-format
 msgid "Found %s at %s\n"
 msgstr "Знайдено %s у %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/0be961a51:/tun-win32.c#l131
-#: ../openconnect-strings.txt:4852
+#: ../openconnect-strings.txt:4855
 #, c-format
 msgid "Cannot open registry key %s\n"
 msgstr "Не вдалося відкрити ключ реєстру %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/6dcfbe1b1:/tun-win32.c#l179
-#: ../openconnect-strings.txt:4855
+#: ../openconnect-strings.txt:4858
 #, c-format
 msgid ""
 "Cannot read registry key %s\\%s: character buffer too small: %llu chars "
@@ -9264,13 +9283,13 @@ msgstr ""
 "потрібен розмір у %llu символів\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/6dcfbe1b1:/tun-win32.c#l189
-#: ../openconnect-strings.txt:4860
+#: ../openconnect-strings.txt:4863
 #, c-format
 msgid "Cannot read registry key %s\\%s: %s (%ld)\n"
 msgstr "Не вдалося прочитати ключ реєстру  %s\\%s: %s (%ld)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/f359a42a9:/tun-win32.c#l349
-#: ../openconnect-strings.txt:4863
+#: ../openconnect-strings.txt:4866
 msgid ""
 "Access denied creating Wintun adapter. Are you running with Administrator "
 "privileges?\n"
@@ -9279,7 +9298,7 @@ msgstr ""
 "є привілеї адміністратора?\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/6096fb0e4:/tun-win32.c#l186
-#: ../openconnect-strings.txt:4868
+#: ../openconnect-strings.txt:4871
 #, c-format
 msgid ""
 "GetAdapterIndex() failed: %s\n"
@@ -9289,19 +9308,19 @@ msgstr ""
 "Повертаємося до GetAdaptersInfo()\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/6096fb0e4:/tun-win32.c#l200
-#: ../openconnect-strings.txt:4873
+#: ../openconnect-strings.txt:4876
 #, c-format
 msgid "GetAdaptersInfo() failed: %s\n"
 msgstr "Помилка GetAdaptersInfo(): %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/0c10442fa:/tun-win32.c#l256
-#: ../openconnect-strings.txt:4876
+#: ../openconnect-strings.txt:4879
 #, c-format
 msgid "GetAdaptersAddresses() failed: %s\n"
 msgstr "Помилка GetAdaptersAddresses(): %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/0c10442fa:/tun-win32.c#l286
-#: ../openconnect-strings.txt:4879
+#: ../openconnect-strings.txt:4882
 #, c-format
 msgid ""
 "Adapter \"%S\" / %ld is UP and using our IPv%d address. Cannot resolve.\n"
@@ -9310,7 +9329,7 @@ msgstr ""
 "Вирішення проблеми неможливе.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/0c10442fa:/tun-win32.c#l293
-#: ../openconnect-strings.txt:4883
+#: ../openconnect-strings.txt:4886
 #, c-format
 msgid ""
 "Adapter \"%S\" / %ld is DOWN and using our IPv%d address. We will reclaim "
@@ -9320,69 +9339,70 @@ msgstr ""
 "Ми заберемо цю адресу у нього.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4a224cdfc:/tun-win32.c#l309
-#: ../openconnect-strings.txt:4888
+#: ../openconnect-strings.txt:4891
 #, c-format
 msgid "GetUnicastIpAddressTable() failed: %s\n"
 msgstr "Помилка GetUnicastIpAddressTable(): %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4a224cdfc:/tun-win32.c#l330
-#: ../openconnect-strings.txt:4891
+#: ../openconnect-strings.txt:4894
 #, c-format
 msgid "DeleteUnicastIpAddressEntry() failed: %s\n"
 msgstr "Помилка DeleteUnicastIpAddressEntry(): %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4a224cdfc:/tun-win32.c#l337
-#: ../openconnect-strings.txt:4894
+#: ../openconnect-strings.txt:4897
 msgid "GetUnicastIpAddressTable() did not find matching address to reclaim\n"
 msgstr ""
 "GetUnicastIpAddressTable() не знайдено відповідної адреси для заміщення\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/60d1f092e:/tun-win32.c#l242
-#: ../openconnect-strings.txt:4897
+#: ../openconnect-strings.txt:4900
 #, c-format
 msgid "Opened tun device %S\n"
 msgstr "Відкрито пристрій tun %S\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/887c9d97e:/tun-win32.c#l184
-#: ../openconnect-strings.txt:4900
+#: ../openconnect-strings.txt:4903
 #, c-format
 msgid "Failed to obtain TAP driver version: %s\n"
 msgstr "Не вдалося отримати дані щодо версії драйвера TAP: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/7c7ad370b:/tun-win32.c#l146
-#: ../openconnect-strings.txt:4903
+#: ../openconnect-strings.txt:4906
 #, c-format
-msgid "Error: TAP-Windows driver v9.9 or greater is required (found %ld.%ld)\n"
+msgid ""
+"Error: TAP-Windows driver v9.9 or greater is required (found %ld.%ld)\n"
 msgstr ""
 "Помилка: потрібна версія драйвера TAP-Windows 9.9 або новіша (виявлено %ld."
 "%ld)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/887c9d97e:/tun-win32.c#l207
-#: ../openconnect-strings.txt:4906
+#: ../openconnect-strings.txt:4909
 #, c-format
 msgid "Failed to set TAP IP addresses: %s\n"
 msgstr "Не вдалося встановити IP-адреси TAP: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/887c9d97e:/tun-win32.c#l219
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/58e7ea69c:/tun-win32.c#l406
-#: ../openconnect-strings.txt:4910
+#: ../openconnect-strings.txt:4913
 #, c-format
 msgid "Failed to set TAP media status: %s\n"
 msgstr "Не вдалося встановити стан носія TAP: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/60d1f092e:/tun-win32.c#l326
-#: ../openconnect-strings.txt:4913
+#: ../openconnect-strings.txt:4916
 msgid "Could not convert interface name to UTF-8\n"
 msgstr "Не вдалося перетворити назву інтерфейсу у кодування UTF-8\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b5ff6f3fb:/tun-win32.c#l468
-#: ../openconnect-strings.txt:4916
+#: ../openconnect-strings.txt:4919
 #, c-format
 msgid "Using %s device '%s', index %d\n"
 msgstr "Використовуємо пристрій %s «%s», індекс %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b5ff6f3fb:/tun-win32.c#l473
-#: ../openconnect-strings.txt:4919
+#: ../openconnect-strings.txt:4922
 #, c-format
 msgid ""
 "WARNING: Support for Wintun is experimental and may be unstable. If you\n"
@@ -9394,20 +9414,20 @@ msgstr ""
 "  TAP-Windows. Див. %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/15e3bd03f:/tun-win32.c#l756
-#: ../openconnect-strings.txt:4925
+#: ../openconnect-strings.txt:4928
 #, c-format
 msgid "Could not construct interface name for \"%s\"\n"
 msgstr "Не вдалося побудувати назву інтерфейсу для «%s»\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/15e3bd03f:/tun-win32.c#l830
-#: ../openconnect-strings.txt:4928
+#: ../openconnect-strings.txt:4931
 msgid "Unable to find a usable default adapter name based on hostname.\n"
 msgstr ""
 "Не вдалося знайти придатну до використання назву адаптера на основі назви "
 "вузла.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/48bd28aad:/tun-win32.c#l394
-#: ../openconnect-strings.txt:4931
+#: ../openconnect-strings.txt:4934
 msgid ""
 "Neither Windows-TAP nor Wintun adapters were found. Is the driver "
 "installed?\n"
@@ -9415,118 +9435,118 @@ msgstr ""
 "Не знайдено адаптерів ні Windows-TAP, ні Wintun. Чи встановлено драйвер?\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/fa3a36f01:/tun-win32.c#l249
-#: ../openconnect-strings.txt:4936
+#: ../openconnect-strings.txt:4939
 msgid "TAP device aborted connectivity. Disconnecting.\n"
 msgstr "Можливість з'єднання перервано пристроєм TAP. Розриваємо з'єднання.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/887c9d97e:/tun-win32.c#l249
-#: ../openconnect-strings.txt:4939
+#: ../openconnect-strings.txt:4942
 #, c-format
 msgid "Failed to read from TAP device: %s\n"
 msgstr "Не вдалося прочитати дані з пристрою TAP: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/887c9d97e:/tun-win32.c#l263
-#: ../openconnect-strings.txt:4942
+#: ../openconnect-strings.txt:4945
 #, c-format
 msgid "Failed to complete read from TAP device: %s\n"
 msgstr "Не вдалося повністю прочитати дані з пристрою TAP: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/87070617c:/tun-win32.c#l245
-#: ../openconnect-strings.txt:4945
+#: ../openconnect-strings.txt:4948
 #, c-format
 msgid "Wrote %ld bytes to tun\n"
 msgstr "Записано %ld байтів до tun\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/87070617c:/tun-win32.c#l255
-#: ../openconnect-strings.txt:4948
+#: ../openconnect-strings.txt:4951
 msgid "Waiting for tun write...\n"
 msgstr "Очікуємо на запис до tun…\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/87070617c:/tun-win32.c#l258
-#: ../openconnect-strings.txt:4951
+#: ../openconnect-strings.txt:4954
 #, c-format
 msgid "Wrote %ld bytes to tun after waiting\n"
 msgstr "Записано %ld байтів до tun після очікування\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/887c9d97e:/tun-win32.c#l306
-#: ../openconnect-strings.txt:4954
+#: ../openconnect-strings.txt:4957
 #, c-format
 msgid "Failed to write to TAP device: %s\n"
 msgstr "Не вдалося виконати запис до пристрою TAP: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/cb1a342a4:/tun-win32.c#l285
-#: ../openconnect-strings.txt:4957
+#: ../openconnect-strings.txt:4960
 msgid "Spawning tunnel scripts is not yet supported on Windows\n"
 msgstr "Підтримки породження скриптів тунелів у Windows ще не передбачено\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/f8fbc0b30:/tun.c#l121
-#: ../openconnect-strings.txt:4960
+#: ../openconnect-strings.txt:4963
 msgid "Could not open /dev/tun for plumbing"
 msgstr "Не вдалося відкрити /dev/tun для вимірювання"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/f8fbc0b30:/tun.c#l125
-#: ../openconnect-strings.txt:4963
+#: ../openconnect-strings.txt:4966
 msgid "Can't push IP"
 msgstr "Не вдалося надіслати IP"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/f8fbc0b30:/tun.c#l135
-#: ../openconnect-strings.txt:4966
+#: ../openconnect-strings.txt:4969
 msgid "Can't set ifname"
 msgstr "Не вдалося встановити назву інтерфейсу"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b056e27c9:/tun.c#l109
-#: ../openconnect-strings.txt:4969
+#: ../openconnect-strings.txt:4972
 #, c-format
 msgid "Can't open %s: %s\n"
 msgstr "Не вдалося відкрити %s: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/0f15f33b7:/tun.c#l152
-#: ../openconnect-strings.txt:4972
+#: ../openconnect-strings.txt:4975
 #, c-format
 msgid "Can't plumb %s for IPv%d: %s\n"
 msgstr "Не вдалося виміряти %s для IPv%d: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/720c63e28:/tun.c#l139
-#: ../openconnect-strings.txt:4975
+#: ../openconnect-strings.txt:4978
 msgid "open /dev/tun"
 msgstr "відкрити /dev/tun"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/720c63e28:/tun.c#l145
-#: ../openconnect-strings.txt:4978
+#: ../openconnect-strings.txt:4981
 msgid "Failed to create new tun"
 msgstr "Не вдалося створити tun"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/720c63e28:/tun.c#l151
-#: ../openconnect-strings.txt:4981
+#: ../openconnect-strings.txt:4984
 msgid "Failed to put tun file descriptor into message-discard mode"
 msgstr "Не вдалося перевести дескриптор файла tun у режим message-discard"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4b960afd1:/tun.c#l183
-#: ../openconnect-strings.txt:4984
+#: ../openconnect-strings.txt:4987
 msgid "tun device is unsupported on this platform\n"
 msgstr "Підтримки пристрою tun на цій платформі не передбачено\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/4ca0aa1bc:/tun.c#l197
-#: ../openconnect-strings.txt:4987
+#: ../openconnect-strings.txt:4990
 #, c-format
 msgid "Requested tun device name '%s' is too long\n"
 msgstr "Запитана назва пристрою тунелювання, «%s», є надто довгою\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/eef00ae2f:/tun.c#l432
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/0f484d6c7:/tun.c#l619
-#: ../openconnect-strings.txt:4991
+#: ../openconnect-strings.txt:4994
 #, c-format
 msgid "Failed to open tun device: %s\n"
 msgstr "Не вдалося відкрити пристрій tun: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/ebc9e59a3:/tun.c#l244
-#: ../openconnect-strings.txt:4994
+#: ../openconnect-strings.txt:4997
 #, c-format
 msgid "Failed to bind local tun device (TUNSETIFF): %s\n"
 msgstr "Не вдалося пов'язати локальний пристрій тунелю (TUNSETIFF): %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/ebc9e59a3:/tun.c#l248
-#: ../openconnect-strings.txt:4997
+#: ../openconnect-strings.txt:5000
 #, c-format
 msgid ""
 "To configure local networking, openconnect must be running as root\n"
@@ -9537,478 +9557,480 @@ msgstr ""
 "Див. %s, щоб дізнатися більше\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/898246b25:/tun.c#l294
-#: ../openconnect-strings.txt:5002
+#: ../openconnect-strings.txt:5005
 #, c-format
 msgid "Invalid interface name '%s'; must match 'utun%%d' or 'tun%%d'\n"
 msgstr "Некоректна назва інтерфейсу — «%s»; має бути «utun%%d» або «tun%%d»\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/898246b25:/tun.c#l303
-#: ../openconnect-strings.txt:5005
+#: ../openconnect-strings.txt:5008
 #, c-format
 msgid "Failed to open SYSPROTO_CONTROL socket: %s\n"
 msgstr "Не вдалося відкрити сокет SYSPROTO_CONTROL: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/898246b25:/tun.c#l312
-#: ../openconnect-strings.txt:5008
+#: ../openconnect-strings.txt:5011
 #, c-format
 msgid "Failed to query utun control id: %s\n"
 msgstr "Не вдалося опитати систему щодо ідентифікатора керування utun: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/5b9c521a9:/tun.c#l343
-#: ../openconnect-strings.txt:5011
+#: ../openconnect-strings.txt:5014
 msgid "Failed to allocate utun device name\n"
 msgstr "Не вдалося розмістити у пам'яті назву пристрою utun\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/5b9c521a9:/tun.c#l354
-#: ../openconnect-strings.txt:5014
+#: ../openconnect-strings.txt:5017
 #, c-format
 msgid "Failed to connect utun unit: %s\n"
 msgstr "Не вдалося встановити з'єднання із модулем utun: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/422e196ae:/tun.c#l508
-#: ../openconnect-strings.txt:5017
+#: ../openconnect-strings.txt:5020
 #, c-format
 msgid "Invalid interface name '%s'; must match 'tun%%d'\n"
 msgstr "Некоректна назва інтерфейсу — «%s»; має бути «tun%%d»\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/422e196ae:/tun.c#l518
-#: ../openconnect-strings.txt:5020
+#: ../openconnect-strings.txt:5023
 #, c-format
 msgid "Cannot open '%s': %s\n"
 msgstr "Не вдалося відкрити %s: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/f8fbc0b30:/tun.c#l411
-#: ../openconnect-strings.txt:5023
+#: ../openconnect-strings.txt:5026
 msgid "TUNSIFHEAD"
 msgstr "TUNSIFHEAD"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/9b6885730:/tun.c#l464
-#: ../openconnect-strings.txt:5026
+#: ../openconnect-strings.txt:5029
 #, c-format
 msgid "Failed to make tun socket nonblocking: %s\n"
 msgstr "Не вдалося зробити сокет tun неблокувальним: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/0f484d6c7:/tun.c#l664
-#: ../openconnect-strings.txt:5029
+#: ../openconnect-strings.txt:5032
 #, c-format
 msgid "socketpair failed: %s\n"
 msgstr "Помилка socketpair: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/0f484d6c7:/tun.c#l669
-#: ../openconnect-strings.txt:5032
+#: ../openconnect-strings.txt:5035
 #, c-format
 msgid "fork failed: %s\n"
 msgstr "Помилка fork: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/be40969ca:/tun.c#l480
-#: ../openconnect-strings.txt:5035
+#: ../openconnect-strings.txt:5038
 msgid "execl"
 msgstr "execl"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/9186ea2ae:/tun.c#l580
-#: ../openconnect-strings.txt:5038
+#: ../openconnect-strings.txt:5041
 msgid "(script)"
 msgstr "(скрипт)"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/87070617c:/tun.c#l436
-#: ../openconnect-strings.txt:5041
+#: ../openconnect-strings.txt:5044
 #, c-format
 msgid "Failed to write incoming packet: %s\n"
 msgstr "Не вдалося записати вхідний пакет: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l77
-#: ../openconnect-strings.txt:5044
+#: ../openconnect-strings.txt:5047
 #, c-format
 msgid "Failed to set vring #%d size: %s\n"
 msgstr "Не вдалося встановити розмір vring %d: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l85
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l97
-#: ../openconnect-strings.txt:5048
+#: ../openconnect-strings.txt:5051
 #, c-format
 msgid "Failed to set vring #%d base: %s\n"
 msgstr "Не вдалося встановити основу vring %d: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l107
-#: ../openconnect-strings.txt:5051
+#: ../openconnect-strings.txt:5054
 #, c-format
 msgid "Failed to set vring #%d RX backend: %s\n"
 msgstr "Не вдалося встановити модуль приймача vring %d: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l115
-#: ../openconnect-strings.txt:5054
+#: ../openconnect-strings.txt:5057
 #, c-format
 msgid "Failed to set vring #%d call eventfd: %s\n"
 msgstr "Не вдалося встановити дескриптор файла події виклику vring %d: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l124
-#: ../openconnect-strings.txt:5057
+#: ../openconnect-strings.txt:5060
 #, c-format
 msgid "Failed to set vring #%d kick eventfd: %s\n"
-msgstr "Не вдалося встановити дескриптор файла події відкидання vring %d: %s\n"
+msgstr ""
+"Не вдалося встановити дескриптор файла події відкидання vring %d: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/7b059e931:/vhost.c#l183
-#: ../openconnect-strings.txt:5060
+#: ../openconnect-strings.txt:5063
 msgid "Failed to find virtual task size; search reached zero"
-msgstr "Не вдалося знайти розмір віртуального завдання; пошуком повернуто нуль"
+msgstr ""
+"Не вдалося знайти розмір віртуального завдання; пошуком повернуто нуль"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/7b059e931:/vhost.c#l233
-#: ../openconnect-strings.txt:5063
+#: ../openconnect-strings.txt:5066
 #, c-format
 msgid "Detected virtual address range 0x%lx-0x%lx\n"
 msgstr "Виявлено діапазон віртуальних адрес 0x%lx-0x%lx\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l143
-#: ../openconnect-strings.txt:5066
+#: ../openconnect-strings.txt:5069
 #, c-format
 msgid "Not using vhost-net due to low queue length %d\n"
 msgstr "Не використовуємо vhost-net через низьку довжину черги, %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l157
-#: ../openconnect-strings.txt:5069
+#: ../openconnect-strings.txt:5072
 #, c-format
 msgid "Failed to open /dev/vhost-net: %s\n"
 msgstr "Не вдалося відкрити /dev/vhost-net: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l164
-#: ../openconnect-strings.txt:5072
+#: ../openconnect-strings.txt:5075
 #, c-format
 msgid "Failed to set vhost ownership: %s\n"
 msgstr "Не вдалося встановити власника vhost: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l173
-#: ../openconnect-strings.txt:5075
+#: ../openconnect-strings.txt:5078
 #, c-format
 msgid "Failed to get vhost features: %s\n"
 msgstr "Не вдалося отримати можливості vhost: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l178
-#: ../openconnect-strings.txt:5078
+#: ../openconnect-strings.txt:5081
 #, c-format
 msgid "vhost-net lacks required features: %llx\n"
 msgstr "vhost-net не вистачає потрібних можливостей: %llx\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l186
-#: ../openconnect-strings.txt:5081
+#: ../openconnect-strings.txt:5084
 #, c-format
 msgid "Failed to set vhost features: %s\n"
 msgstr "Не вдалося встановити можливості vhost: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l194
-#: ../openconnect-strings.txt:5084
+#: ../openconnect-strings.txt:5087
 #, c-format
 msgid "Failed to open vhost kick eventfd: %s\n"
 msgstr "Не вдалося відкрити дескриптор файла події відкидання vhost: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l201
-#: ../openconnect-strings.txt:5087
+#: ../openconnect-strings.txt:5090
 #, c-format
 msgid "Failed to open vhost call eventfd: %s\n"
 msgstr "Не вдалося відкрити дескриптор файла події виклику vhost: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l219
-#: ../openconnect-strings.txt:5090
+#: ../openconnect-strings.txt:5093
 #, c-format
 msgid "Failed to set vhost memory map: %s\n"
 msgstr "Не вдалося встановити прив'язку до пам'яті vhost: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l242
-#: ../openconnect-strings.txt:5093
+#: ../openconnect-strings.txt:5096
 #, c-format
 msgid "Failed to set tun sndbuf: %s\n"
 msgstr "Не вдалося встановити sndbuf tun: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l247
-#: ../openconnect-strings.txt:5096
+#: ../openconnect-strings.txt:5099
 #, c-format
 msgid "Using vhost-net for tun acceleration, ring size %d\n"
 msgstr "Використовуємо vhost-net для прискорення tun, розмір кільця %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l332
-#: ../openconnect-strings.txt:5099
+#: ../openconnect-strings.txt:5102
 #, c-format
 msgid "Error: vhost gave back invalid descriptor %d, len %d\n"
 msgstr "Помилка: vhost повернуто некоректний дескриптор %d, довжина %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l342
-#: ../openconnect-strings.txt:5102
+#: ../openconnect-strings.txt:5105
 #, c-format
 msgid "vhost gave back empty descriptor %d\n"
 msgstr "vhost повернуто порожній дескриптор %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l353
-#: ../openconnect-strings.txt:5105
+#: ../openconnect-strings.txt:5108
 #, c-format
 msgid "Free TX packet %p [%d] [used %d]\n"
 msgstr "Вільний пакет передавання %p [%d] [використано %d]\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l365
-#: ../openconnect-strings.txt:5108
+#: ../openconnect-strings.txt:5111
 #, c-format
 msgid "RX packet %p(%d) [%d] [used %d]\n"
 msgstr "Пакет отримання %p(%d) [%d] [використано %d]\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l413
-#: ../openconnect-strings.txt:5111
+#: ../openconnect-strings.txt:5114
 #, c-format
 msgid "Queue TX packet %p at desc %d avail %d\n"
 msgstr "Пакет передавання черги %p із описом %d, доступно %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l421
-#: ../openconnect-strings.txt:5114
+#: ../openconnect-strings.txt:5117
 #, c-format
 msgid "Queue RX packet %p at desc %d avail %d\n"
 msgstr "Пакет отримання черги %p із описом %d, доступно %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l456
-#: ../openconnect-strings.txt:5117
+#: ../openconnect-strings.txt:5120
 #, c-format
 msgid "Immediate wake because vhost ring moved on from 0x%x to 0x%x\n"
 msgstr "Негайне пробудження через пересування кільця vhost з 0x%x до 0x%x\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/fd8cfdfd3:/vhost.c#l536
-#: ../openconnect-strings.txt:5120
+#: ../openconnect-strings.txt:5123
 msgid "Failed to kick vhost-net eventfd\n"
 msgstr "Не вдалося викинути дескриптор файла події vhost-net\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c6ef11969:/vhost.c#l482
-#: ../openconnect-strings.txt:5123
+#: ../openconnect-strings.txt:5126
 msgid "Kick vhost ring\n"
 msgstr "Викинути кільце vhost\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/60d1f092e:/wintun.c#l75
-#: ../openconnect-strings.txt:5126
+#: ../openconnect-strings.txt:5129
 msgid "Could not load wintun.dll\n"
 msgstr "Не вдалося завантажити wintun.dll\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/60d1f092e:/wintun.c#l90
-#: ../openconnect-strings.txt:5129
+#: ../openconnect-strings.txt:5132
 msgid "Could not resolve functions from wintun.dll\n"
 msgstr "Не вдалося визначити назви функцій з wintun.dll\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c34334152:/wintun.c#l118
-#: ../openconnect-strings.txt:5132
+#: ../openconnect-strings.txt:5135
 msgid "Wintun adapter has not been opened\n"
 msgstr "Адаптер Wintun не було відкрито\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c34334152:/wintun.c#l128
-#: ../openconnect-strings.txt:5135
+#: ../openconnect-strings.txt:5138
 msgid "Unable to get Wintun adapter Guid\n"
 msgstr "Не вдалося отримати GUID адаптера Wintun\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/43f078d92:/wintun.c#l143
-#: ../openconnect-strings.txt:5138
+#: ../openconnect-strings.txt:5141
 #, c-format
 msgid "Loaded Wintun v%lu.%lu\n"
 msgstr "Завантажено Wintun v%lu.%lu\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/b056e27c9:/wintun.c#l146
-#: ../openconnect-strings.txt:5141
+#: ../openconnect-strings.txt:5144
 #, c-format
 msgid "Failed to create Wintun session: %s\n"
 msgstr "Не вдалося створити сеанс Wintun: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/9033a84be:/wintun.c#l173
-#: ../openconnect-strings.txt:5144
+#: ../openconnect-strings.txt:5147
 #, c-format
 msgid "Could not retrieve packet from Wintun adapter '%S': %s\n"
 msgstr "Не вдалося отримати пакет від адаптера Wintun «%S»: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/9033a84be:/wintun.c#l185
-#: ../openconnect-strings.txt:5147
+#: ../openconnect-strings.txt:5150
 #, c-format
 msgid "Drop oversized packet retrieved from Wintun adapter '%S' (%ld > %d)\n"
 msgstr ""
 "Відкинути пакет надмірного розміру від адаптера Wintun «%S» (%ld > %d)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/9033a84be:/wintun.c#l200
-#: ../openconnect-strings.txt:5150
+#: ../openconnect-strings.txt:5153
 #, c-format
 msgid "Could not send packet through Wintun adapter '%S': %s\n"
 msgstr "Не вдалося надіслати пакет крізь адаптер Wintun «%S»: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/8d7853a7b:/xml.c#l97
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/f18f58253:/xml.c#l88
-#: ../openconnect-strings.txt:5154
+#: ../openconnect-strings.txt:5157
 #, c-format
 msgid "Treating host \"%s\" as a raw hostname\n"
 msgstr "Вважаємо назву вузла «%s» простою\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/113965a85:/xml.c#l107
-#: ../openconnect-strings.txt:5157
+#: ../openconnect-strings.txt:5160
 msgid "Failed to SHA1 existing file\n"
 msgstr "Не вдалося знайти суму SHA1 наявного файла\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/ab4abdcdf:/xml.c#l110
-#: ../openconnect-strings.txt:5160
+#: ../openconnect-strings.txt:5163
 #, c-format
 msgid "XML config file SHA1: %s\n"
 msgstr "SHA1 файла налаштувань XML: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/f18f58253:/xml.c#l86
-#: ../openconnect-strings.txt:5163
+#: ../openconnect-strings.txt:5166
 #, c-format
 msgid "Failed to parse XML config file %s\n"
 msgstr "Не вдалося обробити файл налаштувань XML %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/f18f58253:/xml.c#l123
-#: ../openconnect-strings.txt:5166
+#: ../openconnect-strings.txt:5169
 #, c-format
 msgid "Host \"%s\" has address \"%s\"\n"
 msgstr "Вузол «%s» має адресу «%s»\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/f18f58253:/xml.c#l132
-#: ../openconnect-strings.txt:5169
+#: ../openconnect-strings.txt:5172
 #, c-format
 msgid "Host \"%s\" has UserGroup \"%s\"\n"
 msgstr "Вузол «%s» належить групі користувачів «%s»\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/f18f58253:/xml.c#l146
-#: ../openconnect-strings.txt:5172
+#: ../openconnect-strings.txt:5175
 #, c-format
 msgid "Host \"%s\" not listed in config; treating as raw hostname\n"
 msgstr ""
 "Вузла «%s» немає у списку налаштувань; вважаємо його простою назвою вузла\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c24046b93:/yubikey.c#l74
-#: ../openconnect-strings.txt:5175
+#: ../openconnect-strings.txt:5178
 #, c-format
 msgid "Failed to send \"%s\" to ykneo-oath applet: %s\n"
 msgstr "Не вдалося надіслати «%s» до аплету ykneo-oath: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c24046b93:/yubikey.c#l80
-#: ../openconnect-strings.txt:5178
+#: ../openconnect-strings.txt:5181
 #, c-format
 msgid "Invalid short response to \"%s\" from ykneo-oath applet\n"
 msgstr "Некоректна коротка відповідь на «%s» від аплету ykneo-oath\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/a23f11ad9:/yubikey.c#l106
-#: ../openconnect-strings.txt:5181
+#: ../openconnect-strings.txt:5184
 #, c-format
 msgid "Failure response to \"%s\": %04x\n"
 msgstr "Відповідь із повідомленням щодо помилки у «%s»: %04x\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/0a24290ce:/yubikey.c#l151
-#: ../openconnect-strings.txt:5184
+#: ../openconnect-strings.txt:5187
 msgid "select applet command"
 msgstr "вибрати команду для аплету"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/0a24290ce:/yubikey.c#l162
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/0a24290ce:/yubikey.c#l298
-#: ../openconnect-strings.txt:5188
+#: ../openconnect-strings.txt:5191
 msgid "Unrecognised response from ykneo-oath applet\n"
 msgstr "Невідома відповідь від аплету ykneo-oath\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/0a24290ce:/yubikey.c#l179
-#: ../openconnect-strings.txt:5191
+#: ../openconnect-strings.txt:5194
 #, c-format
 msgid "Found ykneo-oath applet v%d.%d.%d.\n"
 msgstr "Виявлено аплет ykneo-oath v%d.%d.%d.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/a23f11ad9:/yubikey.c#l206
-#: ../openconnect-strings.txt:5194
+#: ../openconnect-strings.txt:5197
 msgid "PIN required for Yubikey OATH applet"
 msgstr "Аплету OATH Yubikey потрібен пінкод"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/a23f11ad9:/yubikey.c#l211
-#: ../openconnect-strings.txt:5197
+#: ../openconnect-strings.txt:5200
 msgid "Yubikey PIN:"
 msgstr "Пінкод Yubikey:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/0a24290ce:/yubikey.c#l193
-#: ../openconnect-strings.txt:5200
+#: ../openconnect-strings.txt:5203
 msgid "Failed to calculate Yubikey unlock response\n"
 msgstr "Не вдалося обчислити відповідь щодо розблокування Yubikey\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/0a24290ce:/yubikey.c#l209
-#: ../openconnect-strings.txt:5203
+#: ../openconnect-strings.txt:5206
 msgid "unlock command"
 msgstr "команда розблокування"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/9a7accaf7:/yubikey.c#l289
-#: ../openconnect-strings.txt:5206
+#: ../openconnect-strings.txt:5209
 msgid "Trying truncated-char PBKBF2 variant of Yubikey PIN\n"
 msgstr ""
 "Намагаємося виконати варіант PBKBF2 із обрізаними символами для пінкоду "
 "Yubikey\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c24046b93:/yubikey.c#l146
-#: ../openconnect-strings.txt:5209
+#: ../openconnect-strings.txt:5212
 #, c-format
 msgid "Failed to establish PC/SC context: %s\n"
 msgstr "Не вдалося встановити контекст PC/SC: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c24046b93:/yubikey.c#l150
-#: ../openconnect-strings.txt:5212
+#: ../openconnect-strings.txt:5215
 msgid "Established PC/SC context\n"
 msgstr "Встановлено контекст PC/SC\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c24046b93:/yubikey.c#l155
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c24046b93:/yubikey.c#l165
-#: ../openconnect-strings.txt:5216
+#: ../openconnect-strings.txt:5219
 #, c-format
 msgid "Failed to query reader list: %s\n"
 msgstr "Не вдалося опитати список читачів: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c24046b93:/yubikey.c#l180
-#: ../openconnect-strings.txt:5219
+#: ../openconnect-strings.txt:5222
 #, c-format
 msgid "Failed to connect to PC/SC reader '%s': %s\n"
 msgstr "Не вдалося встановити з'єднання із читачем PC/SC «%s»: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/973eed1ff:/yubikey.c#l341
-#: ../openconnect-strings.txt:5222
+#: ../openconnect-strings.txt:5225
 #, c-format
 msgid "Connected PC/SC reader '%s'\n"
 msgstr "Встановлено з'єднання із читачем PC/SC «%s»\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/973eed1ff:/yubikey.c#l346
-#: ../openconnect-strings.txt:5225
+#: ../openconnect-strings.txt:5228
 #, c-format
 msgid "Failed to obtain exclusive access to reader '%s': %s\n"
 msgstr "Не вдалося отримати ексклюзивний доступ до читача «%s»: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c24046b93:/yubikey.c#l232
-#: ../openconnect-strings.txt:5228
+#: ../openconnect-strings.txt:5231
 msgid "list keys command"
 msgstr "команда списку ключів"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c24046b93:/yubikey.c#l262
-#: ../openconnect-strings.txt:5231
+#: ../openconnect-strings.txt:5234
 #, c-format
 msgid "Found %s/%s key '%s' on '%s'\n"
 msgstr "Знайдено ключ %s/%s «%s» на «%s»\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c24046b93:/yubikey.c#l279
-#: ../openconnect-strings.txt:5234
+#: ../openconnect-strings.txt:5237
 #, c-format
 msgid ""
 "Token '%s' not found on Yubikey '%s'. Searching for another Yubikey...\n"
 msgstr "Ключ «%s» не знайдено на Yubikey «%s». Шукаємо інший Yubikey…\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c24046b93:/yubikey.c#l319
-#: ../openconnect-strings.txt:5238
+#: ../openconnect-strings.txt:5241
 msgid "Server is rejecting the Yubikey token; switching to manual entry\n"
 msgstr "Сервер відкидає ключ Yubikey; перемикаємося на введення вручну\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/c24046b93:/yubikey.c#l374
-#: ../openconnect-strings.txt:5241
+#: ../openconnect-strings.txt:5244
 msgid "Generating Yubikey token code\n"
 msgstr "Створюємо код ключа Yubikey\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/973eed1ff:/yubikey.c#l515
-#: ../openconnect-strings.txt:5244
+#: ../openconnect-strings.txt:5247
 #, c-format
 msgid "Failed to obtain exclusive access to Yubikey: %s\n"
 msgstr "Не вдалося отримати ексклюзивний доступ до Yubikey: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/46b6bb885:/yubikey.c#l622
-#: ../openconnect-strings.txt:5247
+#: ../openconnect-strings.txt:5250
 msgid "calculate command"
 msgstr "команда обчислення"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/0a24290ce:/yubikey.c#l488
-#: ../openconnect-strings.txt:5250
+#: ../openconnect-strings.txt:5253
 msgid "Unrecognised response from Yubikey when generating tokencode\n"
 msgstr "Нерозпізнана відповідь від Yubikey під час створення коду ключа\n"
 
