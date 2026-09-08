@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: NetworkManager-openconnect
-Upstream-Contact: Dan Williams <dcbw@redhat.com>
+Upstream-Contact: David Woodhouse <dwmw2@infradead.org>
 Source: https://ftp.gnome.org/pub/GNOME/sources/NetworkManager-openconnect/
 
 Files: *
