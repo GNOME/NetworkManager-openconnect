@@ -43,13 +43,13 @@
 .dist: &dist
   stage: test
   dependencies:
-    - fedora37_dist
+    - fedora43_dist
   variables:
     GIT_STRATEGY: none
 
 # Roll the distribution tarball
-fedora37_dist:
-  image: fedora:37
+fedora43_dist:
+  image: fedora:43
   stage: build
   before_script:
     - *fedora_deps
@@ -65,8 +65,8 @@ fedora37_dist:
     paths:
       - "*.xz"
 
-fedora37_from_dist:
-  image: fedora:37
+fedora43_from_dist:
+  image: fedora:43
   <<: *dist
   before_script:
     - *fedora_deps
